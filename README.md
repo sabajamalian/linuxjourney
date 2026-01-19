@@ -36,6 +36,10 @@ This course is designed for hands-on learning using **Ubuntu Linux VMs**. Each s
 3. Follow the lessons in order, starting with Grasshopper level
 4. Practice each command in your VM terminal
 
+See [docs/student-guide.md](docs/student-guide.md) for detailed instructions.
+
+**Note:** You have full root access in your VM! See [docs/root-access-guide.md](docs/root-access-guide.md) for a guide to commands requiring sudo/root privileges.
+
 ### For Instructors
 
 See [docs/instructor-guide.md](docs/instructor-guide.md) for VM deployment and management instructions.
