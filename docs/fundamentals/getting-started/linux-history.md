@@ -14,7 +14,7 @@ Welcome to your **Linux Journey**! If you're ready to dive into the powerful wor
 
 To understand how Linux was created, we must go back to 1969 when Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in the C programming language, which made it portable and led to its widespread adoption.
 
-![Timeline of Unix](https://file.labex.io/images/ed9c245d-e8be-4287-bf34-67750b042542.jpg)
+![Timeline of Unix](/assets/images/unix-timeline.jpg)
 
 Over a decade later, Richard Stallman initiated the GNU (a recursive acronym for "GNU's Not UNIX") project. The goal was to create a completely free and open-source UNIX-like operating system. While the GNU project produced many essential components, including the GNU General Public License (GPL), its own kernel, named Hurd, was not completed in time.
 
@@ -26,7 +26,7 @@ The kernel is the core component of an operating system. It acts as a bridge, al
 
 This brings us to 1991, when a Finnish student named Linus Torvalds began developing a new kernel as a personal project. This kernel, which we now know as the Linux kernel, filled the missing piece of the GNU operating system. The combination of the GNU tools and the Linux kernel created the complete, open-source operating system that is widely used today. This milestone was a pivotal moment in the **history of Linux**.
 
-![Linus Torvalds in 2018](https://file.labex.io/images/3e1311fd-b8ca-45e7-8d02-9aac6377bb36.jpg)
+![Linus Torvalds in 2018](/assets/images/linus-torvalds.jpg)
 
 _Linus Torvalds in 2018 (Source: [Wikipedia](https://en.wikipedia.org/wiki/Linus_Torvalds))_
 
