@@ -31,7 +31,54 @@ Most of the time, the real UID and the effective UID are the same, but in such c
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check your current process permissions**: View your effective user ID
+   ```bash
+   id
+   ```
+   Expected output:
+   ```
+   uid=1000(user) gid=1000(user) groups=1000(user),4(adm),27(sudo)
+   ```
+
+2. **Create a script and check its execution**: Make an executable file
+   ```bash
+   echo '#!/bin/bash' > myscript.sh
+   echo 'echo "Hello from $USER"' >> myscript.sh
+   chmod +x myscript.sh
+   ./myscript.sh
+   ```
+   Expected output:
+   ```
+   Hello from your-username
+   ```
+
+3. **View process ownership**: See which user owns running processes
+   ```bash
+   ps aux | grep bash | head -3
+   ```
+   Expected output:
+   ```
+   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+   user      1234  0.0  0.1  21536  5124 pts/0    Ss   10:30   0:00 /bin/bash
+   ```
+
+4. **Check effective permissions**: Run a command and verify permissions
+   ```bash
+   touch permtest.txt
+   ls -l permtest.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 permtest.txt
+   (File owned by the user who created it)
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm myscript.sh permtest.txt
+   ```
 
 ## Quiz Question
 

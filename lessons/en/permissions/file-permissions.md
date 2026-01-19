@@ -53,7 +53,45 @@ Mastering **file permissions** is a core concept, and this foundation is essenti
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a test file and check permissions**: Make a file and view its permissions
+   ```bash
+   touch testfile.txt
+   ls -l testfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 testfile.txt
+   ```
+
+2. **Understand permission notation**: Break down the permission string
+   - First character: file type (- for regular file, d for directory)
+   - Next 9 characters: rwxrwxrwx (owner, group, others)
+   - rw-rw-r-- means: owner can read/write, group can read/write, others can only read
+
+3. **Check directory permissions**: View permissions of a directory
+   ```bash
+   ls -ld /home
+   ```
+   Expected output:
+   ```
+   drwxr-xr-x 3 root root 4096 Jan 15 10:30 /home
+   ```
+
+4. **View permissions in octal**: Use stat to see numeric permissions
+   ```bash
+   stat -c "%a %n" testfile.txt
+   ```
+   Expected output:
+   ```
+   664 testfile.txt
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm testfile.txt
+   ```
 
 ## Quiz Question
 

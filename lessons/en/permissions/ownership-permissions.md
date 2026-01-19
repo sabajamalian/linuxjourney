@@ -43,7 +43,54 @@ This single command assigns user ownership to `patty` and group ownership to `wh
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a test file and check ownership**: Make a file and see who owns it
+   ```bash
+   touch testfile.txt
+   ls -l testfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 your-username your-username 0 Jan 19 10:30 testfile.txt
+   ```
+
+2. **View file ownership details**: Use stat command
+   ```bash
+   stat testfile.txt
+   ```
+   Expected output:
+   ```
+   File: testfile.txt
+   Size: 0           Blocks: 0          IO Block: 4096   regular empty file
+   Device: 802h/2050d  Inode: 123456      Links: 1
+   Access: (0664/-rw-rw-r--)  Uid: ( 1000/your-username)   Gid: ( 1000/your-username)
+   ```
+
+3. **Create a directory and check ownership**: Make a directory
+   ```bash
+   mkdir testdir
+   ls -ld testdir
+   ```
+   Expected output:
+   ```
+   drwxrwxr-x 2 your-username your-username 4096 Jan 19 10:30 testdir
+   ```
+
+4. **View numeric user and group IDs**: Check IDs with stat
+   ```bash
+   stat -c "Owner UID: %u, Owner GID: %g" testfile.txt
+   ```
+   Expected output:
+   ```
+   Owner UID: 1000, Owner GID: 1000
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm testfile.txt
+   rmdir testdir
+   ```
 
 ## Quiz Question
 

@@ -72,7 +72,62 @@ While `chmod` is essential, it's crucial to use it carefully. Changing permissio
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a test file**: Make a file to modify permissions
+   ```bash
+   touch myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
+
+2. **Add execute permission for owner**: Use chmod with symbolic notation
+   ```bash
+   chmod u+x myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rwxrw-r-- 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
+
+3. **Remove write permission for group**: Use chmod to remove permissions
+   ```bash
+   chmod g-w myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rwxr--r-- 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
+
+4. **Set permissions with octal notation**: Use numeric mode
+   ```bash
+   chmod 755 myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rwxr-xr-x 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
+
+5. **Set restrictive permissions**: Make file owner-only accessible
+   ```bash
+   chmod 600 myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rw------- 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
+
+6. **Clean up**: Remove test file
+   ```bash
+   rm myfile.txt
+   ```
 
 ## Quiz Question
 

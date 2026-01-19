@@ -23,7 +23,67 @@ When you run the `umask` command, it will apply that default set of permissions 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check current umask value**: View your default umask
+   ```bash
+   umask
+   ```
+   Expected output:
+   ```
+   0002
+   (Common default umask value)
+   ```
+
+2. **Create a file and check default permissions**: See umask in action
+   ```bash
+   touch testfile1.txt
+   ls -l testfile1.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 testfile1.txt
+   (666 - 002 = 664 permissions)
+   ```
+
+3. **Change umask temporarily**: Set a more restrictive umask
+   ```bash
+   umask 0077
+   umask
+   ```
+   Expected output:
+   ```
+   0077
+   ```
+
+4. **Create a file with new umask**: See how permissions change
+   ```bash
+   touch testfile2.txt
+   ls -l testfile2.txt
+   ```
+   Expected output:
+   ```
+   -rw------- 1 user user 0 Jan 19 10:30 testfile2.txt
+   (666 - 077 = 600 permissions)
+   ```
+
+5. **Create a directory with current umask**: Check directory permissions
+   ```bash
+   mkdir testdir
+   ls -ld testdir
+   ```
+   Expected output:
+   ```
+   drwx------ 2 user user 4096 Jan 19 10:30 testdir
+   (777 - 077 = 700 permissions)
+   ```
+
+6. **Restore default umask and clean up**: Reset umask
+   ```bash
+   umask 0002
+   rm testfile1.txt testfile2.txt
+   rmdir testdir
+   ```
 
 ## Quiz Question
 

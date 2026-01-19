@@ -61,7 +61,68 @@ As you can see, the SUID is denoted by a 4 and prepended to the permission set. 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Find files with setuid bit set**: Look for SUID executables
+   ```bash
+   find /usr/bin -perm -4000 2>/dev/null | head -5
+   ```
+   Expected output:
+   ```
+   /usr/bin/sudo
+   /usr/bin/passwd
+   /usr/bin/chsh
+   /usr/bin/newgrp
+   /usr/bin/gpasswd
+   ```
+
+2. **Check passwd command permissions**: View the SUID bit on passwd
+   ```bash
+   ls -l /usr/bin/passwd
+   ```
+   Expected output:
+   ```
+   -rwsr-xr-x 1 root root 68208 Jan 15 2020 /usr/bin/passwd
+   (Note the 's' in owner execute permission)
+   ```
+
+3. **Create a test script and set SUID**: Experiment with SUID (for learning)
+   ```bash
+   echo '#!/bin/bash' > testscript.sh
+   echo 'echo "Running as: $(whoami)"' >> testscript.sh
+   chmod +x testscript.sh
+   chmod u+s testscript.sh
+   ls -l testscript.sh
+   ```
+   Expected output:
+   ```
+   -rwsr-xr-x 1 user user 50 Jan 19 10:30 testscript.sh
+   ```
+
+4. **Test the script**: Run it to see current user
+   ```bash
+   ./testscript.sh
+   ```
+   Expected output:
+   ```
+   Running as: your-username
+   (SUID doesn't work for scripts in modern systems for security)
+   ```
+
+5. **Check SUID in octal notation**: View numeric permissions
+   ```bash
+   stat -c "%a" testscript.sh
+   ```
+   Expected output:
+   ```
+   4755
+   (4 prefix indicates SUID bit is set)
+   ```
+
+6. **Clean up**: Remove test script
+   ```bash
+   rm testscript.sh
+   ```
 
 ## Quiz Question
 
