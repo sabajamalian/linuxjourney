@@ -1,9 +1,13 @@
 title: Linux Journey
 description: A comprehensive, beginner-friendly guide to learning Linux
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 baseurl: /linuxjourney
 url: https://linuxjourney.github.io
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Navigation
 nav_sort: case_insensitive
