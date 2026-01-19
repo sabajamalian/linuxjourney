@@ -39,13 +39,7 @@ Try running this command. As you continue to use your system, you will see new l
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of the `tail` command and its applications:
-
-1. **[Linux tail Command: File End Display](https://labex.io/labs/linux-linux-tail-command-file-end-display-214303)** - Learn the Linux `tail` command for viewing and monitoring the end of text files, including the `-f` option for real-time updates.
-2. **[Viewing Log and Configuration Files in Linux](https://labex.io/labs/linux-viewing-log-and-configuration-files-in-linux-387914)** - Practice using `tail` (along with `cat` and `more`) to efficiently view and navigate log and configuration files, which is crucial for system monitoring.
-3. **[Rapid Threat Detection](https://labex.io/labs/linux-rapid-threat-detection-387930)** - Apply your knowledge of `tail` to quickly extract and analyze recent log entries, simulating rapid threat detection in a cybersecurity context.
-
-These labs will help you apply the concepts of viewing and monitoring file content in real scenarios and build confidence with the `tail` command.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

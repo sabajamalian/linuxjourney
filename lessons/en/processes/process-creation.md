@@ -33,11 +33,7 @@ If every process is a child of another, there must be an original ancestor. This
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of Linux processes and their management:
-
-- **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
-
-This lab will help you apply the concepts of process IDs, parent process IDs, and process monitoring in a real scenario and build confidence with process management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

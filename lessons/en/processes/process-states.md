@@ -35,11 +35,7 @@ By understanding these fundamental **linux process states**, you can gain deeper
 
 ## Exercise
 
-Apply your knowledge with hands-on practice. The following lab will help reinforce your understanding of Linux process management and states:
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
-
-This lab will help you apply the concepts of process states in real scenarios and build confidence with Linux process management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -47,7 +47,7 @@ For more direct control, you might also encounter the `halt` and `poweroff` comm
 
 ## Exercise
 
-Feel free to practice these commands in a virtual machine. For more guided exercises, explore the comprehensive [Linux Learning Path](https://labex.io/learn/linux) to practice a wide range of Linux skills.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

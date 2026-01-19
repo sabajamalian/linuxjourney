@@ -39,12 +39,7 @@ This single command creates `books`, `hemmingway`, and `favorites` if they don't
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of directory creation and management:
-
-1. **[Linux mkdir Command: Directory Creating](https://labex.io/labs/linux-linux-mkdir-command-directory-creating-209739)** - Learn how to use the `mkdir` command in Linux to create directories, set permissions, and organize your file system. This lab covers basic and advanced usage, including creating nested directories.
-2. **[Setting Up a New Project Structure](https://labex.io/labs/linux-setting-up-a-new-project-structure-387859)** - Practice your Linux directory management skills by creating a specific project structure and navigating through it using essential commands like `mkdir` and `cd`.
-
-These labs will help you apply the concepts in real scenarios and build confidence with creating and organizing directories in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

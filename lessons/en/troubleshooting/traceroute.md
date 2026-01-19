@@ -44,12 +44,7 @@ Using the `traceroute linux` command effectively provides invaluable insight int
 
 ## Exercise
 
-Practice is key to mastering network diagnostics. The following hands-on labs will help reinforce your understanding of network path discovery and troubleshooting with tools like `traceroute`:
-
-1. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Practice using the `ip` command to configure network settings and then verify connectivity and routing paths with `traceroute`.
-2. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Learn how `ping` and `arp` work together to understand network layer interactions, which are foundational concepts for how `traceroute` operates.
-
-These labs will help you apply the concepts of network diagnostics in real-world scenarios and build confidence with essential Linux networking tools.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

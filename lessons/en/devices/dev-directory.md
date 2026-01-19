@@ -35,11 +35,7 @@ Thankfully, modern Linux systems use a dynamic approach. A system like `udev` no
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of hardware devices and their interaction with the Linux system:
-
-1. **[Explore Hardware Devices in Linux](https://labex.io/labs/comptia-explore-hardware-devices-in-linux-590861)** - In this lab, you will learn the essential skills to explore, identify, and inspect hardware devices within a Linux environment. You will gain hands-on experience with powerful command-line utilities to understand how the operating system interacts with physical components.
-
-This lab will help you apply the concepts of device interaction in real scenarios and build confidence with managing hardware in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

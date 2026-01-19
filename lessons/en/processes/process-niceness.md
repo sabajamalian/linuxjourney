@@ -50,11 +50,7 @@ renice 10 -p 3245
 
 ## Exercise
 
-Apply your knowledge with this hands-on lab to reinforce your understanding of Linux process management and scheduling:
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, adjusting priority with `renice`, and terminating them with `kill`.
-
-This lab will help you apply the concepts of process scheduling and niceness in real scenarios and build confidence with managing processes in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

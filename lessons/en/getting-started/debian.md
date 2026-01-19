@@ -33,13 +33,7 @@ The **Debian** Stable branch is renowned for its rock-solid stability. While it 
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux file and directory management:
-
-1. **[Basic Files Operations](https://labex.io/labs/linux-basic-files-operations-270248)** - Practice listing files, changing directories, and moving/copying/deleting files and directories in a real Linux environment.
-2. **[Files and Directories](https://labex.io/labs/linux-files-and-directories-270246)** - Learn to navigate the file system, copy, move, and delete files and directories using basic Linux commands.
-3. **[Basic File Operations in Linux](https://labex.io/labs/linux-basic-file-operations-in-linux-18001)** - Learn essential Linux commands and concepts to navigate the file system, manage files and directories, and use wildcards.
-
-These labs will help you apply the concepts in real scenarios and build confidence with Linux file system operations.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

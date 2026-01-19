@@ -25,11 +25,7 @@ While these two files are powerful tools for **system monitoring**, remember tha
 
 ## Exercise
 
-Practice is key to mastering **log analysis**. The following exercises will help you get comfortable with viewing and analyzing **Linux logs** using common command-line tools, an essential skill for **system monitoring**.
-
-1. **[Linux tail Command: File End Display](https://labex.io/labs/linux-linux-tail-command-file-end-display-214303)** - Learn the Linux `tail` command for viewing and monitoring the end of text files, essential for log analysis.
-2. **[Linux head Command: File Beginning Display](https://labex.io/labs/linux-linux-head-command-file-beginning-display-214302)** - Explore the `head` command to display the initial lines of text files, useful for quickly checking log headers.
-3. **[Rapid Threat Detection](https://labex.io/labs/linux-rapid-threat-detection-387930)** - Practice essential Linux command-line skills for cybersecurity analysis, using `tail` and `head` to quickly extract and analyze recent log entries.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

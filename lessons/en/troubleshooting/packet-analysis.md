@@ -74,11 +74,7 @@ We have only scratched the surface of packet analysis. There is much more to exp
 
 ## Exercise
 
-To solidify your understanding of packet analysis, try this hands-on lab. Practice makes perfect!
-
-1. **[Analyze Ethernet Frames with tcpdump in Linux](https://labex.io/labs/comptia-analyze-ethernet-frames-with-tcpdump-in-linux-592765)** - Practice capturing and inspecting Ethernet frames, generating traffic, and analyzing frame headers and MAC addresses using `tcpdump`.
-
-This lab will help you apply the concepts of packet analysis in a real-world scenario and build confidence with network troubleshooting.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

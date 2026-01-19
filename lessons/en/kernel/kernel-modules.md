@@ -65,9 +65,7 @@ These configuration files allow for fine-grained control over which modules are 
 
 ## Exercise
 
-Practice makes perfect! Here's a hands-on lab to reinforce your understanding of Linux kernel modules:
-
-1. **[Manage Kernel Modules in Linux](https://labex.io/labs/comptia-manage-kernel-modules-in-linux-590865)** - Practice listing, inspecting, loading, and unloading kernel modules, and configuring them to load automatically at boot. This lab will help you apply the concepts in a real scenario and build confidence with kernel module management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

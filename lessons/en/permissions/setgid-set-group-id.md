@@ -31,12 +31,7 @@ The numerical representation for SGID is 2.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux user, group, and file permissions:
-
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating and managing users, exploring group memberships, understanding file permissions, and manipulating file ownership.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - Practice creating new user accounts, setting up custom groups, and managing group memberships, simulating real-world system administration tasks.
-
-These labs will help you apply the concepts in real scenarios and build confidence with Linux permissions and user management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

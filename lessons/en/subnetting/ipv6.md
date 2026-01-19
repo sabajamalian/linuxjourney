@@ -33,13 +33,7 @@ This longer format allows for a vastly larger number of unique IP addresses, sec
 
 ## Exercise
 
-To master the concepts of IPv6, practice is essential. Here are some hands-on labs to reinforce your understanding of IPv6 addressing and its interaction with IPv4 in a Linux environment:
-
-1. **[Configure and Verify IPv6 Addresses in Linux](https://labex.io/labs/comptia-configure-and-verify-ipv6-addresses-in-linux-592858)** - Practice assigning static IPv6 addresses and testing connectivity using `ip` and `ping6` commands.
-2. **[Perform IPv6 DNS Lookups in Linux](https://labex.io/labs/comptia-perform-ipv6-dns-lookups-in-linux-592862)** - Learn to query for AAAA records and verify IPv6 DNS resolution using `dig`, `nslookup`, and `ping6`.
-3. **[Configure an IPv4-to-IPv6 6to4 Tunnel in Linux](https://labex.io/labs/comptia-configure-an-ipv4-to-ipv6-6to4-tunnel-in-linux-592867)** - Gain hands-on experience setting up a 6to4 tunnel to enable IPv6 connectivity over an existing IPv4 network.
-
-These labs will help you apply the concepts of IPv6 in real scenarios and build confidence with network configuration and troubleshooting.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

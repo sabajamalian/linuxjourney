@@ -37,11 +37,7 @@ In our email example, the SMTP-formatted data is passed to the transport layer t
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of network layers and ports:
-
-1. **[Analyze Network Ports and Sessions with netstat in Linux](https://labex.io/labs/comptia-analyze-network-ports-and-sessions-with-netstat-in-linux-592741)** - In this lab, you will learn how to use the `netstat` command to analyze network activity, exploring fundamental concepts such as network ports, sockets, and active connections. This will give you practical insight into how services communicate over the network, directly relating to the transport layer concepts discussed.
-
-This lab will help you apply the concepts of network communication and port usage in a real Linux environment, building your confidence in understanding how applications interact with the network stack.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

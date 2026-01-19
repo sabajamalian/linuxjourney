@@ -31,13 +31,7 @@ Another common example is a `/30` network, which provides `32 - 30 = 2` host bit
 
 ## Exercise
 
-To master these concepts, practice with some hands-on labs that reinforce your understanding of CIDR, IP addressing, and **cidr subnetting**:
-
-1. **[Perform IP Subnetting and Binary Conversion in the Linux Terminal](https://labex.io/labs/comptia-perform-ip-subnetting-and-binary-conversion-in-the-linux-terminal-592782)** - Master IP subnetting and binary conversion, including translating CIDR masks and calculating usable hosts.
-2. **[Simulate Network Layer Connectivity in Linux](https://labex.io/labs/comptia-simulate-network-layer-connectivity-in-linux-592752)** - Learn to assign static IP addresses and observe how IP subnets govern direct network communication in a simulated environment.
-3. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Explore IP addressing and network reachability using commands like `ping` and `ip a` to test various IP types and connectivity.
-
-These labs will help you apply the concepts of CIDR and IP addressing in real-world scenarios and build confidence with network configuration.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

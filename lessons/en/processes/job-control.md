@@ -70,9 +70,7 @@ Mastering these commands is essential for any beginner Linux user looking to mul
 
 ## Exercise
 
-To put your knowledge of Linux job control into practice, try this hands-on lab. It will help you solidify your understanding of managing foreground and background processes.
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, monitoring resources, and terminating processes, directly addressing the scenario of long-running commands.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

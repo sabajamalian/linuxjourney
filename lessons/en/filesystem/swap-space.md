@@ -32,11 +32,7 @@ Generally, you should allocate about twice as much swap space as you have memory
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux swap space and virtual memory management:
-
-1. **[Create and Activate a Swap File in Linux](https://labex.io/labs/comptia-create-and-activate-a-swap-file-in-linux-590858)** - Practice creating and activating a swap file, a crucial skill for managing your system's virtual memory.
-
-This lab will help you apply the concepts of swap partitions in real scenarios and build confidence with system resource management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

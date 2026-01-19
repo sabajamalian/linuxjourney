@@ -33,11 +33,7 @@ To edit this file safely, you should always use the `visudo` command. This utili
 
 ## Exercise
 
-Put your knowledge into practice. The following hands-on lab will help reinforce your understanding of superuser access and privileges:
-
-1. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Practice enforcing password policies, locking and unlocking user accounts, securing the root account, and granting administrative permissions, directly relating to the management of superuser access.
-
-This lab will help you apply the concepts in real scenarios and build confidence with managing user privileges and superuser access.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

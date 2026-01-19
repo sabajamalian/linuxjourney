@@ -47,11 +47,7 @@ Once you add your job definition and save the file, `cron` will automatically re
 
 ## Exercise
 
-Practice makes perfect! This hands-on lab will help reinforce your understanding of how to `schedule tasks` in Linux.
-
-1. **[Schedule Tasks with at and cron in Linux](https://labex.io/labs/comptia-schedule-tasks-with-at-and-cron-in-linux-590870)** - Practice creating, managing, and removing jobs with `at`, `atq`, `atrm`, and `crontab`, gaining hands-on experience in automating system administration tasks.
-
-This lab will help you apply the concepts from this lesson in a real-world scenario and build your confidence with `Linux automation`.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

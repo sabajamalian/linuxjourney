@@ -31,12 +31,7 @@ Most of the time, the real UID and the effective UID are the same, but in such c
 
 ## Exercise
 
-Practice makes perfect! Understanding user IDs and process permissions is crucial for Linux security and administration. Here are some hands-on labs to reinforce your understanding of user and group management, which forms the basis of how UIDs function:
-
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating and managing users, exploring group memberships, understanding file permissions, and manipulating file ownership. This lab provides practical experience in securing a multi-user Linux environment.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - In this challenge, you'll simulate adding new team members to a server environment by creating new user accounts, setting up custom groups, and managing group memberships. This will test your skills in Linux user and group administration, essential for system administrators and DevOps professionals.
-
-These labs will help you apply the concepts of user and group management in real scenarios, building a strong foundation for understanding how UIDs control access and permissions in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

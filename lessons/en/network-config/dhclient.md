@@ -21,13 +21,7 @@ sudo dhclient
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of dynamic IP addressing and network configuration:
-
-1. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Practice using `dhclient` to obtain a dynamic IP address and verify network configuration in a real Linux environment.
-2. **[Identify MAC and IP Addresses in Linux](https://labex.io/labs/comptia-identify-mac-and-ip-addresses-in-linux-592731)** - Learn to inspect network interfaces and identify MAC and IP addresses, which are fundamental to understanding how DHCP assigns addresses.
-3. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Test network reachability and explore different IP address types, building on your understanding of how IP addresses function in a network.
-
-These labs will help you apply the concepts of DHCP and IP addressing in real scenarios and build confidence with network configuration in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

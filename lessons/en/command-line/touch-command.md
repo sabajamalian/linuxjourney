@@ -68,12 +68,7 @@ Mastering `touch` is a great step in learning to manage your file system efficie
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of creating and managing file system objects:
-
-1. **[Linux mkdir Command: Directory Creating](https://labex.io/labs/linux-linux-mkdir-command-directory-creating-209739)** - Learn how to use the `mkdir` command in Linux to create directories, set permissions, and organize your file system. This will help you understand the broader concept of creating new items in the file system.
-2. **[Setting Up a New Project Structure](https://labex.io/labs/linux-setting-up-a-new-project-structure-387859)** - Practice your Linux directory management skills by creating a specific project structure and navigating through it using essential commands like `mkdir` and `cd`.
-
-These labs will help you apply the concepts of file system creation and organization in real scenarios and build confidence with Linux commands.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

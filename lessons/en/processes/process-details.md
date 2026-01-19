@@ -29,13 +29,7 @@ All active processes compete for system resources. The kernel acts as a schedule
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux processes and their management:
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Learn essential skills for managing and monitoring processes on a Linux system, including interacting with foreground/background processes, inspecting with `ps`, monitoring with `top`, and terminating with `kill`.
-2. **[Linux top Command: Real-time System Monitoring](https://labex.io/labs/linux-linux-top-command-real-time-system-monitoring-388500)** - Learn to use the `top` command for real-time system monitoring, including sorting processes, adjusting update intervals, and filtering by user.
-3. **[Linux free Command: Monitoring System Memory](https://labex.io/labs/linux-linux-free-command-monitoring-system-memory-388496)** - Learn to use the `free` command to monitor and analyze system memory usage, understanding how the kernel allocates resources to processes.
-
-These labs will help you apply the concepts in real scenarios and build confidence with process management in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

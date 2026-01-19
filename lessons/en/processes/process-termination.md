@@ -38,9 +38,7 @@ In short, an orphan is alive but parentless, while a zombie is dead but not yet 
 
 ## Exercise
 
-To apply these concepts, try the following hands-on lab:
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, adjusting priority with `renice`, and terminating them with `kill`. This lab provides practical experience with the process lifecycle, including how to terminate them and observe their states.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

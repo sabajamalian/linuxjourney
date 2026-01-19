@@ -43,11 +43,7 @@ A general rule for good **system performance** is to keep your load average belo
 
 ## Exercise
 
-To gain practical experience with **Linux CPU monitoring** and analyzing **system performance**, try these hands-on labs. They will help you apply the concepts of **load average** and **process utilization** in real-world scenarios.
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with and inspecting processes, and monitoring resources with tools like `ps` and `top`, which directly relates to understanding CPU load.
-2. **[Linux top Command: Real-time System Monitoring](https://labex.io/labs/linux-linux-top-command-real-time-system-monitoring-388500)** - Learn to use the `top` command for real-time system monitoring, including sorting processes and filtering, providing a deeper dive into CPU and process activity.
-3. **[Linux free Command: Monitoring System Memory](https://labex.io/labs/linux-linux-free-command-monitoring-system-memory-388496)** - Learn to monitor and analyze system memory usage, which is often a critical factor alongside CPU load in overall system performance.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

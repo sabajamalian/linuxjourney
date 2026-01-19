@@ -31,7 +31,7 @@ This will prompt you to type a filename to open. If you do not have a file that 
 
 ## Exercise
 
-While there are no specific labs for this topic, we recommend exploring the comprehensive [Linux Learning Path](https://labex.io/learn/linux) to practice related Linux skills and concepts.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

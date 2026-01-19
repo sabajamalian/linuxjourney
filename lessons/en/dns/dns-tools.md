@@ -72,11 +72,7 @@ Because of its detailed output and flexibility, `dig` is an indispensable utilit
 
 ## Exercise
 
-To gain more experience with Linux networking utilities, consider trying the following hands-on lab:
-
-1. **[Examine Network Interface Settings with ethtool in Linux](https://labex.io/labs/comptia-examine-network-interface-settings-with-ethtool-in-linux-592759)** - Learn to use the `ethtool` command to examine and manage network interface settings, including viewing and setting interface speed and duplex, and analyzing link modes to troubleshoot physical layer network issues.
-
-This lab will help you apply the concepts in real scenarios and build confidence with managing network interfaces.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

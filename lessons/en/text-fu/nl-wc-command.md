@@ -66,13 +66,7 @@ Both `wc` and `nl` are essential commands for everyday text processing on the Li
 
 ## Exercise
 
-To master these commands, hands-on practice is key. Try these exercises to solidify your skills in text counting and line numbering on Linux:
-
-1. **[Linux wc Command: Text Counting](https://labex.io/labs/linux-linux-wc-command-text-counting-219200)** - Practice counting words, lines, and characters in text files using the `wc` command.
-2. **[Linux nl Command: Line Numbering](https://labex.io/labs/linux-linux-nl-command-line-numbering-210988)** - Learn to number lines in text files with the `nl` command.
-3. **[Word Count and Sorting](https://labex.io/labs/linux-word-count-and-sorting-388125)** - Apply your knowledge of `wc` to count lines, words, and characters, and combine it with sorting for practical text analysis tasks.
-
-These labs will help you apply the concepts in real-world scenarios and build confidence with text processing in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

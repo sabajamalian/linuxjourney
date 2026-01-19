@@ -94,7 +94,7 @@ This command uses the `cifs` filesystem type to attach the remote share to a loc
 
 ## Exercise
 
-Try setting up a simple Samba share on your own Linux machine. Create a directory, configure it in `smb.conf`, and try accessing it using `smbclient` from the same machine to test the configuration. For more hands-on practice, explore the comprehensive [Linux Learning Path](https://labex.io/learn/linux) to practice related Linux skills and concepts.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

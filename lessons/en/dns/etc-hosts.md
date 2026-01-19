@@ -50,12 +50,7 @@ search localdomain
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of local hostname resolution and DNS queries:
-
-1. **[Manage Local Hostname Resolution in Linux](https://labex.io/labs/comptia-manage-local-hostname-resolution-in-linux-592792)** - Practice editing the `/etc/hosts` file to manage local hostname resolution, a key step before DNS queries.
-2. **[Query DNS Records in Linux with dig and nslookup](https://labex.io/labs/comptia-query-dns-records-in-linux-with-dig-and-nslookup-592796)** - Learn to query DNS records using essential Linux tools like `dig` and `nslookup` to understand how your machine resolves external names.
-
-These labs will help you apply the concepts in real scenarios and build confidence with hostname resolution and DNS.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

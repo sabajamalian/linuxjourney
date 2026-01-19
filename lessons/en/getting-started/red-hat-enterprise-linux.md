@@ -31,13 +31,7 @@ For those looking to **learn Red Hat Enterprise Linux** professionally, Red Hat 
 
 ## Exercise
 
-To practice fundamental Linux skills, try these hands-on labs focused on user and group management:
-
-1. **[User Account Management](https://labex.io/labs/linux-user-account-management-49)** - In this lab, you will learn how to manage user accounts in the Linux platform, such as creating new user accounts, modifying user account management, and deleting a user account.
-2. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating and managing users, exploring group memberships, understanding file permissions, and manipulating file ownership.
-3. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - In this challenge, you'll simulate adding new team members to a server environment by creating new user accounts, setting up custom groups, and managing group memberships.
-
-These labs will help you apply the concepts in real scenarios and build confidence with user and group administration and file permissions in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

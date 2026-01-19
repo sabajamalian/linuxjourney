@@ -55,11 +55,7 @@ Since all other bits are `0`, we don't add any other values. The formula `128 + 
 
 ## Exercise
 
-Practice makes perfect! While subnet math is often automated in the real world, understanding the underlying binary conversions is crucial for interviews and a deeper grasp of networking. Here's a hands-on lab to reinforce your understanding:
-
-1. **[Perform IP Subnetting and Binary Conversion in the Linux Terminal](https://labex.io/labs/comptia-perform-ip-subnetting-and-binary-conversion-in-the-linux-terminal-592782)** - Master IP subnetting and binary conversion by using Python in a Linux terminal to convert IP addresses, translate CIDR masks, and calculate network details.
-
-This lab will help you apply the concepts of binary conversion and subnetting in a practical scenario and build confidence with network addressing fundamentals.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

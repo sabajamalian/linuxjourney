@@ -53,13 +53,7 @@ Mastering **file permissions** is a core concept, and this foundation is essenti
 
 ## Exercise
 
-The **best way to learn linux** is through hands-on practice. These exercises will help you master Linux **file permissions**, users, and groups:
-
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating users, exploring group memberships, understanding file permissions, and manipulating file ownership.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - Practice creating new user accounts, setting up custom groups, and managing group memberships, simulating real-world system administration tasks.
-3. **[Find a File](https://labex.io/labs/linux-find-a-file-17993)** - Apply your knowledge of file permissions by finding a specific file and setting its access authority, ensuring you're the only authorized user.
-
-These labs will help you apply the concepts in real scenarios and build confidence with managing permissions and users in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -71,11 +71,7 @@ Both tools are essential for any Linux user. Familiarize yourself with them to e
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of managing processes and troubleshooting resource conflicts:
-
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, and terminating them with `kill`. This lab will help you identify and manage processes that might be holding onto resources, like files on a USB drive.
-
-This lab will help you apply these concepts in real-world scenarios and build confidence with identifying and managing system processes.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

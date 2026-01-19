@@ -71,11 +71,7 @@ ls -la
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of the `ls` command:
-
-- **[Linux ls Command: Content Listing](https://labex.io/labs/linux-linux-ls-command-content-listing-219205)** - Practice using the `ls` command to efficiently list and analyze file and directory contents. You'll learn various options for detailed listings, hidden file display, human-readable sizes, and sorting techniques to enhance your command-line skills.
-
-This lab will help you apply the concepts in a real scenario and build confidence with directory listing in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

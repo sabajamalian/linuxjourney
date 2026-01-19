@@ -38,11 +38,7 @@ Here are some of the most common parameters you will encounter:
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of the GRUB bootloader and its configuration:
-
-1. **[Customize the GRUB2 Boot Menu in Linux](https://labex.io/labs/comptia-customize-the-grub2-boot-menu-in-linux-590859)** - Practice modifying the GRUB2 primary configuration file to change boot menu settings and apply these changes.
-
-This lab will help you apply the concepts in a real scenario and build confidence with bootloader management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -40,13 +40,7 @@ Here is a step-by-step breakdown of how a packet travels from a sender (Pete) to
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of the Link Layer, MAC addresses, and ARP:
-
-1. **[Identify MAC and IP Addresses in Linux](https://labex.io/labs/comptia-identify-mac-and-ip-addresses-in-linux-592731)** - Practice using the `ip a` command to identify network addressing information, including MAC addresses, on a Linux system.
-2. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Learn how `ping` and `arp` commands work together to resolve IP addresses to MAC addresses and understand network layer interactions.
-3. **[Analyze Ethernet Frames with tcpdump in Linux](https://labex.io/labs/comptia-analyze-ethernet-frames-with-tcpdump-in-linux-592765)** - Gain hands-on experience capturing and inspecting Ethernet frames, including MAC addresses, to understand low-level network communications.
-
-These labs will help you apply the concepts in real scenarios and build confidence with network fundamentals at the Link Layer.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

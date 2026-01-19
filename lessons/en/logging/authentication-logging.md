@@ -37,11 +37,7 @@ It's important to note that the location for authentication logs can vary betwee
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of user authentication and account management:
-
-1. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Practice enforcing password policies, locking/unlocking user accounts, securing the root account, and granting administrative permissions, all of which are critical for understanding authentication security.
-
-These labs will help you apply the concepts in real scenarios and build confidence with Linux user and security management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -46,11 +46,7 @@ The `df` command reports file system disk space usage. The `-T` flag specificall
 
 ## Exercise
 
-To put your knowledge into practice, complete the following hands-on lab. It will help reinforce your understanding of Linux filesystems and partitions:
-
-1. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - In this lab, you will practice creating a new partition, formatting it with a specific filesystem type, mounting it, and configuring it for persistent mounting. These are fundamental skills for managing storage in Linux.
-
-This lab allows you to apply these concepts in a real-world scenario and build confidence with disk management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

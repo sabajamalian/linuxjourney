@@ -72,12 +72,7 @@ While `chmod` is essential, it's crucial to use it carefully. Changing permissio
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux file permissions:
-
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including understanding file permissions and manipulating file ownership. This lab provides practical experience in securing a multi-user Linux environment.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - In this challenge, you'll simulate adding new team members to a server environment, creating new user accounts, setting up custom groups, and managing group memberships, which often involves setting appropriate permissions.
-
-These labs will help you apply the concepts of user, group, and other permissions in real scenarios and build confidence with managing access in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

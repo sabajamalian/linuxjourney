@@ -49,13 +49,7 @@ The second report focuses on device-level **I/O monitoring**, showing how data i
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of system monitoring and disk usage:
-
-1. **[Linux df Command: Disk Space Reporting](https://labex.io/labs/linux-linux-df-command-disk-space-reporting-219188)** - Practice reporting disk space usage on mounted file systems, a key aspect of monitoring.
-2. **[Linux du Command: File Space Estimating](https://labex.io/labs/linux-linux-du-command-file-space-estimating-219190)** - Learn to estimate disk space usage for directories and subdirectories, complementing the disk I/O information from `iostat`.
-3. **[Linux top Command: Real-time System Monitoring](https://labex.io/labs/linux-linux-top-command-real-time-system-monitoring-388500)** - Explore real-time system monitoring, including CPU and memory usage, which provides a broader context for the CPU metrics seen in `iostat`.
-
-These labs will help you apply the concepts in real scenarios and build confidence with monitoring Linux system resources.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -42,11 +42,7 @@ Mastering these basic commands is the first step toward proficiency in Vim. As y
 
 ## Exercise
 
-To master these commands, hands-on practice is essential. The following lab provides a real-world scenario to help you reinforce your text editing skills in Vim.
-
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating files, editing text, saving files, and navigating with both Vim and Nano. This lab will solidify your understanding of basic Vim operations, including how to save and quit.
-
-Completing this lab will help you apply these concepts and build confidence with text editing in a Linux environment.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

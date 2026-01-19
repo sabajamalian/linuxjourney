@@ -44,11 +44,7 @@ Tip: You can prefix these commands with a number to repeat them. For example, ty
 
 ## Exercise
 
-Practice is essential for mastering Vim. The following lab provides a hands-on environment to reinforce your understanding of Vim's text editing capabilities.
-
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating files, editing text, saving files, and navigating with both vi/vim and nano. This lab will help you master the fundamental skills of using Vim's Normal and Insert modes.
-
-Applying these concepts in real scenarios will help you build confidence with text editing in Linux using Vim.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

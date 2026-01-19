@@ -49,13 +49,7 @@ Mastering the `less command` is a fundamental skill for anyone working on the Li
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of viewing and navigating text files in Linux:
-
-1. **[Linux less Command: File Paging](https://labex.io/labs/linux-linux-less-command-file-paging-214301)** - Learn the Linux 'less' command for efficient text file viewing and navigation, including search, line numbers, and pattern matching.
-2. **[Linux more Command: File Scrolling](https://labex.io/labs/linux-linux-more-command-file-scrolling-214299)** - Learn the Linux 'more' command for efficient text file viewing, covering basic usage, starting from specific lines, and customizing display.
-3. **[Viewing Log and Configuration Files in Linux](https://labex.io/labs/linux-viewing-log-and-configuration-files-in-linux-387914)** - Learn essential Linux command-line skills for efficiently viewing and navigating text files, including system logs and configuration files, using commands like `cat`, `more`, and `less`.
-
-These labs will help you apply the concepts in real scenarios and build confidence with text file manipulation and navigation.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -56,13 +56,7 @@ The `nmcli` command is the primary command-line utility for controlling and modi
 
 ## Exercise
 
-Practice makes perfect! While NetworkManager automates much of the network configuration, understanding the underlying commands and concepts it manages is crucial for troubleshooting and advanced administration. Here are some hands-on labs to reinforce your understanding of network identification and management in Linux:
-
-1. **[Identify MAC and IP Addresses in Linux](https://labex.io/labs/comptia-identify-mac-and-ip-addresses-in-linux-592731)** - Practice using the `ip a` command to identify network addressing information, including MAC and IP addresses, on a Linux system.
-2. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Learn to configure static and dynamic IP addresses, set default gateways, and verify network configurations using the `ip` command and `dhclient`.
-3. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Use `ping` and `arp` to understand how network and data link layers interact, observing ARP in action and how default gateways handle traffic.
-
-These labs will help you apply the concepts of network identification and configuration in real scenarios and build confidence with Linux networking fundamentals.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

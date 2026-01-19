@@ -42,7 +42,7 @@ These basic commands form the foundation of editing in the Emacs text editor.
 
 ## Exercise
 
-The best way to learn Emacs commands is through practice. Open a new text file using `emacs my_practice_file.txt` and try out the navigation, selection, cutting, and pasting commands covered in this lesson. Get comfortable moving around the buffer and manipulating text.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

@@ -33,13 +33,7 @@ _Linus Torvalds in 2018 (Source: [Wikipedia](https://en.wikipedia.org/wiki/Linus
 
 ## Exercise
 
-The best way to learn is by doing. To start your **Linux journey**, try these hands-on labs to practice fundamental commands and build your confidence in the command-line environment.
-
-1. **[Getting Started with Linux](https://labex.io/labs/linux-getting-started-with-linux-446315)** - Begin your Linux journey by learning essential terminal commands like `echo`, `date`, and basic calculations. Perfect for complete beginners.
-2. **[Your First Linux Lab](https://labex.io/labs/linux-your-first-linux-lab-270253)** - This introductory lab guides you through the classic "Hello, World!" program in Linux and teaches you some fundamental commands.
-3. **[Create Personalized Terminal Greeting](https://labex.io/labs/linux-create-personalized-terminal-greeting-446322)** - A quick and fun challenge to use basic Linux terminal commands to create an engaging welcome message.
-
-These labs will help you apply foundational concepts in a real Linux environment.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

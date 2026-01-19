@@ -30,11 +30,7 @@ Over time, your `/boot` directory can fill up with files from old kernels. If yo
 
 ## Exercise
 
-Apply your knowledge with this hands-on lab to reinforce your understanding of the Linux boot process and kernel management:
-
-1. **[Customize the GRUB2 Boot Menu in Linux](https://labex.io/labs/comptia-customize-the-grub2-boot-menu-in-linux-590859)** - Practice modifying the GRUB2 configuration, which directly impacts how your Linux system boots and selects kernel versions. This lab will help you understand the practical implications of the files discussed in the `/boot` directory.
-
-This lab will help you apply these concepts in a real-world scenario and build confidence with Linux kernel and boot management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

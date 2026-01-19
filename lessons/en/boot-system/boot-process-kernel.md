@@ -27,11 +27,7 @@ Finally, with the root filesystem fully available, the kernel starts the very fi
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of the Linux boot process:
-
-- **[Customize the GRUB2 Boot Menu in Linux](https://labex.io/labs/comptia-customize-the-grub2-boot-menu-in-linux-590859)** - Learn to modify the GRUB2 boot menu, including changing the timeout and default entry, and applying these changes. This lab will help you understand how the bootloader can be configured.
-
-This lab will help you apply the concepts in a real scenario and build confidence with Linux boot configuration.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

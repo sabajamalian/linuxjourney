@@ -68,11 +68,7 @@ While you won't always need to mount devices via their UUIDs, it is the recommen
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of managing Linux filesystems:
-
-- **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - In this lab, you will learn to manage disk partitions and filesystems in Linux. You'll use fdisk to create a new partition, format it with ext4, mount it, configure persistent mounting in /etc/fstab, and create a swap partition, all on a safe secondary virtual disk.
-
-This lab will help you apply the concepts of mounting and unmounting in real scenarios and build confidence with filesystem management.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

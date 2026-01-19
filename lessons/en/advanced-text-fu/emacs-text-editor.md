@@ -23,11 +23,7 @@ Buffers in Emacs are what your text resides in. So, if you open a file, a buffer
 
 ## Exercise
 
-Practice makes perfect! While there isn't a specific LabEx lab for Emacs, mastering fundamental text editing skills in Linux is crucial for any editor, including Emacs. Here's a hands-on lab to reinforce your understanding of text manipulation in a Linux environment:
-
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating, editing, saving, and navigating text files using two essential Linux text editors, Vim and Nano. This will build a strong foundation for working with any text editor, including Emacs.
-
-This lab will help you apply the concepts of text editing in real scenarios and build confidence with Linux text manipulation.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

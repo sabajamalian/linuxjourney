@@ -48,9 +48,7 @@ The `/` and `?` commands are the core of any `vim lookup` operation. Whether you
 
 ## Exercise
 
-To apply these concepts, try the following hands-on lab. It will help you become proficient with essential text editing tools, including search functionalities.
-
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating, editing, saving, and navigating text files with Vim and Nano.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

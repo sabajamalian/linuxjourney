@@ -76,11 +76,7 @@ Number  Start   End     Size     File system  Name        Flags
 
 ## Exercise
 
-To reinforce your understanding of disk partitioning and filesystems, we recommend this hands-on lab:
-
-1. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - Practice creating new partitions, formatting them with filesystems like ext4, mounting them, and configuring persistent mounting in `/etc/fstab`.
-
-This lab will help you apply disk management concepts in real-world scenarios and build confidence with Linux storage.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

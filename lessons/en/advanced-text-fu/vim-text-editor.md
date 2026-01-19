@@ -39,9 +39,7 @@ If the file exists, Vim will open it for editing. If it doesn't exist, Vim will 
 
 ## Exercise
 
-To put your knowledge into practice, try the following hands-on lab. It will help you apply the concepts in real-world scenarios and build confidence with Linux text editors.
-
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating files, editing text, saving files, and navigating with both Vim and Nano in a real Linux environment.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 

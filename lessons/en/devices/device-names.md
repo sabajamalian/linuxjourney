@@ -46,12 +46,7 @@ On older systems, you might encounter hard drives that use the Parallel ATA (PAT
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux device names and storage management:
-
-1. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - Practice creating, formatting, and mounting partitions, which directly involves working with device names.
-2. **[Explore Hardware Devices in Linux](https://labex.io/labs/comptia-explore-hardware-devices-in-linux-590861)** - Learn to identify and inspect various hardware devices and their associated names within a Linux environment.
-
-These labs will help you apply the concepts in real scenarios and build confidence with managing storage and understanding hardware in Linux.
+Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
 
 ## Quiz Question
 
