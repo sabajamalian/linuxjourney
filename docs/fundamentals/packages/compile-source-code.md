@@ -1,0 +1,136 @@
+---
+title: "Compile Source Code"
+layout: default
+parent: Packages
+grand_parent: Fundamentals
+nav_order: 7
+---
+
+## Lesson Content
+
+Occasionally, you may find a package that is only available as source code. To use it, you'll need to compile and install it on your system. This lesson will guide you through the common process of how to compile from source code.
+
+### Preparing Your System
+
+Before you can compile anything, you need the necessary tools. On Debian-based systems like Ubuntu, you can install them with a single command.
+
+```bash
+sudo apt install build-essential
+```
+
+The `build-essential` package installs a suite of software development tools, including the GCC compiler and the `make` utility, which are essential for compilation.
+
+After installing the tools, extract the contents of the source code package, which is typically a `.tar.gz` file.
+
+```bash
+tar -xzvf package.tar.gz
+```
+
+Before proceeding, always check for a `README` or `INSTALL` file inside the extracted directory. These files often contain specific instructions or dependencies required for that particular package.
+
+### The Standard Build Process
+
+While different developers might use various build systems like `cmake`, the most traditional method involves a three-step process. Understanding this is fundamental to learning how to build source code.
+
+First, run the `configure` script. This script checks your system for all the necessary dependencies and libraries the software needs to build and run correctly.
+
+```bash
+./configure
+```
+
+The `./` prefix tells the shell to execute the script from the current directory. If the script reports any missing dependencies, you must install them before continuing.
+
+Next, run the `make` command. This command reads a file named `Makefile` in the directory, which contains a set of rules on how to compile the source code into executable programs.
+
+```bash
+make
+```
+
+Finally, to install the software onto your system, you would typically run:
+
+```bash
+sudo make install
+```
+
+This command copies the compiled files to the appropriate system directories, making the software available for use.
+
+### A Better Way to Install
+
+While `sudo make install` works, it has a significant drawback: it doesn't register the software with your system's package manager. This makes it difficult to track, update, or cleanly uninstall the package later.
+
+A much better approach is to use `checkinstall`. This tool runs the installation process but, instead of copying files directly, it creates a native system package (like a `.deb` file on Debian/Ubuntu) and installs that.
+
+```bash
+sudo checkinstall
+```
+
+Using `checkinstall` integrates the compiled software into your package management system. This means you can easily remove it later using `apt` or `dpkg`, just like any other package you installed from the official repositories. For this reason, you should always prefer `checkinstall` over `make install`.
+
+To uninstall a package installed with `make install`, you would navigate back to the source directory and run `sudo make uninstall`, but this is not always reliable.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check if compiler is installed**: Verify gcc availability
+   ```bash
+   which gcc
+   gcc --version | head -1
+   ```
+   Expected output:
+   ```
+   /usr/bin/gcc
+   gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+   ```
+
+2. **Create a simple C program**: Make a hello world program
+   ```bash
+   cat > hello.c << 'EOF'
+#include <stdio.h>
+int main() {
+    printf("Hello, Linux Journey!
+");
+    return 0;
+}
+EOF
+   ```
+
+3. **Compile the program**: Use gcc to compile
+   ```bash
+   gcc hello.c -o hello
+   ls -l hello
+   ```
+   Expected output:
+   ```
+   -rwxrwxr-x 1 user user 16696 Jan 19 10:30 hello
+   ```
+
+4. **Run the compiled program**: Execute the binary
+   ```bash
+   ./hello
+   ```
+   Expected output:
+   ```
+   Hello, Linux Journey!
+   ```
+
+5. **View compilation steps**: Compile with verbose output
+   ```bash
+   gcc -v hello.c -o hello 2>&1 | head -5
+   ```
+   Expected output:
+   ```
+   Using built-in specs.
+   COLLECT_GCC=gcc
+   (Shows compilation process)
+   ```
+
+6. **Clean up**: Remove test files
+   ```bash
+   rm hello.c hello
+   ```
+
+## Quiz Question
+
+What should you use instead of `make install` ALWAYS? (Please answer in English, paying attention to case sensitivity).
+

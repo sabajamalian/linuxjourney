@@ -1,0 +1,140 @@
+---
+title: "Systemd Goals"
+layout: default
+parent: Init
+grand_parent: Administration
+nav_order: 6
+---
+
+## Lesson Content
+
+This lesson provides a foundational overview of systemd unit files and how to manage them with `systemctl`, the primary tool for controlling the init system. We will cover the basic structure of a unit file and the essential commands for managing Linux services.
+
+### Understanding a Systemd Unit File
+
+A systemd unit file is a plain text file that describes a service, a mount point, a device, or another resource that systemd can manage. Here is a basic example of a service unit file named `foobar.service`:
+
+```
+[Unit]
+Description=My Foobar Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/foobar
+
+[Install]
+WantedBy=multi-user.target
+```
+
+This simple service file is divided into sections:
+
+- **[Unit]**: This section contains metadata and dependency information. The `Description` provides a human-readable name for the unit. Directives like `After` and `Before` control the startup order, ensuring this unit starts after the network is available.
+- **[Service]**: This section defines how to manage the service. The `ExecStart` directive is crucial, as it specifies the command to execute to start the service. Other directives like `ExecStop` and `ExecReload` can define how to stop or reload the service.
+- **[Install]**: This section defines the behavior of the unit when it is enabled or disabled with `systemctl`. The `WantedBy` directive tells systemd to start this service as part of a specific target, such as the `multi-user.target` for a standard non-graphical boot.
+
+This is just a glimpse into systemd unit files. For more advanced configurations, further reading on the topic is highly recommended.
+
+### Essential Systemctl Commands
+
+Now, let's explore the essential `systemctl` commands you'll use to interact with systemd units and manage Linux services.
+
+### Listing Systemd Units
+
+To see all active units that systemd is currently managing, use the `list-units` command.
+
+```bash
+systemctl list-units
+```
+
+### Checking a Unit's Status
+
+To view the detailed status of a specific unit, including whether it's active, enabled, and its latest log entries, use the `status` command.
+
+```bash
+systemctl status networking.service
+```
+
+### Managing Service States
+
+You can control the runtime state of a service using `start`, `stop`, and `restart`.
+
+To start a service immediately:
+
+```bash
+sudo systemctl start networking.service
+```
+
+To stop a running service:
+
+```bash
+sudo systemctl stop networking.service
+```
+
+To stop and then start the service again:
+
+```bash
+sudo systemctl restart networking.service
+```
+
+### Enabling and Disabling Services
+
+Enabling a service creates a symbolic link that hooks it into the boot process, ensuring it starts automatically. Disabling it removes that link.
+
+To enable a service to start on boot:
+
+```bash
+sudo systemctl enable networking.service
+```
+
+To disable a service from starting on boot:
+
+```bash
+sudo systemctl disable networking.service
+```
+
+These commands are the building blocks for service management on modern Linux systems. Mastering them is a key step in your Linux journey.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check init system**: Try this command
+   ```bash
+   ps -p 1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **List services**: Try this command
+   ```bash
+   systemctl list-units --type=service | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check service status**: Try this command
+   ```bash
+   systemctl status ssh` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View runlevel**: Try this command
+   ```bash
+   runlevel` or `who -r
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+What is the command to start a service named peanut.service? Please answer in English. The answer is case-sensitive.
+

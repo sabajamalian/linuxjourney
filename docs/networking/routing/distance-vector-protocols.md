@@ -1,0 +1,77 @@
+---
+title: "Distance Vector Protocols"
+layout: default
+parent: Routing
+grand_parent: Networking
+nav_order: 5
+---
+
+## Lesson Content
+
+Distance vector protocols are a fundamental category of routing protocols used in computer networks. They determine the best path for data packets based on distance, which is typically measured by **hop count**. In this type of **network routing**, each router maintains a table of the "distance" to all known networks.
+
+### How Distance Vector Protocols Work
+
+The core principle of a distance vector protocol is straightforward: routers share their routing information with their immediate neighbors. This process is sometimes called "routing by rumor." For example, if Router A knows it is 3 hops away from Network X, and Router B is a direct neighbor of Router A, Router B can infer that it is 4 hops away from Network X via Router A. When multiple paths to the same destination exist, the protocol will always choose the path with the lowest **hop count**.
+
+### Advantages and Disadvantages
+
+**Distance vector protocols** are simple to configure and work well in small, stable networks. However, they have significant limitations that make them less suitable for larger, more complex environments.
+
+One major downside is slow convergence. Routers periodically broadcast their entire routing table to their neighbors, which can consume significant bandwidth and processing power, especially as the network grows. If a network change occurs, it can take a long time for that information to propagate to all routers.
+
+Another key disadvantage is that the shortest path in terms of **hop count** is not always the most efficient. A path with fewer hops might have slower links (e.g., 10 Mbps) compared to a path with more hops that uses faster links (e.g., 1 Gbps). Distance vector protocols are generally unaware of link speed, leading to suboptimal routing decisions.
+
+### RIP A Common Example
+
+One of the most well-known **distance vector protocols** is the **Routing Information Protocol (RIP)**. It is a classic example that clearly demonstrates the principles and limitations of this protocol family.
+
+- **Periodic Updates:** RIP broadcasts its entire routing table to all neighbors every 30 seconds.
+- **Hop Count Limit:** To prevent routing loops and control network traffic, RIP enforces a maximum **hop count** of 15. Any route that requires 16 hops is considered unreachable.
+
+Because of these characteristics, RIP is rarely used in modern production networks but serves as an excellent learning tool in a **beginner guide** to **Linux networking** and routing concepts.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View routing table**: Try this command
+   ```bash
+   ip route show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Check default gateway**: Try this command
+   ```bash
+   ip route | grep default
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Trace route to server**: Try this command
+   ```bash
+   traceroute 8.8.8.8` (if available) or use `tracepath
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View network interfaces**: Try this command
+   ```bash
+   ip link show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+True or false: Distance vector protocols use the route with the least amount of bandwidth?
+

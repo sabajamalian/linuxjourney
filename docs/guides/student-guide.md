@@ -1,3 +1,10 @@
+---
+title: "Student Guide"
+layout: default
+parent: Guides
+nav_order: 1
+---
+
 # Student Guide: Linux Journey
 
 ## Welcome to Linux Journey!

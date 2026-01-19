@@ -1,0 +1,83 @@
+---
+title: "less"
+layout: default
+parent: Command Line
+grand_parent: Fundamentals
+nav_order: 8
+---
+
+## Lesson Content
+
+When viewing text files that are too large to fit on a single screen, the `less command` is an invaluable tool. As the old Unix saying goes, "less is more." (This is a play on the fact that there is also a `more` command with similar functionality). The `less` utility displays text in a paged format, allowing you to navigate through a file page by page without loading the entire file into memory.
+
+### Getting Started with the Less Command
+
+To start viewing a file, simply use the `command less` followed by the filename. This will open the file in the `less` interface.
+
+```bash
+less /home/pete/Documents/text1
+```
+
+Once you are inside the `less` viewer, your standard shell commands won't work. Instead, you use a specific set of keys to navigate and interact with the text.
+
+### Navigation and Controls
+
+You can use several keys to move through the document:
+
+- **Arrow Keys and Page Keys**: Use `Page Up`, `Page Down`, `Up`, and `Down` to navigate line by line or page by page.
+- **Go to Start**: Press `g` to move directly to the beginning of the text file.
+- **Go to End**: Press `G` (Shift + g) to jump to the end of the text file.
+- **Help Menu**: If you forget the commands while inside `less`, just press `h` to display a helpful summary.
+
+### Unix Less Search
+
+A powerful feature of `less` is its ability to search for text. To perform a `unix less search`, type `/` followed by the text you want to find, and then press Enter. This will highlight all occurrences of your search term.
+
+- `/search_term`: Searches forward for "search_term".
+- `?search_term`: Searches backward for "search_term".
+- `n`: Jumps to the next occurrence of the search term.
+- `N`: Jumps to the previous occurrence.
+
+### How to Exit Less
+
+When you are finished viewing the file, you need to know how to `exit less` and return to your command prompt.
+
+- **Quit**: Simply press `q` to quit the `less` viewer and go back to your shell.
+
+Mastering the `less command` is a fundamental skill for anyone working on the Linux command line, making file inspection much more efficient.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Open a file with less**: View a system file
+   ```bash
+   less /etc/services
+   ```
+   Expected output:
+   ```
+   (Opens file in pager - press 'q' to quit)
+   ```
+
+2. **Navigate through the file**: Practice movement commands
+   - Press **Space** to move down one page
+   - Press **b** to move back one page
+   - Press **g** to go to the beginning
+   - Press **G** to go to the end
+   - Press **q** to quit
+
+3. **Search within less**: Open a file and search
+   ```bash
+   less /etc/services
+   ```
+   Then type **/http** and press Enter to search for "http"
+
+4. **View command output with less**: Pipe a long listing into less
+   ```bash
+   ls -lR /etc | less
+   ```
+
+## Quiz Question
+
+How do you quit out of the `less` command? Please provide the single character key as your answer. Note: the answer is a case-sensitive English letter.
+

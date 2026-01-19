@@ -1,0 +1,75 @@
+---
+title: "NFS"
+layout: default
+parent: Network Sharing
+grand_parent: Networking
+nav_order: 4
+---
+
+## Lesson Content
+
+The most standard protocol for network file sharing in Linux is NFS, which stands for **Network File System**. NFS allows a server to share its directories and files with one or more client machines over a network, making them appear as if they were local resources.
+
+This lesson will focus on the configuration of an **NFS client**, as setting up an NFS server can be a more complex process.
+
+### Mounting an NFS Share
+
+To connect to an NFS share, you first need to ensure the NFS client service is running. Then, you can use the `mount` command to attach the remote directory to a local mount point on your system.
+
+```bash
+sudo service nfsclient start
+sudo mount server:/directory /mount_directory
+```
+
+In this example, `server:/directory` is the remote share you want to access, and `/mount_directory` is the local directory where the share will be mounted.
+
+### Using Automount for NFS
+
+If you frequently access an NFS share, you might consider making the mount permanent. While adding an entry to the `/etc/fstab` file is a common method for local drives, it can cause significant boot delays or even failures if the network connection or NFS server is unavailable during startup.
+
+A better solution for network shares is **automount**. This service, managed by the `automount` tool or its modern implementation `amd`, dynamically mounts a filesystem on-demand. When a file or directory within a specified path is accessed, automount automatically connects to the remote server and mounts the share. This ensures seamless access when needed without impacting the system's boot process.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check SSH availability**: Try this command
+   ```bash
+   which ssh
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Test local connection**: Try this command
+   ```bash
+   ss -tuln | grep :22
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View network shares**: Try this command
+   ```bash
+   mount | grep nfs` or similar
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check rsync**: Try this command
+   ```bash
+   which rsync` and `rsync --version
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+What tool is used to manage mount points automatically? Please answer in English, and note that the answer is case-sensitive.
+

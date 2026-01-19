@@ -1,0 +1,62 @@
+---
+title: "help"
+layout: default
+parent: Command Line
+grand_parent: Fundamentals
+nav_order: 15
+---
+
+## Lesson Content
+
+When working on the Linux command line, you'll often need a quick reminder of how a command works or what options it accepts. Fortunately, Linux provides excellent tools for command line help right in the terminal.
+
+### The 'help' Command for Bash Built-ins
+
+One of the most direct tools is `help`, a command that is built directly into the Bash shell. It is specifically designed to provide information about other Bash built-in commands. A built-in command is part of the shell itself, not a separate program. Examples include `echo`, `cd`, and `pwd`.
+
+To use the **Linux help command**, simply type `help` followed by the name of the built-in command.
+
+```bash
+help echo
+```
+
+This will display a summary of the `echo` command, its syntax, and a list of available options. This is the fastest way to get assistance for shell-specific functions.
+
+### The --help Flag for Executable Programs
+
+For most other executable programs that are not built into the shell, the `help` command won't work. Instead, a common convention is to provide a `--help` flag. This option signals the program to print a usage summary and then exit.
+
+```bash
+ls --help
+```
+
+While most developers adhere to this standard, it's not universal. However, trying the `--help` flag is usually the best first step to find help for an unfamiliar program. It's a fundamental skill for anyone learning about **Linux commands**.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Get help for a built-in command**: Use help for cd
+   ```bash
+   help cd
+   ```
+
+2. **List all shell built-ins**: See what commands have help
+   ```bash
+   help | head -20
+   ```
+
+3. **Get help for another built-in**: Check help for alias
+   ```bash
+   help alias
+   ```
+
+4. **Get help for export**: Learn about the export command
+   ```bash
+   help export
+   ```
+
+## Quiz Question
+
+How do you get quick command-line help for built-in Bash commands? (Please provide the single command name in English and in lowercase.)
+

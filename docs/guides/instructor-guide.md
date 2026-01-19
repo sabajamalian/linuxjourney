@@ -1,3 +1,10 @@
+---
+title: "Instructor Guide"
+layout: default
+parent: Guides
+nav_order: 2
+---
+
 # Instructor Guide: Linux Journey
 
 ## Overview

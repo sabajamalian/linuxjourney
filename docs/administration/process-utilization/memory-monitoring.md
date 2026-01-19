@@ -1,0 +1,106 @@
+---
+title: "Memory Monitoring"
+layout: default
+parent: Process Utilization
+grand_parent: Administration
+nav_order: 6
+---
+
+## Lesson Content
+
+Effective system administration requires keeping a close eye on resource usage, and **memory monitoring** is a critical part of this process. When a system runs low on memory, its performance can degrade significantly. Linux provides several tools to help you track memory consumption, and one of the most versatile is `vmstat`.
+
+### Introduction to vmstat
+
+The `vmstat` (virtual memory statistics) command is a powerful **memory utilization monitor** that reports information about processes, memory, paging, block I/O, traps, and CPU activity. Running it without any arguments provides a snapshot of the system's current state since the last boot.
+
+```bash
+pete@icebox:~$ vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0
+```
+
+The output is organized into several columns. Let's break down what each field means.
+
+### Procs
+
+- `r`: The number of runnable processes waiting for run time.
+- `b`: The number of processes in uninterruptible sleep, typically waiting for I/O.
+
+### Memory
+
+- `swpd`: The amount of virtual memory used (in kilobytes).
+- `free`: The amount of idle memory (in kilobytes).
+- `buff`: The amount of memory used as buffers.
+- `cache`: The amount of memory used as a page cache.
+
+### Swap
+
+- `si`: The amount of memory swapped in from disk per second (in kilobytes). High values indicate the system is low on physical memory.
+- `so`: The amount of memory swapped out to disk per second (in kilobytes). This should ideally be zero.
+
+### IO
+
+- `bi`: Blocks received from a block device (blocks/s).
+- `bo`: Blocks sent to a block device (blocks/s).
+
+### System
+
+- `in`: The number of interrupts per second, including the clock.
+- `cs`: The number of context switches per second.
+
+### CPU
+
+These are percentages of total CPU time.
+
+- `us`: Time spent running non-kernel code (user time).
+- `sy`: Time spent running kernel code (system time).
+- `id`: Time spent idle.
+- `wa`: Time spent waiting for I/O.
+- `st`: Time stolen from a virtual machine (for virtualized environments).
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View top processes**: Try this command
+   ```bash
+   top -b -n 1 | head -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Check memory usage**: Try this command
+   ```bash
+   free -h
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View CPU info**: Try this command
+   ```bash
+   cat /proc/cpuinfo | grep 'model name' | head -1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check load average**: Try this command
+   ```bash
+   uptime
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+What tool is used to view memory utilization? (Please answer in English, paying attention to case sensitivity).
+

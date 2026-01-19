@@ -1,0 +1,183 @@
+---
+title: "uniq (Unique)"
+layout: default
+parent: Text-Fu
+grand_parent: Fundamentals
+nav_order: 14
+---
+
+## Lesson Content
+
+The `uniq` (unique) command is an essential tool for text processing in Linux. It helps you filter and manage duplicate lines within a text file, but it's important to understand how it works to use it effectively.
+
+### Basic Duplicate Removal
+
+The primary function of the `uniq` command is to remove duplicate adjacent lines. Imagine you have a file named `reading.txt` with the following content:
+
+```plaintext
+book
+book
+paper
+paper
+article
+article
+magazine
+```
+
+To remove the repeated lines, you can run the `uniq` command:
+
+```bash
+$ uniq reading.txt
+book
+paper
+article
+magazine
+```
+
+As you can see, `uniq` outputs a version of the file with the duplicate adjacent lines removed.
+
+### Advanced Filtering Options
+
+The `uniq` command also provides several options for more detailed analysis.
+
+To count the occurrences of each line, use the `-c` (count) flag:
+
+```bash
+$ uniq -c reading.txt
+      2 book
+      2 paper
+      2 article
+      1 magazine
+```
+
+To display only the lines that are not repeated (i.e., are unique), use the `-u` (unique) flag:
+
+```bash
+$ uniq -u reading.txt
+magazine
+```
+
+Conversely, to display only the lines that are repeated, use the `-d` (duplicated) flag:
+
+```bash
+$ uniq -d reading.txt
+book
+paper
+article
+```
+
+### The Importance of Sorting
+
+A critical detail about the **uniq linux** command is that it only detects duplicate lines if they are directly adjacent to each other. If the duplicates are scattered throughout the file, `uniq` will not identify them.
+
+Consider this version of `reading.txt` where duplicates are not adjacent:
+
+```plaintext
+book
+paper
+book
+paper
+article
+magazine
+article
+```
+
+Running `uniq` on this file will produce a surprising result:
+
+```bash
+$ uniq reading.txt
+book
+paper
+book
+paper
+article
+magazine
+article
+```
+
+No lines were removed because no two identical lines were next to each other. To solve this, you must first sort the file's contents. By piping the output of `sort` into `uniq`, you ensure that all identical lines become adjacent, allowing `uniq` to work correctly. This combination is a powerful and common pattern in shell scripting.
+
+```bash
+$ sort reading.txt | uniq
+article
+book
+magazine
+paper
+```
+
+This command first sorts the lines alphabetically, then `uniq` filters out the duplicates, giving you a clean list of unique entries.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a file with duplicate lines**: Make a test file
+   ```bash
+   cat > duplicates.txt << EOF
+   apple
+   apple
+   banana
+   banana
+   banana
+   cherry
+   cherry
+   EOF
+   ```
+
+2. **Remove adjacent duplicate lines**: Use basic uniq
+   ```bash
+   uniq duplicates.txt
+   ```
+   Expected output:
+   ```
+   apple
+   banana
+   cherry
+   ```
+
+3. **Count occurrences**: Use -c flag to count duplicates
+   ```bash
+   uniq -c duplicates.txt
+   ```
+   Expected output:
+   ```
+   2 apple
+   3 banana
+   2 cherry
+   ```
+
+4. **Show only duplicated lines**: Use -d flag
+   ```bash
+   uniq -d duplicates.txt
+   ```
+   Expected output:
+   ```
+   apple
+   banana
+   cherry
+   ```
+
+5. **Sort and remove duplicates**: Combine with sort for non-adjacent duplicates
+   ```bash
+   echo -e "apple
+banana
+apple
+cherry
+banana" | sort | uniq
+   ```
+   Expected output:
+   ```
+   apple
+   banana
+   cherry
+   ```
+
+6. **Clean up**: Remove test file
+   ```bash
+   rm duplicates.txt
+   ```
+
+## Quiz Question
+
+What command would you use to remove adjacent duplicate lines in a file? Please answer using only the command name in lowercase English letters.
+

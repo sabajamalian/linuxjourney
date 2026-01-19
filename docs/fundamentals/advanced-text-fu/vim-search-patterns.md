@@ -1,0 +1,83 @@
+---
+title: "Vim Search Patterns"
+layout: default
+parent: Advanced Text-Fu
+grand_parent: Fundamentals
+nav_order: 4
+---
+
+## Lesson Content
+
+Searching for text is a fundamental task in any editor. Vim provides powerful and fast ways to perform a `vim search` directly from normal mode. Let's explore how to use these search patterns to improve your workflow.
+
+### Forward Search
+
+To perform a standard forward `vim search`, simply press the `/` key in normal mode, followed by your search term. When you press Enter, Vim will jump to the first occurrence of the term after your cursor.
+
+```plaintext
+My pretty file is very pretty.
+
+/pretty
+
+This will find the first "pretty" word after the cursor.
+```
+
+### Backward Search
+
+Similarly, you can search backward from your cursor's position. Use the `?` key followed by your search term. Vim will find the first occurrence before your cursor.
+
+```plaintext
+My pretty file is very pretty.
+
+?pretty
+
+This will find the last "pretty" word in the file first.
+```
+
+### Navigating Search Results
+
+Once a search is initiated, you can easily navigate through all the matches in the file.
+
+- Press `n` to jump to the **next** match in the direction of the original search.
+- Press `N` to jump to the **previous** match, moving in the opposite direction of the original search.
+
+### Effective Vim Lookup
+
+The `/` and `?` commands are the core of any `vim lookup` operation. Whether you need to find a specific function name, a variable, or just a word, this search mechanism is your primary tool. Mastering this simple `vim lookup` process is essential for efficient navigation and editing.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Practice the concepts using a text editor of your choice**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+2. **Create a test file**: Try this command
+   ```bash
+   touch practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Edit the file following the lesson instructions**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+4. **Save and verify changes**: Try this command
+   ```bash
+   cat practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+What key is used to initiate a forward search in Vim?
+

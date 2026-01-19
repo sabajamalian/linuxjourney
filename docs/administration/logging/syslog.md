@@ -1,0 +1,82 @@
+---
+title: "syslog"
+layout: default
+parent: Logging
+grand_parent: Administration
+nav_order: 2
+---
+
+## Lesson Content
+
+The syslog service manages and sends logs to the system logger. Rsyslog is an advanced version of syslog; most Linux distributions should be using this new version. The output of all the logs the syslog service collects can be found at `/var/log/syslog` (every message except authentication messages).
+
+To find out what files are maintained by our system logger, look at the configuration files in `/etc/rsyslog.d`:
+
+```plaintext
+pete@icebox:~$ less /etc/rsyslog.d/50-default.conf
+# First some standard log files.  Log by facility.
+#
+auth,authpriv.*                 /var/log/auth.log
+*.*;auth,authpriv.none          -/var/log/syslog
+#cron.*                         /var/log/cron.log
+#daemon.*                       -/var/log/daemon.log
+kern.*                          -/var/log/kern.log
+#lpr.*                          -/var/log/lpr.log
+mail.*                          -/var/log/mail.log
+#user.*                         -/var/log/user.log
+```
+
+These rules for log files are denoted by the selector on the left column and the action on the right column. The action tells us where to send the log information: to a file, console, etc. Remember, not every application and service uses rsyslog to manage their logs, so if you want to know specifically what is logged, you'll have to look inside this directory.
+
+Let's actually see logging in action; you can manually send a log with the `logger` command:
+
+```bash
+logger -s Hello
+```
+
+Now look inside your `/var/log/syslog`, and you should see this entry in your logs.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View system logs**: Try this command
+   ```bash
+   journalctl -n 20` or `tail -20 /var/log/syslog
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Check auth logs**: Try this command
+   ```bash
+   sudo tail -20 /var/log/auth.log` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View kernel logs**: Try this command
+   ```bash
+   dmesg | tail -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check log directory**: Try this command
+   ```bash
+   ls -lh /var/log/ | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+What command can you use to manually log a message?
+

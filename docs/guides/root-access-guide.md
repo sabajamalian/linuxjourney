@@ -1,3 +1,10 @@
+---
+title: "Root Access Guide"
+layout: default
+parent: Guides
+nav_order: 3
+---
+
 # Common Commands Requiring Root Access
 
 This guide lists commands you'll encounter in Linux Journey that require administrative (root) privileges. In your Ubuntu VM, you have full sudo access to practice all these commands safely.

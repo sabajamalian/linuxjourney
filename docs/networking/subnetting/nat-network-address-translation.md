@@ -1,0 +1,66 @@
+---
+title: "NAT"
+layout: default
+parent: Subnetting
+grand_parent: Networking
+nav_order: 6
+---
+
+## Lesson Content
+
+We've brought up NAT (Network Address Translation) before but didn't touch upon it. When we are working on our network, does that mean the internet can see our IP address? Not quite.
+
+NAT makes a device like our router act as an intermediary between the internet and a private network. So, only a single, unique IP address is required to represent an entire group of computers.
+
+Think of NAT as a receptionist in a large office. If someone wants to contact you, they only know the number to the whole office. The receptionist would then have to look for your extension number and forward the call to you.
+
+### How does it work?
+
+A simple case would look like this:
+
+1. Patty wants to connect to `www.google.com`, so her machine sends this request through the router.
+2. The router takes that request and opens its own connection to google.com, then it sends Patty's request once it makes a connection.
+3. The router is the intermediary between Patty and `www.google.com`. Google doesn't know about Patty; instead, all it can see is the router.
+
+NAT and packet routing in general can get pretty ugly, but we won't dive into the specifics.
+
+## Exercise
+
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View IP address**: Try this command
+   ```bash
+   ip addr show | grep inet
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Calculate subnet: Use `ipcalc 192.168.1.0/24` (if available)**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+3. **Check network mask**: Try this command
+   ```bash
+   ifconfig | grep netmask` or `ip addr
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View CIDR notation**: Try this command
+   ```bash
+   ip addr show | grep inet
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+## Quiz Question
+
+What is used to represent a single private address to the internet?
+
