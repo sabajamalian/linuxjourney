@@ -110,13 +110,73 @@ This command first sorts the lines alphabetically, then `uniq` filters out the d
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of text processing with `uniq` and `sort`:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux uniq Command: Duplicate Filtering](https://labex.io/labs/linux-linux-uniq-command-duplicate-filtering-219199)** - Learn how to use the Linux `uniq` command in combination with `sort` to identify, filter, and analyze duplicate lines in text files.
-2. **[Linux sort Command: Text Sorting](https://labex.io/labs/linux-linux-sort-command-text-sorting-219196)** - Practice using the `sort` command to organize lines of text files, a crucial step before using `uniq` effectively.
-3. **[Word Count and Sorting](https://labex.io/labs/linux-word-count-and-sorting-388125)** - Learn the essential Linux text processing tools `wc` (word count) and `sort` in this hands-on challenge. Learn to count lines, words, and characters, find frequent patterns, and sort data efficiently for various text analysis tasks.
+1. **Create a file with duplicate lines**: Make a test file
+   ```bash
+   cat > duplicates.txt << EOF
+   apple
+   apple
+   banana
+   banana
+   banana
+   cherry
+   cherry
+   EOF
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with text processing and data manipulation in Linux.
+2. **Remove adjacent duplicate lines**: Use basic uniq
+   ```bash
+   uniq duplicates.txt
+   ```
+   Expected output:
+   ```
+   apple
+   banana
+   cherry
+   ```
+
+3. **Count occurrences**: Use -c flag to count duplicates
+   ```bash
+   uniq -c duplicates.txt
+   ```
+   Expected output:
+   ```
+   2 apple
+   3 banana
+   2 cherry
+   ```
+
+4. **Show only duplicated lines**: Use -d flag
+   ```bash
+   uniq -d duplicates.txt
+   ```
+   Expected output:
+   ```
+   apple
+   banana
+   cherry
+   ```
+
+5. **Sort and remove duplicates**: Combine with sort for non-adjacent duplicates
+   ```bash
+   echo -e "apple
+banana
+apple
+cherry
+banana" | sort | uniq
+   ```
+   Expected output:
+   ```
+   apple
+   banana
+   cherry
+   ```
+
+6. **Clean up**: Remove test file
+   ```bash
+   rm duplicates.txt
+   ```
 
 ## Quiz Question
 

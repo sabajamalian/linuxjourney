@@ -78,13 +78,35 @@ Learning these operators is one of the best ways to learn Linux command-line eff
 
 ## Exercise
 
-Put your knowledge into practice. Here are some hands-on labs to reinforce your understanding of regular expressions and pattern matching:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Search Text with grep in Linux](https://labex.io/labs/comptia-search-text-with-grep-in-linux-590841)** - In this lab, you will learn to search for text in files on a Linux system using the `grep` command. You will perform basic searches, display line numbers, use anchors like `^` and `$` to match line positions, and harness both basic and extended regular expressions for complex pattern matching.
-2. **[Text Processing and Regular Expressions](https://labex.io/labs/linux-text-processing-and-regular-expressions-18003)** - Learn the powerful text processing tools grep, sed, and awk. Learn to use regular expressions for efficient text manipulation and pattern matching in Linux.
-3. **[Extracting Mails and Numbers](https://labex.io/labs/linux-extracting-mails-and-numbers-17991)** - In this challenge, you will learn how to use grep and regular expressions to extract email addresses and numbers from a file, demonstrating essential Linux text processing skills.
+1. **Practice the concepts using a text editor of your choice**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with regular expressions and text processing.
+2. **Create a test file**: Try this command
+   ```bash
+   touch practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Edit the file following the lesson instructions**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+4. **Save and verify changes**: Try this command
+   ```bash
+   cat practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

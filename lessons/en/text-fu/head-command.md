@@ -33,13 +33,58 @@ This makes `head` one of the most useful **Linux commands** for quickly inspecti
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of viewing the beginning of files and general text file manipulation:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux head Command: File Beginning Display](https://labex.io/labs/linux-linux-head-command-file-beginning-display-214302)** - This lab will guide you through using the `head` command to display the initial lines of text files, including modifying the line count.
-2. **[Viewing Log and Configuration Files in Linux](https://labex.io/labs/linux-viewing-log-and-configuration-files-in-linux-387914)** - Practice essential Linux command-line skills for efficiently viewing and navigating text files, including system logs and configuration files, which often require commands like `head`.
-3. **[Rapid Threat Detection](https://labex.io/labs/linux-rapid-threat-detection-387930)** - Apply your knowledge of `head` (and `tail`) to quickly extract and analyze recent log entries, simulating real-world cybersecurity analysis.
+1. **View first 10 lines of a system file**: Use default head behavior
+   ```bash
+   head /etc/passwd
+   ```
+   Expected output:
+   ```
+   (First 10 lines of the passwd file)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with text file viewing and analysis in Linux.
+2. **View first 5 lines**: Use the -n flag to specify line count
+   ```bash
+   head -n 5 /etc/passwd
+   ```
+   Expected output:
+   ```
+   (First 5 lines of the passwd file)
+   ```
+
+3. **Create a test file and view it**: Make a file with numbered lines
+   ```bash
+   seq 1 100 > numbers.txt
+   head numbers.txt
+   ```
+   Expected output:
+   ```
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+   ```
+
+4. **View first 15 lines**: Use head -n with a larger number
+   ```bash
+   head -n 15 numbers.txt
+   ```
+   Expected output:
+   ```
+   (Numbers 1 through 15)
+   ```
+
+5. **Clean up**: Remove the test file
+   ```bash
+   rm numbers.txt
+   ```
 
 ## Quiz Question
 

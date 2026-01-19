@@ -50,7 +50,40 @@ Another indispensable feature is tab completion. If you start typing the beginni
 
 ## Exercise
 
-While there are no specific labs for this topic, we recommend exploring the comprehensive [Linux Learning Path](https://labex.io/learn/linux) to practice related Linux skills and concepts.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View your command history**: Display recently executed commands
+   ```bash
+   history
+   ```
+   Expected output:
+   ```
+   1  pwd
+   2  ls -la
+   3  cd /etc
+   4  history
+   ```
+
+2. **Repeat a specific command**: Run a command from history
+   ```bash
+   !-2
+   ```
+
+3. **Search history**: Use reverse search
+   ```bash
+   Press Ctrl+R, then type "ls"
+   ```
+
+4. **View last 10 commands**: Limit history output
+   ```bash
+   history 10
+   ```
+
+5. **Clear history**: Remove all history entries
+   ```bash
+   history -c
+   history
+   ```
 
 ## Quiz Question
 

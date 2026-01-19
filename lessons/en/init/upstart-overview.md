@@ -44,12 +44,43 @@ The way that Upstart works is that:
 
 ## Exercise
 
-Practice makes perfect! While Upstart is an older init system, understanding how processes are managed and tasks are scheduled is crucial for any Linux administrator. Here are some hands-on labs to reinforce your understanding of process management and task automation, which are foundational to how init systems operate:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, and terminating them with `kill`. This lab helps you understand the lifecycle of processes, which init systems like Upstart manage.
-2. **[Schedule Tasks with at and cron in Linux](https://labex.io/labs/comptia-schedule-tasks-with-at-and-cron-in-linux-590870)** - Learn to schedule one-time jobs with `at` and recurring tasks with `cron`. This provides practical experience with task automation, a core function that init systems facilitate for system services.
+1. **Check init system**: Try this command
+   ```bash
+   ps -p 1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of process control and task automation in real scenarios, building confidence in managing a Linux system, regardless of the specific init system in use.
+2. **List services**: Try this command
+   ```bash
+   systemctl list-units --type=service | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check service status**: Try this command
+   ```bash
+   systemctl status ssh` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View runlevel**: Try this command
+   ```bash
+   runlevel` or `who -r
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

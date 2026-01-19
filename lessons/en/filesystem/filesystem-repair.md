@@ -19,11 +19,43 @@ sudo fsck /dev/sda
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux filesystems and their management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - In this lab, you'll gain practical experience with creating, formatting, and mounting partitions, which is crucial for understanding how filesystems are structured and maintained. This foundational knowledge will help you better grasp concepts like filesystem integrity and recovery.
+1. **Check disk usage**: Try this command
+   ```bash
+   df -h
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux filesystem administration.
+2. **View directory usage**: Try this command
+   ```bash
+   du -sh /home
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check filesystem type**: Try this command
+   ```bash
+   df -T
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View mounted filesystems**: Try this command
+   ```bash
+   mount | column -t
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

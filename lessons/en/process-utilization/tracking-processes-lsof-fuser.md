@@ -71,11 +71,43 @@ Both tools are essential for any Linux user. Familiarize yourself with them to e
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of managing processes and troubleshooting resource conflicts:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, and terminating them with `kill`. This lab will help you identify and manage processes that might be holding onto resources, like files on a USB drive.
+1. **View top processes**: Try this command
+   ```bash
+   top -b -n 1 | head -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-This lab will help you apply these concepts in real-world scenarios and build confidence with identifying and managing system processes.
+2. **Check memory usage**: Try this command
+   ```bash
+   free -h
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View CPU info**: Try this command
+   ```bash
+   cat /proc/cpuinfo | grep 'model name' | head -1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check load average**: Try this command
+   ```bash
+   uptime
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

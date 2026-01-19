@@ -33,11 +33,55 @@ To edit this file safely, you should always use the `visudo` command. This utili
 
 ## Exercise
 
-Put your knowledge into practice. The following hands-on lab will help reinforce your understanding of superuser access and privileges:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Practice enforcing password policies, locking and unlocking user accounts, securing the root account, and granting administrative permissions, directly relating to the management of superuser access.
+1. **Check if you are root**: Verify your current user
+   ```bash
+   whoami
+   ```
+   Expected output:
+   ```
+   your-username
+   (not root - which is correct for safety)
+   ```
 
-This lab will help you apply the concepts in real scenarios and build confidence with managing user privileges and superuser access.
+2. **Run a command as root**: Use sudo to execute with elevated privileges
+   ```bash
+   sudo whoami
+   ```
+   Expected output:
+   ```
+   root
+   ```
+
+3. **View a root-only file**: Try to access shadow file
+   ```bash
+   sudo cat /etc/shadow | head -3
+   ```
+   Expected output:
+   ```
+   root:*:18000:0:99999:7:::
+   (encrypted password entries)
+   ```
+
+4. **Check sudo privileges**: See what commands you can run as sudo
+   ```bash
+   sudo -l
+   ```
+   Expected output:
+   ```
+   User your-username may run the following commands:
+       (ALL : ALL) ALL
+   ```
+
+5. **View root's home directory**: List contents of /root
+   ```bash
+   sudo ls -la /root
+   ```
+   Expected output:
+   ```
+   drwx------  5 root root 4096 (root's home directory contents)
+   ```
 
 ## Quiz Question
 

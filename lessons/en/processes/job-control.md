@@ -70,9 +70,59 @@ Mastering these commands is essential for any beginner Linux user looking to mul
 
 ## Exercise
 
-To put your knowledge of Linux job control into practice, try this hands-on lab. It will help you solidify your understanding of managing foreground and background processes.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, monitoring resources, and terminating processes, directly addressing the scenario of long-running commands.
+1. **Start a job in the background**: Launch a background process
+   ```bash
+   sleep 100 &
+   ```
+   Expected output:
+   ```
+   [1] 5678
+   ```
+
+2. **List current jobs**: View all background jobs
+   ```bash
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Running                 sleep 100 &
+   ```
+
+3. **Start a foreground job and suspend it**: Use Ctrl+Z
+   ```bash
+   sleep 200
+   (Press Ctrl+Z)
+   ```
+   Expected output:
+   ```
+   ^Z
+   [2]+  Stopped                 sleep 200
+   ```
+
+4. **Resume job in background**: Use bg command
+   ```bash
+   bg %2
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]-  Running                 sleep 100 &
+   [2]+  Running                 sleep 200 &
+   ```
+
+5. **Bring job to foreground**: Use fg command
+   ```bash
+   fg %1
+   (Press Ctrl+C to stop)
+   ```
+
+6. **Clean up remaining jobs**: Kill all background jobs
+   ```bash
+   jobs
+   kill %2
+   ```
 
 ## Quiz Question
 

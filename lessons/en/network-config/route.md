@@ -51,12 +51,43 @@ Mastering the `ip route` command is a key skill for any Linux administrator resp
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of network routing and IP addressing:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Practice configuring a static IP, setting a default gateway, and verifying network configuration using the `ip` command.
-2. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Learn how the default gateway handles remote traffic and observe network layer interactions.
+1. **View IP configuration**: Try this command
+   ```bash
+   ip addr show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of IP addressing and routing in real scenarios and build confidence with Linux networking.
+2. **Check network interfaces**: Try this command
+   ```bash
+   ls /sys/class/net/
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View ARP table**: Try this command
+   ```bash
+   ip neigh` or `arp -a
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check network statistics**: Try this command
+   ```bash
+   netstat -i` or `ip -s link
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

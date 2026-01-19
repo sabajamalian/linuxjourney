@@ -35,11 +35,45 @@ To prevent them from being accidentally terminated, daemons are not attached to 
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of Linux processes and their interaction with terminals:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
+1. **Check your terminal device**: View current TTY
+   ```bash
+   tty
+   ```
+   Expected output:
+   ```
+   /dev/pts/0
+   ```
 
-This lab will help you apply the concepts of process management in real scenarios and build confidence with understanding how processes run and interact with the system.
+2. **View processes on your terminal**: Filter by TTY
+   ```bash
+   ps -t pts/0
+   ```
+   Expected output:
+   ```
+     PID TTY          TIME CMD
+    1234 pts/0    00:00:00 bash
+    5678 pts/0    00:00:00 ps
+   ```
+
+3. **View all terminal sessions**: See all active terminals
+   ```bash
+   who
+   ```
+   Expected output:
+   ```
+   user     pts/0        2024-01-19 10:30 (:0)
+   ```
+
+4. **Check processes without controlling terminal**: Find daemon processes
+   ```bash
+   ps aux | grep "?" | head -10
+   ```
+   Expected output:
+   ```
+   (Shows system daemons with ? in TTY column)
+   ```
 
 ## Quiz Question
 

@@ -81,13 +81,62 @@ As you can see, `grep` is a versatile and powerful tool for any Linux user.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of text searching and pattern matching with `grep`:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Search Text with grep in Linux](https://labex.io/labs/comptia-search-text-with-grep-in-linux-590841)** - Practice basic searches, display line numbers, use anchors, and harness both basic and extended regular expressions for complex pattern matching with `grep`.
-2. **[Linux grep Command: Pattern Searching](https://labex.io/labs/linux-linux-grep-command-pattern-searching-219192)** - Learn to use `grep` for searching and matching patterns within text files, and explore regular expressions to define complex search patterns.
-3. **[Needle in the Haystack](https://labex.io/labs/linux-needle-in-the-haystack-388109)** - Learn the power of the `grep` command to search for specific patterns, count occurrences, extract unique values, and combine multiple search criteria across various log files.
+1. **Create a sample file for testing**: Make a file with multiple lines
+   ```bash
+   cat > sample.txt << EOF
+   The quick brown fox jumps over the lazy dog
+   Fox hunting is a traditional activity
+   The red fox is very clever
+   Dogs and foxes are different animals
+   EOF
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with `grep` and regular expressions.
+2. **Basic grep search**: Find all lines containing "fox"
+   ```bash
+   grep fox sample.txt
+   ```
+   Expected output:
+   ```
+   The quick brown fox jumps over the lazy dog
+   The red fox is very clever
+   ```
+
+3. **Case-insensitive search**: Use -i flag to find "fox" regardless of case
+   ```bash
+   grep -i fox sample.txt
+   ```
+   Expected output:
+   ```
+   The quick brown fox jumps over the lazy dog
+   Fox hunting is a traditional activity
+   The red fox is very clever
+   ```
+
+4. **Count matching lines**: Use grep -c to count occurrences
+   ```bash
+   grep -c fox sample.txt
+   ```
+   Expected output:
+   ```
+   2
+   ```
+
+5. **Show only the match**: Use grep -o to see just the matching text
+   ```bash
+   grep -o fox sample.txt
+   ```
+   Expected output:
+   ```
+   fox
+   fox
+   ```
+
+6. **Clean up**: Remove the test file
+   ```bash
+   rm sample.txt
+   ```
 
 ## Quiz Question
 

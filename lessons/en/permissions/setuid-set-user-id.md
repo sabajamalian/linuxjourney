@@ -61,13 +61,68 @@ As you can see, the SUID is denoted by a 4 and prepended to the permission set. 
 
 ## Exercise
 
-Practice makes perfect! Understanding how file permissions, user groups, and special bits like SUID work is crucial for managing and securing Linux systems. Hands-on experience will solidify your knowledge.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-Here is a hands-on lab to reinforce your understanding of file permissions and user management:
+1. **Find files with setuid bit set**: Look for SUID executables
+   ```bash
+   find /usr/bin -perm -4000 2>/dev/null | head -5
+   ```
+   Expected output:
+   ```
+   /usr/bin/sudo
+   /usr/bin/passwd
+   /usr/bin/chsh
+   /usr/bin/newgrp
+   /usr/bin/gpasswd
+   ```
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Practice creating and managing users and groups, understanding file permissions, and manipulating file ownership. This lab provides the foundational knowledge necessary to grasp how SUID leverages these concepts for elevated access.
+2. **Check passwd command permissions**: View the SUID bit on passwd
+   ```bash
+   ls -l /usr/bin/passwd
+   ```
+   Expected output:
+   ```
+   -rwsr-xr-x 1 root root 68208 Jan 15 2020 /usr/bin/passwd
+   (Note the 's' in owner execute permission)
+   ```
 
-This lab will help you apply the concepts in a real scenario and build confidence with Linux user and file management.
+3. **Create a test script and set SUID**: Experiment with SUID (for learning)
+   ```bash
+   echo '#!/bin/bash' > testscript.sh
+   echo 'echo "Running as: $(whoami)"' >> testscript.sh
+   chmod +x testscript.sh
+   chmod u+s testscript.sh
+   ls -l testscript.sh
+   ```
+   Expected output:
+   ```
+   -rwsr-xr-x 1 user user 50 Jan 19 10:30 testscript.sh
+   ```
+
+4. **Test the script**: Run it to see current user
+   ```bash
+   ./testscript.sh
+   ```
+   Expected output:
+   ```
+   Running as: your-username
+   (SUID doesn't work for scripts in modern systems for security)
+   ```
+
+5. **Check SUID in octal notation**: View numeric permissions
+   ```bash
+   stat -c "%a" testscript.sh
+   ```
+   Expected output:
+   ```
+   4755
+   (4 prefix indicates SUID bit is set)
+   ```
+
+6. **Clean up**: Remove test script
+   ```bash
+   rm testscript.sh
+   ```
 
 ## Quiz Question
 

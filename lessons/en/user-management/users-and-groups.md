@@ -47,13 +47,57 @@ This time, you will be prompted for your password and, upon successful authentic
 
 ## Exercise
 
-While many apps to learn linux exist, hands-on practice is essential. Here are some labs to reinforce your understanding of Linux users, groups, and `sudo`:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Linux User Accounts with useradd, usermod, and userdel](https://labex.io/labs/comptia-manage-linux-user-accounts-with-useradd-usermod-and-userdel-590837)** - Practice the complete lifecycle of user administration, from creating and securing new accounts to modifying and deleting them.
-2. **[Manage Linux Groups with groupadd, usermod, and groupdel](https://labex.io/labs/comptia-manage-linux-groups-with-groupadd-usermod-and-groupdel-590836)** - Gain hands-on experience with core command-line utilities for group administration, including creating new groups, modifying user memberships, and removing groups.
-3. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Learn essential techniques for managing user accounts and `sudo` privileges to enhance the security of a Linux system, including granting administrative permissions.
+1. **View your current user information**: Check who you are logged in as
+   ```bash
+   whoami
+   ```
+   Expected output:
+   ```
+   your-username
+   ```
 
-These labs will help you apply the concepts of user and group management, and the use of `sudo`, in real scenarios and build confidence with Linux system administration.
+2. **See your user and group IDs**: Display numeric IDs
+   ```bash
+   id
+   ```
+   Expected output:
+   ```
+   uid=1000(user) gid=1000(user) groups=1000(user),4(adm),27(sudo)
+   ```
+
+3. **List all users on the system**: View the passwd file
+   ```bash
+   cat /etc/passwd | head -10
+   ```
+   Expected output:
+   ```
+   root:x:0:0:root:/root:/bin/bash
+   daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+   (and more users)
+   ```
+
+4. **List all groups**: View the group file
+   ```bash
+   cat /etc/group | head -10
+   ```
+   Expected output:
+   ```
+   root:x:0:
+   daemon:x:1:
+   bin:x:2:
+   (and more groups)
+   ```
+
+5. **See which groups you belong to**: List your group memberships
+   ```bash
+   groups
+   ```
+   Expected output:
+   ```
+   user adm cdrom sudo dip plugdev lxd
+   ```
 
 ## Quiz Question
 

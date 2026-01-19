@@ -39,11 +39,43 @@ lssci
 
 ## Exercise
 
-To reinforce your understanding of exploring hardware devices in Linux, try the following hands-on lab:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Explore Hardware Devices in Linux](https://labex.io/labs/comptia-explore-hardware-devices-in-linux-590861)** - In this lab, you will learn the essential skills to explore, identify, and inspect hardware devices within a Linux environment. You will gain hands-on experience with powerful command-line utilities to understand how the operating system interacts with physical components.
+1. **List block devices**: Try this command
+   ```bash
+   lsblk
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-This lab will help you apply these concepts in a real-world scenario and build confidence in managing device information.
+2. **View device information**: Try this command
+   ```bash
+   ls -l /dev/
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check device types**: Try this command
+   ```bash
+   file /dev/sda` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View USB devices**: Try this command
+   ```bash
+   lsusb
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

@@ -63,13 +63,53 @@ Experiment with these shortcuts to become more efficient on the command line.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux directory navigation:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux cd Command: Directory Changing](https://labex.io/labs/linux-linux-cd-command-directory-changing-209733)** - Learn the Linux `cd` command to efficiently navigate your file system, including various techniques for changing directories, understanding paths, and exploring the file structure.
-2. **[Linux Directory Navigation](https://labex.io/labs/linux-directory-navigation-387844)** - Put your basic Linux command-line skills to the test by navigating through directories using essential commands.
-3. **[Setting Up a New Project Structure](https://labex.io/labs/linux-setting-up-a-new-project-structure-387859)** - Practice your Linux directory management skills by creating a specific project structure and navigating through it using essential commands like `mkdir` and `cd`.
+1. **Navigate to root directory**: Move to the top of the filesystem
+   ```bash
+   cd /
+   pwd
+   ```
+   Expected output:
+   ```
+   /
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with navigating the Linux filesystem.
+2. **Use absolute path**: Navigate to /usr/share using the full path
+   ```bash
+   cd /usr/share
+   pwd
+   ```
+   Expected output:
+   ```
+   /usr/share
+   ```
+
+3. **Use relative path**: Move up one directory level
+   ```bash
+   cd ..
+   pwd
+   ```
+   Expected output:
+   ```
+   /usr
+   ```
+
+4. **Return to home directory**: Use cd without arguments
+   ```bash
+   cd
+   pwd
+   ```
+   Expected output:
+   ```
+   /home/your-username
+   ```
+
+5. **Use cd with tilde**: Navigate to home using the ~ shortcut
+   ```bash
+   cd ~/Documents
+   pwd
+   ```
 
 ## Quiz Question
 

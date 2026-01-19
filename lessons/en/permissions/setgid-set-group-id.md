@@ -31,12 +31,56 @@ The numerical representation for SGID is 2.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux user, group, and file permissions:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating and managing users, exploring group memberships, understanding file permissions, and manipulating file ownership.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - Practice creating new user accounts, setting up custom groups, and managing group memberships, simulating real-world system administration tasks.
+1. **Find files with setgid bit**: Look for SGID files
+   ```bash
+   find /usr/bin -perm -2000 2>/dev/null | head -5
+   ```
+   Expected output:
+   ```
+   /usr/bin/ssh-agent
+   /usr/bin/wall
+   (SGID executables on system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux permissions and user management.
+2. **Create a directory with SGID**: Make a directory for testing
+   ```bash
+   mkdir testdir
+   chmod g+s testdir
+   ls -ld testdir
+   ```
+   Expected output:
+   ```
+   drwxrwsr-x 2 user user 4096 Jan 19 10:30 testdir
+   (Note the 's' in group execute permission)
+   ```
+
+3. **Create a file in SGID directory**: Test inheritance
+   ```bash
+   touch testdir/newfile.txt
+   ls -l testdir/newfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 testdir/newfile.txt
+   (File inherits the group from parent directory)
+   ```
+
+4. **Check SGID in octal notation**: View numeric permissions
+   ```bash
+   stat -c "%a" testdir
+   ```
+   Expected output:
+   ```
+   2775
+   (2 prefix indicates SGID bit is set)
+   ```
+
+5. **Clean up**: Remove test directory
+   ```bash
+   rm -r testdir
+   ```
 
 ## Quiz Question
 

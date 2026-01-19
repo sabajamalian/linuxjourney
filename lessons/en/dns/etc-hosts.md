@@ -50,12 +50,43 @@ search localdomain
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of local hostname resolution and DNS queries:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Local Hostname Resolution in Linux](https://labex.io/labs/comptia-manage-local-hostname-resolution-in-linux-592792)** - Practice editing the `/etc/hosts` file to manage local hostname resolution, a key step before DNS queries.
-2. **[Query DNS Records in Linux with dig and nslookup](https://labex.io/labs/comptia-query-dns-records-in-linux-with-dig-and-nslookup-592796)** - Learn to query DNS records using essential Linux tools like `dig` and `nslookup` to understand how your machine resolves external names.
+1. **View DNS configuration**: Try this command
+   ```bash
+   cat /etc/resolv.conf
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with hostname resolution and DNS.
+2. **Test DNS lookup**: Try this command
+   ```bash
+   nslookup google.com` or `host google.com
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check hosts file**: Try this command
+   ```bash
+   cat /etc/hosts
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Query DNS**: Try this command
+   ```bash
+   dig google.com` (if available) or use nslookup
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

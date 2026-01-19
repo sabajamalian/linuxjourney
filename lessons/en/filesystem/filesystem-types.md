@@ -46,11 +46,43 @@ The `df` command reports file system disk space usage. The `-T` flag specificall
 
 ## Exercise
 
-To put your knowledge into practice, complete the following hands-on lab. It will help reinforce your understanding of Linux filesystems and partitions:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - In this lab, you will practice creating a new partition, formatting it with a specific filesystem type, mounting it, and configuring it for persistent mounting. These are fundamental skills for managing storage in Linux.
+1. **Check disk usage**: Try this command
+   ```bash
+   df -h
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-This lab allows you to apply these concepts in a real-world scenario and build confidence with disk management.
+2. **View directory usage**: Try this command
+   ```bash
+   du -sh /home
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check filesystem type**: Try this command
+   ```bash
+   df -T
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View mounted filesystems**: Try this command
+   ```bash
+   mount | column -t
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

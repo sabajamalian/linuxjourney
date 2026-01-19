@@ -46,12 +46,43 @@ The `dd linux` command is extremely powerful. You can use it to create backups o
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of data manipulation and disk management in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Create and Restore a Backup with tar in Linux](https://labex.io/labs/comptia-create-and-restore-a-backup-with-tar-in-linux-590843)** - Practice creating and restoring file system backups, a critical skill related to data integrity and recovery, which `dd` can also be used for.
-2. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - Learn to manage disk partitions and filesystems, including creating, formatting, and mounting, which are fundamental concepts when working with tools like `dd` for disk imaging.
+1. **List block devices**: Try this command
+   ```bash
+   lsblk
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of data handling and disk operations in real scenarios and build confidence with system administration tasks.
+2. **View device information**: Try this command
+   ```bash
+   ls -l /dev/
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check device types**: Try this command
+   ```bash
+   file /dev/sda` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View USB devices**: Try this command
+   ```bash
+   lsusb
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

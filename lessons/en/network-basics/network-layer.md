@@ -25,13 +25,43 @@ At the Network layer, the data segment received from the Transport layer is enca
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of the Network layer, IP addressing, and subnets:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Simulate Network Layer Connectivity in Linux](https://labex.io/labs/comptia-simulate-network-layer-connectivity-in-linux-592752)** - Practice assigning static IP addresses and testing connectivity within and across different subnets using Docker containers.
-2. **[Perform IP Subnetting and Binary Conversion in the Linux Terminal](https://labex.io/labs/comptia-perform-ip-subnetting-and-binary-conversion-in-the-linux-terminal-592782)** - Master IP subnetting and binary conversion, including calculating usable hosts and subnets, directly in the Linux terminal.
-3. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Explore various IP address types (private, public, multicast) and test network reachability using `ping` and `ip a`.
+1. **View network interfaces**: Try this command
+   ```bash
+   ip addr show` or `ifconfig
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of IP addressing and subnetting in real scenarios and build confidence with Network layer fundamentals.
+2. **Check routing table**: Try this command
+   ```bash
+   ip route` or `route -n
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Test connectivity**: Try this command
+   ```bash
+   ping -c 3 8.8.8.8
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View DNS settings**: Try this command
+   ```bash
+   cat /etc/resolv.conf
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

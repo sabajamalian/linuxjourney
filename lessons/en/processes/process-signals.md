@@ -45,11 +45,61 @@ The key difference between `SIGTERM` (**linux signal 15**) and `SIGKILL` is that
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of processes and how signals are used to interact with them:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`. Terminating processes with `kill` is a direct application of sending signals.
+1. **List all available signals**: View signal numbers and names
+   ```bash
+   kill -l
+   ```
+   Expected output:
+   ```
+    1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL
+    5) SIGTRAP      6) SIGABRT      7) SIGBUS       8) SIGFPE
+    9) SIGKILL     10) SIGUSR1     11) SIGSEGV     12) SIGUSR2
+   (and more signals)
+   ```
 
-This lab will help you apply the concepts of process management and the underlying use of signals in real scenarios and build confidence with Linux system administration.
+2. **Start a process and send SIGSTOP**: Pause a process
+   ```bash
+   sleep 100 &
+   SLEEPPID=$!
+   kill -STOP $SLEEPPID
+   ps -p $SLEEPPID -o pid,state,cmd
+   ```
+   Expected output:
+   ```
+     PID S CMD
+    5678 T sleep 100
+   (T = stopped)
+   ```
+
+3. **Resume the process with SIGCONT**: Continue a stopped process
+   ```bash
+   kill -CONT $SLEEPPID
+   ps -p $SLEEPPID -o pid,state,cmd
+   ```
+   Expected output:
+   ```
+     PID S CMD
+    5678 S sleep 100
+   (S = sleeping/running)
+   ```
+
+4. **Terminate with SIGTERM**: Send termination signal
+   ```bash
+   kill -TERM $SLEEPPID
+   ```
+
+5. **Try SIGINT with Ctrl+C**: Start a foreground process
+   ```bash
+   sleep 60
+   (Press Ctrl+C to send SIGINT)
+   ```
+   Expected output:
+   ```
+   ^C
+   (Process interrupted)
+   ```
 
 ## Quiz Question
 

@@ -21,13 +21,43 @@ sudo dhclient
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of dynamic IP addressing and network configuration:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Practice using `dhclient` to obtain a dynamic IP address and verify network configuration in a real Linux environment.
-2. **[Identify MAC and IP Addresses in Linux](https://labex.io/labs/comptia-identify-mac-and-ip-addresses-in-linux-592731)** - Learn to inspect network interfaces and identify MAC and IP addresses, which are fundamental to understanding how DHCP assigns addresses.
-3. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Test network reachability and explore different IP address types, building on your understanding of how IP addresses function in a network.
+1. **View IP configuration**: Try this command
+   ```bash
+   ip addr show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of DHCP and IP addressing in real scenarios and build confidence with network configuration in Linux.
+2. **Check network interfaces**: Try this command
+   ```bash
+   ls /sys/class/net/
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View ARP table**: Try this command
+   ```bash
+   ip neigh` or `arp -a
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check network statistics**: Try this command
+   ```bash
+   netstat -i` or `ip -s link
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

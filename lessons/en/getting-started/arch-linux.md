@@ -27,13 +27,39 @@ Its lightweight nature makes it a great choice for modern desktops and laptops. 
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of basic Linux commands and file system navigation:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Getting Started with Linux](https://labex.io/labs/linux-getting-started-with-linux-446315)** - Begin your Linux journey by learning essential terminal commands and basic system interactions.
-2. **[Basic File Operations in Linux](https://labex.io/labs/linux-basic-file-operations-in-linux-18001)** - Learn to navigate the file system, manage files and directories, and use command-line shortcuts.
-3. **[File and Directory Operations](https://labex.io/labs/linux-file-and-directory-operations-17997)** - Practice essential Linux file system operations, including managing files and folders with commands like `ls`, `cd`, `mkdir`, `cp`, and `mv`.
+1. **Check your distribution**: Try this command
+   ```bash
+   cat /etc/os-release
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with the Linux command line and file system.
+2. **View system information**: Try this command
+   ```bash
+   uname -a
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check package manager**: Try this command
+   ```bash
+   which apt yum dnf pacman
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View installed packages: Use appropriate list command for your system**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
 
 ## Quiz Question
 

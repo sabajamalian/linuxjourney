@@ -74,12 +74,57 @@ top
 
 ## Exercise
 
-Practice is key to mastering Linux commands. The following hands-on labs will help reinforce your understanding of process monitoring and management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice essential skills for managing and monitoring processes on a Linux system, including interacting with foreground/background processes, inspecting with `ps`, monitoring with `top`, and terminating with `kill`.
-2. **[Linux top Command: Real-time System Monitoring](https://labex.io/labs/linux-linux-top-command-real-time-system-monitoring-388500)** - Learn to use the Linux `top` command for real-time system monitoring, including sorting processes, adjusting update intervals, and filtering by user.
+1. **View your current processes**: See processes in your terminal session
+   ```bash
+   ps
+   ```
+   Expected output:
+   ```
+     PID TTY          TIME CMD
+    1234 pts/0    00:00:00 bash
+    5678 pts/0    00:00:00 ps
+   ```
 
-These labs will help you apply the concepts of process identification and monitoring in real-world scenarios, building your confidence as a Linux system administrator.
+2. **View all processes**: Use ps aux to see all running processes
+   ```bash
+   ps aux | head -10
+   ```
+   Expected output:
+   ```
+   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+   root         1  0.0  0.1 225848  9476 ?        Ss   Jan19   0:03 /sbin/init
+   root         2  0.0  0.0      0     0 ?        S    Jan19   0:00 [kthreadd]
+   ```
+
+3. **Filter processes by name**: Find all bash processes
+   ```bash
+   ps aux | grep bash
+   ```
+   Expected output:
+   ```
+   user      1234  0.0  0.1  21536  5124 pts/0    Ss   10:30   0:00 /bin/bash
+   ```
+
+4. **View processes in tree format**: See process hierarchy
+   ```bash
+   ps auxf | head -20
+   ```
+   Expected output:
+   ```
+   (Shows processes in tree structure with parent-child relationships)
+   ```
+
+5. **Use ps with System V style**: Try the ps -ef command
+   ```bash
+   ps -ef | head -10
+   ```
+   Expected output:
+   ```
+   UID        PID  PPID  C STIME TTY          TIME CMD
+   root         1     0  0 Jan19 ?        00:00:03 /sbin/init
+   ```
 
 ## Quiz Question
 

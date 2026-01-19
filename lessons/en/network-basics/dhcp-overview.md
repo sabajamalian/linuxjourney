@@ -41,13 +41,43 @@ While the full protocol is more complex, these four steps represent the core of 
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of dynamic IP addressing and network configuration:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Practice using the `ip` command to inspect interfaces and specifically use `dhclient` to obtain a dynamic IP address, directly applying your knowledge of DHCP.
-2. **[Identify MAC and IP Addresses in Linux](https://labex.io/labs/comptia-identify-mac-and-ip-addresses-in-linux-592731)** - Learn to use the `ip a` command to identify network addressing information, including the IP addresses assigned by DHCP, and inspect network interfaces.
-3. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Explore IP addressing and network reachability using `ping` and `ip a`, helping you understand how dynamically assigned IPs function within a network.
+1. **View network interfaces**: Try this command
+   ```bash
+   ip addr show` or `ifconfig
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of dynamic IP assignment and network configuration in real scenarios and build confidence with Linux networking.
+2. **Check routing table**: Try this command
+   ```bash
+   ip route` or `route -n
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Test connectivity**: Try this command
+   ```bash
+   ping -c 3 8.8.8.8
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View DNS settings**: Try this command
+   ```bash
+   cat /etc/resolv.conf
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

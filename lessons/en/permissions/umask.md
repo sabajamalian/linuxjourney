@@ -23,11 +23,67 @@ When you run the `umask` command, it will apply that default set of permissions 
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of file permissions and how they relate to default settings:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Practice creating and managing users, exploring group memberships, understanding file permissions, and manipulating file ownership. This lab provides practical experience in securing a multi-user Linux environment, which is crucial for understanding how `umask` influences new file permissions.
+1. **Check current umask value**: View your default umask
+   ```bash
+   umask
+   ```
+   Expected output:
+   ```
+   0002
+   (Common default umask value)
+   ```
 
-This lab will help you apply the concepts of file permissions in real scenarios and build confidence with managing access in Linux.
+2. **Create a file and check default permissions**: See umask in action
+   ```bash
+   touch testfile1.txt
+   ls -l testfile1.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 testfile1.txt
+   (666 - 002 = 664 permissions)
+   ```
+
+3. **Change umask temporarily**: Set a more restrictive umask
+   ```bash
+   umask 0077
+   umask
+   ```
+   Expected output:
+   ```
+   0077
+   ```
+
+4. **Create a file with new umask**: See how permissions change
+   ```bash
+   touch testfile2.txt
+   ls -l testfile2.txt
+   ```
+   Expected output:
+   ```
+   -rw------- 1 user user 0 Jan 19 10:30 testfile2.txt
+   (666 - 077 = 600 permissions)
+   ```
+
+5. **Create a directory with current umask**: Check directory permissions
+   ```bash
+   mkdir testdir
+   ls -ld testdir
+   ```
+   Expected output:
+   ```
+   drwx------ 2 user user 4096 Jan 19 10:30 testdir
+   (777 - 077 = 700 permissions)
+   ```
+
+6. **Restore default umask and clean up**: Reset umask
+   ```bash
+   umask 0002
+   rm testfile1.txt testfile2.txt
+   rmdir testdir
+   ```
 
 ## Quiz Question
 

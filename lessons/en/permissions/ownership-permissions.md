@@ -43,12 +43,54 @@ This single command assigns user ownership to `patty` and group ownership to `wh
 
 ## Exercise
 
-To solidify your understanding of **Linux file ownership**, we recommend practicing with these hands-on labs. They provide real-world scenarios for applying the `chown` and `chgrp` commands.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including understanding file permissions and manipulating file ownership. This lab provides practical experience in securing a multi-user Linux environment.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - In this challenge, you'll simulate adding new team members to a server environment by creating new user accounts, setting up custom groups, and managing group memberships. This will test your skills in Linux user and group administration.
+1. **Create a test file and check ownership**: Make a file and see who owns it
+   ```bash
+   touch testfile.txt
+   ls -l testfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 your-username your-username 0 Jan 19 10:30 testfile.txt
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with managing file ownership and permissions in Linux.
+2. **View file ownership details**: Use stat command
+   ```bash
+   stat testfile.txt
+   ```
+   Expected output:
+   ```
+   File: testfile.txt
+   Size: 0           Blocks: 0          IO Block: 4096   regular empty file
+   Device: 802h/2050d  Inode: 123456      Links: 1
+   Access: (0664/-rw-rw-r--)  Uid: ( 1000/your-username)   Gid: ( 1000/your-username)
+   ```
+
+3. **Create a directory and check ownership**: Make a directory
+   ```bash
+   mkdir testdir
+   ls -ld testdir
+   ```
+   Expected output:
+   ```
+   drwxrwxr-x 2 your-username your-username 4096 Jan 19 10:30 testdir
+   ```
+
+4. **View numeric user and group IDs**: Check IDs with stat
+   ```bash
+   stat -c "Owner UID: %u, Owner GID: %g" testfile.txt
+   ```
+   Expected output:
+   ```
+   Owner UID: 1000, Owner GID: 1000
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm testfile.txt
+   rmdir testdir
+   ```
 
 ## Quiz Question
 

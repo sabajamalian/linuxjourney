@@ -31,13 +31,37 @@ Man pages are particularly useful for understanding command options. For instanc
 
 ## Exercise
 
-Practice is key to mastering the command line. These hands-on labs will help you reinforce your skills with fundamental commands. After completing them, use the `man` command to explore each tool's full potential.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux ls Command: Content Listing](https://labex.io/labs/linux-linux-ls-command-content-listing-219205)** - Practice listing and analyzing file and directory contents, and then use `man ls` to discover more options.
-2. **[Linux pwd Command: Directory Displaying](https://labex.io/labs/linux-linux-pwd-command-directory-displaying-209734)** - Learn the `pwd` command to display your current directory, and explore its man page for details.
-3. **[Linux cd Command: Directory Changing](https://labex.io/labs/linux-linux-cd-command-directory-changing-209733)** - Master navigating your file system with `cd`, and use `man cd` to understand its various techniques.
+1. **Read the manual for ls**: Open the comprehensive manual page
+   ```bash
+   man ls
+   ```
+   Expected output:
+   ```
+   (Opens manual - press 'q' to quit)
+   ```
 
-These labs will help you apply core concepts in real scenarios and build confidence with essential Linux commands, preparing you to effectively use `man` to deepen your knowledge.
+2. **Search within a man page**: Look for specific information
+   ```bash
+   man ls
+   ```
+   Then type **/recursive** and press Enter
+
+3. **View manual for a configuration file**: Check passwd file docs
+   ```bash
+   man 5 passwd
+   ```
+
+4. **Search all manual pages**: Find commands related to "copy"
+   ```bash
+   man -k copy | head -10
+   ```
+
+5. **View man page sections**: Check available sections for passwd
+   ```bash
+   man -wa passwd
+   ```
 
 ## Quiz Question
 

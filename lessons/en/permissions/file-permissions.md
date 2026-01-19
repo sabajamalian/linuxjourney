@@ -53,13 +53,45 @@ Mastering **file permissions** is a core concept, and this foundation is essenti
 
 ## Exercise
 
-The **best way to learn linux** is through hands-on practice. These exercises will help you master Linux **file permissions**, users, and groups:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating users, exploring group memberships, understanding file permissions, and manipulating file ownership.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - Practice creating new user accounts, setting up custom groups, and managing group memberships, simulating real-world system administration tasks.
-3. **[Find a File](https://labex.io/labs/linux-find-a-file-17993)** - Apply your knowledge of file permissions by finding a specific file and setting its access authority, ensuring you're the only authorized user.
+1. **Create a test file and check permissions**: Make a file and view its permissions
+   ```bash
+   touch testfile.txt
+   ls -l testfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 testfile.txt
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with managing permissions and users in Linux.
+2. **Understand permission notation**: Break down the permission string
+   - First character: file type (- for regular file, d for directory)
+   - Next 9 characters: rwxrwxrwx (owner, group, others)
+   - rw-rw-r-- means: owner can read/write, group can read/write, others can only read
+
+3. **Check directory permissions**: View permissions of a directory
+   ```bash
+   ls -ld /home
+   ```
+   Expected output:
+   ```
+   drwxr-xr-x 3 root root 4096 Jan 15 10:30 /home
+   ```
+
+4. **View permissions in octal**: Use stat to see numeric permissions
+   ```bash
+   stat -c "%a %n" testfile.txt
+   ```
+   Expected output:
+   ```
+   664 testfile.txt
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm testfile.txt
+   ```
 
 ## Quiz Question
 

@@ -37,13 +37,55 @@ Ultimately, the content of `peanuts.txt` is copied to `banana.txt`. This example
 
 ## Exercise
 
-To solidify your understanding, try these hands-on exercises focused on input and output redirection in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Redirecting Input and Output in Linux](https://labex.io/labs/comptia-redirecting-input-and-output-in-linux-590840)** - Practice controlling data flow from commands by manipulating standard output (stdout), standard error (stderr), and standard input (stdin) using operators like >, >>, 2>, and the tee command.
-2. **[Data Stream Redirection](https://labex.io/labs/linux-data-stream-redirection-17995)** - Learn the art of Linux stream redirection. Manipulate standard input, output, and error streams, combine outputs, and utilize /dev/null for advanced file operations.
-3. **[Sequence Control and Pipeline](https://labex.io/labs/linux-sequence-control-and-pipeline-17994)** - Learn to control command execution sequences and utilize pipelines, which are fundamental to directing output from one command as input to another.
+1. **Create a test file**: Make a file to use as input
+   ```bash
+   cat > input.txt << EOF
+   Line 1
+   Line 2
+   Line 3
+   EOF
+   ```
 
-These labs will help you apply the concepts of input and output redirection in real scenarios and build confidence with shell scripting and data manipulation.
+2. **Redirect file as input**: Use < to provide input to a command
+   ```bash
+   cat < input.txt
+   ```
+   Expected output:
+   ```
+   Line 1
+   Line 2
+   Line 3
+   ```
+
+3. **Use stdin with sort**: Sort contents of a file via stdin
+   ```bash
+   sort < input.txt
+   ```
+   Expected output:
+   ```
+   Line 1
+   Line 2
+   Line 3
+   ```
+
+4. **Combine input and output redirection**: Read from one file, write to another
+   ```bash
+   tr 'a-z' 'A-Z' < input.txt > output.txt
+   cat output.txt
+   ```
+   Expected output:
+   ```
+   LINE 1
+   LINE 2
+   LINE 3
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm input.txt output.txt
+   ```
 
 ## Quiz Question
 

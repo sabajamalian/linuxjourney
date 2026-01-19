@@ -35,11 +35,46 @@ By understanding these fundamental **linux process states**, you can gain deeper
 
 ## Exercise
 
-Apply your knowledge with hands-on practice. The following lab will help reinforce your understanding of Linux process management and states:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
+1. **View process states**: See STAT column in ps output
+   ```bash
+   ps aux | head -15
+   ```
+   Expected output:
+   ```
+   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+   root         1  0.0  0.1 225848  9476 ?        Ss   Jan19   0:03 /sbin/init
+   root         2  0.0  0.0      0     0 ?        S    Jan19   0:00 [kthreadd]
+   (Note STAT column: S=sleeping, R=running, Z=zombie, etc.)
+   ```
 
-This lab will help you apply the concepts of process states in real scenarios and build confidence with Linux process management.
+2. **Find running processes**: Filter for running state
+   ```bash
+   ps aux | awk '$8 ~ /R/ {print $0}' | head -5
+   ```
+   Expected output:
+   ```
+   (Shows processes in Running state)
+   ```
+
+3. **Find sleeping processes**: Look for interruptible sleep
+   ```bash
+   ps aux | awk '$8 ~ /S/ {print $0}' | head -5
+   ```
+   Expected output:
+   ```
+   (Shows processes in Sleeping state)
+   ```
+
+4. **Check zombie processes**: Look for defunct processes
+   ```bash
+   ps aux | grep Z
+   ```
+   Expected output:
+   ```
+   (Usually no output if system is healthy)
+   ```
 
 ## Quiz Question
 

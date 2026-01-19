@@ -71,11 +71,45 @@ ls -la
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of the `ls` command:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-- **[Linux ls Command: Content Listing](https://labex.io/labs/linux-linux-ls-command-content-listing-219205)** - Practice using the `ls` command to efficiently list and analyze file and directory contents. You'll learn various options for detailed listings, hidden file display, human-readable sizes, and sorting techniques to enhance your command-line skills.
+1. **List files in your home directory**: See what files and folders you have
+   ```bash
+   ls
+   ```
+   Expected output:
+   ```
+   Desktop  Documents  Downloads  Music  Pictures  Videos
+   ```
 
-This lab will help you apply the concepts in a real scenario and build confidence with directory listing in Linux.
+2. **Show hidden files**: View all files including those starting with a dot
+   ```bash
+   ls -a
+   ```
+   Expected output:
+   ```
+   .  ..  .bash_history  .bashrc  .profile  Desktop  Documents
+   ```
+
+3. **Get detailed file information**: Use the long format
+   ```bash
+   ls -l
+   ```
+   Expected output:
+   ```
+   drwxr-xr-x 2 user user 4096 Jan 15 10:30 Desktop
+   drwxr-xr-x 2 user user 4096 Jan 15 10:30 Documents
+   ```
+
+4. **Combine flags**: List all files in long format with reverse sorting
+   ```bash
+   ls -lar
+   ```
+
+5. **List a specific directory**: View contents of /etc
+   ```bash
+   ls /etc
+   ```
 
 ## Quiz Question
 

@@ -33,13 +33,49 @@ Mastering the tools to manage these packages is the **best way to learn linux co
 
 ## Exercise
 
-To apply your knowledge, we recommend these hands-on labs. They provide practical experience with the concepts covered in this lesson.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Managing Packages with RPM in Linux](https://labex.io/labs/rhel-managing-packages-with-rpm-in-linux-590868)** - Gain hands-on experience querying package info, verifying integrity, and inspecting RPM package contents on Red Hat-based systems.
-2. **[Query and Update Packages with YUM in Linux](https://labex.io/labs/rhel-query-and-update-packages-with-yum-in-linux-590869)** - Learn to manage software packages on RHEL-based Linux systems using YUM, including inspecting, updating, and exploring repositories.
-3. **[Build Software from Source Code in Linux](https://labex.io/labs/comptia-build-software-from-source-code-in-linux-590853)** - Understand the fundamental process of building and installing software from its source code, a crucial skill for applications not available via package managers.
+1. **Check your Linux distribution**: Identify which distro you're using
+   ```bash
+   cat /etc/os-release
+   ```
+   Expected output:
+   ```
+   NAME="Ubuntu"
+   VERSION="20.04.5 LTS (Focal Fossa)"
+   ID=ubuntu
+   ID_LIKE=debian
+   ```
 
-These labs will help you apply the concepts of package management and software installation in real scenarios and build confidence with Linux system administration.
+2. **Check package management system**: Verify what package manager is available
+   ```bash
+   which apt
+   which dpkg
+   ```
+   Expected output:
+   ```
+   /usr/bin/apt
+   /usr/bin/dpkg
+   ```
+
+3. **View system architecture**: Check if 32-bit or 64-bit
+   ```bash
+   uname -m
+   ```
+   Expected output:
+   ```
+   x86_64
+   (64-bit system)
+   ```
+
+4. **Check kernel version**: View Linux kernel information
+   ```bash
+   uname -r
+   ```
+   Expected output:
+   ```
+   5.4.0-150-generic
+   ```
 
 ## Quiz Question
 

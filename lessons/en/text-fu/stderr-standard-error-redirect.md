@@ -82,11 +82,47 @@ This command will execute, and any error output from `stderr` will be sent to `/
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of input/output redirection:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Redirecting Input and Output in Linux](https://labex.io/labs/comptia-redirecting-input-and-output-in-linux-590840)** - In this lab, you will learn to redirect input and output in the Linux shell. You will practice controlling data flow from commands by manipulating standard output (stdout), standard error (stderr), and standard input (stdin) using operators like >, >>, 2>, and the tee command.
+1. **Generate an error**: Try to access a non-existent file
+   ```bash
+   cat /nonexistent 2> error.log
+   cat error.log
+   ```
+   Expected output:
+   ```
+   cat: /nonexistent: No such file or directory
+   ```
 
-This lab will help you apply the concepts of I/O redirection in real scenarios and build confidence with managing data streams in Linux.
+2. **Redirect both stdout and stderr**: Send both to different files
+   ```bash
+   ls /etc /nonexistent > output.log 2> error.log
+   cat output.log | head -5
+   cat error.log
+   ```
+
+3. **Redirect stderr to stdout**: Combine error and output streams
+   ```bash
+   ls /etc /nonexistent 2>&1 | head -10
+   ```
+   Expected output:
+   ```
+   (Combined output and error messages)
+   ```
+
+4. **Discard errors**: Send stderr to /dev/null
+   ```bash
+   ls /etc /nonexistent 2>/dev/null | head -5
+   ```
+   Expected output:
+   ```
+   (Only shows successful output, errors discarded)
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm error.log output.log
+   ```
 
 ## Quiz Question
 

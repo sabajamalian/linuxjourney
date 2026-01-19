@@ -46,11 +46,52 @@ In this case, `tr -s ' '` replaced sequences of multiple spaces with a single sp
 
 ## Exercise
 
-To put your knowledge into practice, try the following hands-on lab. It will help you reinforce your understanding of character translation and text processing.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux tr Command: Character Translating](https://labex.io/labs/linux-linux-tr-command-character-translating-219198)** - Learn the Linux `tr` command for character-level transformations in text streams. You'll practice translating characters, deleting specific characters, working with character classes, and squeezing repeated characters.
+1. **Convert lowercase to uppercase**: Use tr to change case
+   ```bash
+   echo "hello world" | tr 'a-z' 'A-Z'
+   ```
+   Expected output:
+   ```
+   HELLO WORLD
+   ```
 
-This lab will help you apply the concepts of text manipulation in real scenarios and build confidence with the `tr` command.
+2. **Delete specific characters**: Remove vowels from a string
+   ```bash
+   echo "hello world" | tr -d 'aeiou'
+   ```
+   Expected output:
+   ```
+   hll wrld
+   ```
+
+3. **Replace characters**: Change spaces to underscores
+   ```bash
+   echo "hello world from linux" | tr ' ' '_'
+   ```
+   Expected output:
+   ```
+   hello_world_from_linux
+   ```
+
+4. **Delete all digits**: Remove numbers from text
+   ```bash
+   echo "abc123def456" | tr -d '0-9'
+   ```
+   Expected output:
+   ```
+   abcdef
+   ```
+
+5. **Squeeze repeated characters**: Reduce multiple spaces to single space
+   ```bash
+   echo "hello    world" | tr -s ' '
+   ```
+   Expected output:
+   ```
+   hello world
+   ```
 
 ## Quiz Question
 

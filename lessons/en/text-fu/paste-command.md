@@ -37,13 +37,53 @@ Now everything should be on one line delimited by spaces.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of text processing and data manipulation in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Simple Text Processing](https://labex.io/labs/linux-simple-text-processing-18004)** - Learn to use powerful commands like `tr`, `col`, `join`, and `paste` to manipulate and analyze text data efficiently.
-2. **[Data Stream Redirection](https://labex.io/labs/linux-data-stream-redirection-17995)** - Learn the art of Linux stream redirection and how to manipulate standard input, output, and error streams, which is fundamental to understanding how commands like `paste` operate.
-3. **[Sequence Control and Pipeline](https://labex.io/labs/linux-sequence-control-and-pipeline-17994)** - Learn to control command execution sequences and utilize pipelines, enhancing your ability to combine `paste` with other commands for complex data tasks.
+1. **Create two test files**: Make files to paste together
+   ```bash
+   echo -e "A
+B
+C" > file1.txt
+   echo -e "1
+2
+3" > file2.txt
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with text processing and data handling in Linux.
+2. **Paste files side by side**: Merge files horizontally
+   ```bash
+   paste file1.txt file2.txt
+   ```
+   Expected output:
+   ```
+   A       1
+   B       2
+   C       3
+   ```
+
+3. **Use custom delimiter**: Paste with comma delimiter
+   ```bash
+   paste -d',' file1.txt file2.txt
+   ```
+   Expected output:
+   ```
+   A,1
+   B,2
+   C,3
+   ```
+
+4. **Paste serially**: Use -s to paste one file per line
+   ```bash
+   paste -s file1.txt
+   ```
+   Expected output:
+   ```
+   A       B       C
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm file1.txt file2.txt
+   ```
 
 ## Quiz Question
 

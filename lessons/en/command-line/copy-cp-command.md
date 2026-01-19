@@ -77,12 +77,41 @@ This command demonstrates how to use `linux cp -p` to copy `mycoolfile` while pr
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of copying files and directories in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux cp Command: File Copying](https://labex.io/labs/linux-linux-cp-command-file-copying-209744)** - Practice basic usage, advanced options like recursive copying, preserving attributes, and using wildcards to efficiently copy files and directories.
-2. **[Organizing Files and Directories](https://labex.io/labs/linux-organizing-files-and-directories-387877)** - Practice essential Linux file management skills by using `cp`, `mv`, and `rm` commands to organize a project structure, move files, and clean up unnecessary directories.
+1. **Create a test file and copy it**: Make a file and create a copy
+   ```bash
+   echo "Original content" > original.txt
+   cp original.txt copy.txt
+   ls -l *.txt
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with file copying and management in Linux.
+2. **Copy with verbose output**: Use -v flag
+   ```bash
+   cp -v original.txt another_copy.txt
+   ```
+   Expected output:
+   ```
+   'original.txt' -> 'another_copy.txt'
+   ```
+
+3. **Create a directory and copy files into it**: Make a test directory
+   ```bash
+   mkdir test_dir
+   cp *.txt test_dir/
+   ls test_dir/
+   ```
+
+4. **Copy a directory recursively**: Copy entire directory with -r flag
+   ```bash
+   cp -r test_dir test_dir_backup
+   ls test_dir_backup/
+   ```
+
+5. **Clean up**: Remove test files and directories
+   ```bash
+   rm -r test_dir test_dir_backup *.txt
+   ```
 
 ## Quiz Question
 

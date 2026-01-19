@@ -77,12 +77,39 @@ Mastering the `mv command` is essential for efficient file management on the com
 
 ## Exercise
 
-Practice makes perfect! Hands-on experience is crucial for mastering Linux commands like `mv`. These labs will help you solidify your understanding of moving and renaming files and directories in a real environment:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux mv Command: File Moving and Renaming](https://labex.io/labs/linux-linux-mv-command-file-moving-and-renaming-209743)** - Practice using the `mv` command to move and rename files and directories, including understanding its various options and behaviors.
-2. **[Organizing Files and Directories](https://labex.io/labs/linux-organizing-files-and-directories-387877)** - Apply your knowledge of `mv` (along with `cp` and `rm`) in a practical challenge to organize a project structure, move files, and clean up directories.
+1. **Create a file and rename it**: Use mv to change a filename
+   ```bash
+   echo "Test content" > oldname.txt
+   mv oldname.txt newname.txt
+   ls -l newname.txt
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with file and directory management using the `mv` command.
+2. **Move a file to a different directory**: Create a directory and move a file
+   ```bash
+   mkdir mydir
+   mv newname.txt mydir/
+   ls mydir/
+   ```
+
+3. **Move and rename simultaneously**: Move file with new name
+   ```bash
+   mv mydir/newname.txt renamed_file.txt
+   ls -l renamed_file.txt
+   ```
+
+4. **Move multiple files**: Create several files and move them
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   mv file1.txt file2.txt file3.txt mydir/
+   ls mydir/
+   ```
+
+5. **Clean up**: Remove test files and directory
+   ```bash
+   rm -r mydir renamed_file.txt
+   ```
 
 ## Quiz Question
 

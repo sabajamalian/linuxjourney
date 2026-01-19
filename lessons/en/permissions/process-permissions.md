@@ -31,12 +31,54 @@ Most of the time, the real UID and the effective UID are the same, but in such c
 
 ## Exercise
 
-Practice makes perfect! Understanding user IDs and process permissions is crucial for Linux security and administration. Here are some hands-on labs to reinforce your understanding of user and group management, which forms the basis of how UIDs function:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Learn essential Linux user and group management concepts, including creating and managing users, exploring group memberships, understanding file permissions, and manipulating file ownership. This lab provides practical experience in securing a multi-user Linux environment.
-2. **[Add New User and Group](https://labex.io/labs/linux-add-new-user-and-group-17987)** - In this challenge, you'll simulate adding new team members to a server environment by creating new user accounts, setting up custom groups, and managing group memberships. This will test your skills in Linux user and group administration, essential for system administrators and DevOps professionals.
+1. **Check your current process permissions**: View your effective user ID
+   ```bash
+   id
+   ```
+   Expected output:
+   ```
+   uid=1000(user) gid=1000(user) groups=1000(user),4(adm),27(sudo)
+   ```
 
-These labs will help you apply the concepts of user and group management in real scenarios, building a strong foundation for understanding how UIDs control access and permissions in Linux.
+2. **Create a script and check its execution**: Make an executable file
+   ```bash
+   echo '#!/bin/bash' > myscript.sh
+   echo 'echo "Hello from $USER"' >> myscript.sh
+   chmod +x myscript.sh
+   ./myscript.sh
+   ```
+   Expected output:
+   ```
+   Hello from your-username
+   ```
+
+3. **View process ownership**: See which user owns running processes
+   ```bash
+   ps aux | grep bash | head -3
+   ```
+   Expected output:
+   ```
+   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+   user      1234  0.0  0.1  21536  5124 pts/0    Ss   10:30   0:00 /bin/bash
+   ```
+
+4. **Check effective permissions**: Run a command and verify permissions
+   ```bash
+   touch permtest.txt
+   ls -l permtest.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 permtest.txt
+   (File owned by the user who created it)
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm myscript.sh permtest.txt
+   ```
 
 ## Quiz Question
 

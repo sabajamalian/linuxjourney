@@ -51,13 +51,61 @@ RPM: $ yum info package_name
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux package management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Query and Update Packages with YUM in Linux](https://labex.io/labs/rhel-query-and-update-packages-with-yum-in-linux-590869)** - Practice managing software packages on RHEL-based Linux systems using YUM, including inspecting, updating, and exploring repositories.
-2. **[Software Installation on Linux](https://labex.io/labs/linux-software-installation-on-linux-18005)** - Learn various methods to install and manage software on Ubuntu systems, including using apt, dpkg, and handling .deb files.
-3. **[Installing and Removing Packages](https://labex.io/labs/linux-installing-and-removing-packages-385380)** - Practice updating the system, installing and removing packages, and optimizing software configuration on a Debian-based system using `apt`.
+1. **Check your package management system**: Identify which system you're using
+   ```bash
+   which apt apt-get dpkg
+   ```
+   Expected output:
+   ```
+   /usr/bin/apt
+   /usr/bin/apt-get
+   /usr/bin/dpkg
+   (Debian-based system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux package management.
+2. **Update package database**: Refresh available packages
+   ```bash
+   sudo apt update
+   ```
+   Expected output:
+   ```
+   Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+   Reading package lists... Done
+   Building dependency tree       
+   ```
+
+3. **Search for a package**: Find available packages
+   ```bash
+   apt search tree 2>/dev/null | grep "^tree/"
+   ```
+   Expected output:
+   ```
+   tree/focal 1.8.0-1 amd64
+   ```
+
+4. **Simulate package installation**: Dry-run to see what would happen
+   ```bash
+   apt install --simulate tree 2>/dev/null | head -10
+   ```
+   Expected output:
+   ```
+   Reading package lists... Done
+   Building dependency tree       
+   The following NEW packages will be installed:
+     tree
+   ```
+
+5. **List upgradable packages**: Check for available updates
+   ```bash
+   apt list --upgradable 2>/dev/null | head -10
+   ```
+   Expected output:
+   ```
+   Listing... Done
+   (Shows packages that can be upgraded)
+   ```
 
 ## Quiz Question
 

@@ -41,12 +41,33 @@ A key feature of the `find command linux` users appreciate is its recursive natu
 
 ## Exercise
 
-Practice is key to mastering the `find command in linux`. These hands-on labs will help you reinforce your understanding of finding files and directories:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux find Command: File Searching](https://labex.io/labs/linux-linux-find-command-file-searching-219191)** - This lab provides an introduction to the `find` command, a versatile utility for searching and locating files and directories based on various criteria. You'll practice using `find` to locate specific files.
-2. **[Discover Critical System Resources](https://labex.io/labs/linux-discover-critical-system-resources-388032)** - Learn essential Linux commands for locating files and executables, including `find`. You'll practice efficiently navigating the file system and discovering critical system resources.
+1. **Find files by name**: Search for files in your home directory
+   ```bash
+   find ~ -name "*.txt" 2>/dev/null | head -5
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with using the `find` command effectively.
+2. **Find files by type**: Look for all directories
+   ```bash
+   find /etc -type d 2>/dev/null | head -10
+   ```
+
+3. **Find recently modified files**: Search for files modified in last 7 days
+   ```bash
+   find ~ -type f -mtime -7 2>/dev/null | head -5
+   ```
+
+4. **Find empty files**: Create and find empty files
+   ```bash
+   touch empty1.txt empty2.txt
+   find . -name "empty*.txt" -type f -empty
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm empty1.txt empty2.txt
+   ```
 
 ## Quiz Question
 

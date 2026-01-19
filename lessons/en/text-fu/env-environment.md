@@ -119,13 +119,53 @@ After this, the `TEST` variable will be available in all future terminal session
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux environment variables:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Shell Environment and Configuration in Linux](https://labex.io/labs/comptia-manage-shell-environment-and-configuration-in-linux-590838)** - Practice creating and managing local and environment variables, understanding inheritance, and making configurations persistent by modifying the `.bashrc` file.
-2. **[Environment Variables in Linux](https://labex.io/labs/linux-environment-variables-in-linux-385274)** - Learn the concept and usage of environment variables, how to create, modify, and manage them, and their role in system configuration.
-3. **[Configure Linux Environment Variables](https://labex.io/labs/linux-configure-linux-environment-variables-437861)** - Get hands-on experience creating, setting, and managing environment variables in a Linux system.
+1. **View all environment variables**: Display current environment
+   ```bash
+   env | head -20
+   ```
+   Expected output:
+   ```
+   (Lists environment variables like PATH, HOME, USER, etc.)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with managing your Linux shell environment.
+2. **Check specific variable**: View the PATH variable
+   ```bash
+   echo $PATH
+   ```
+   Expected output:
+   ```
+   /usr/local/bin:/usr/bin:/bin:/usr/games
+   ```
+
+3. **Set a new variable**: Create a temporary environment variable
+   ```bash
+   export MYVAR="Hello Linux"
+   echo $MYVAR
+   ```
+   Expected output:
+   ```
+   Hello Linux
+   ```
+
+4. **View user-related variables**: Check HOME and USER
+   ```bash
+   echo "User: $USER, Home: $HOME"
+   ```
+   Expected output:
+   ```
+   User: your-username, Home: /home/your-username
+   ```
+
+5. **Filter environment variables**: Find variables containing "PATH"
+   ```bash
+   env | grep PATH
+   ```
+   Expected output:
+   ```
+   PATH=/usr/local/bin:/usr/bin:/bin
+   ```
 
 ## Quiz Question
 

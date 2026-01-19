@@ -41,11 +41,63 @@ By directly accessing files within `/proc`, you can gather specific metrics to b
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux processes and system monitoring:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
+1. **Explore the /proc directory**: View process information filesystem
+   ```bash
+   ls /proc | head -20
+   ```
+   Expected output:
+   ```
+   1
+   2
+   3
+   cpuinfo
+   meminfo
+   (PIDs and system info files)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with process management and system observation.
+2. **View process information**: Check info for current shell
+   ```bash
+   cat /proc/$$/status | head -15
+   ```
+   Expected output:
+   ```
+   Name:   bash
+   State:  S (sleeping)
+   Pid:    1234
+   PPid:   1233
+   ```
+
+3. **Check system CPU information**: View processor details
+   ```bash
+   cat /proc/cpuinfo | grep "model name" | head -1
+   ```
+   Expected output:
+   ```
+   model name      : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+   ```
+
+4. **View memory information**: Check system memory
+   ```bash
+   cat /proc/meminfo | head -10
+   ```
+   Expected output:
+   ```
+   MemTotal:        8052484 kB
+   MemFree:         1234567 kB
+   MemAvailable:    5678901 kB
+   ```
+
+5. **Check command line of a process**: View how process was started
+   ```bash
+   cat /proc/$$/cmdline
+   echo
+   ```
+   Expected output:
+   ```
+   bash
+   ```
 
 ## Quiz Question
 

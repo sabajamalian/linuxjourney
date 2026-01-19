@@ -66,13 +66,63 @@ Both `wc` and `nl` are essential commands for everyday text processing on the Li
 
 ## Exercise
 
-To master these commands, hands-on practice is key. Try these exercises to solidify your skills in text counting and line numbering on Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux wc Command: Text Counting](https://labex.io/labs/linux-linux-wc-command-text-counting-219200)** - Practice counting words, lines, and characters in text files using the `wc` command.
-2. **[Linux nl Command: Line Numbering](https://labex.io/labs/linux-linux-nl-command-line-numbering-210988)** - Learn to number lines in text files with the `nl` command.
-3. **[Word Count and Sorting](https://labex.io/labs/linux-word-count-and-sorting-388125)** - Apply your knowledge of `wc` to count lines, words, and characters, and combine it with sorting for practical text analysis tasks.
+1. **Number lines in a file**: Create a test file and add line numbers
+   ```bash
+   cat > lines.txt << EOF
+   First line
+   Second line
+   Third line
+   EOF
+   nl lines.txt
+   ```
+   Expected output:
+   ```
+        1  First line
+        2  Second line
+        3  Third line
+   ```
 
-These labs will help you apply the concepts in real-world scenarios and build confidence with text processing in Linux.
+2. **Count lines, words, and bytes**: Use wc on the file
+   ```bash
+   wc lines.txt
+   ```
+   Expected output:
+   ```
+   3 6 33 lines.txt
+   ```
+
+3. **Count only lines**: Use wc -l
+   ```bash
+   wc -l lines.txt
+   ```
+   Expected output:
+   ```
+   3 lines.txt
+   ```
+
+4. **Number non-empty lines only**: Use nl with -b flag
+   ```bash
+   echo -e "line1
+
+line3
+
+line5" | nl -b a
+   ```
+   Expected output:
+   ```
+        1  line1
+        2  
+        3  line3
+        4  
+        5  line5
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm lines.txt
+   ```
 
 ## Quiz Question
 

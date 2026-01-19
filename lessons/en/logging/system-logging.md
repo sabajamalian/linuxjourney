@@ -36,13 +36,43 @@ This entry shows that on January 27th at 07:41:32, the `anacron` service on the 
 
 ## Exercise
 
-Practice is essential for mastery. The following hands-on labs are some of the **best resources to learn Linux** log management and file viewing skills.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Viewing Log and Configuration Files in Linux](https://labex.io/labs/linux-viewing-log-and-configuration-files-in-linux-387914)** - Learn essential Linux command-line skills for efficiently viewing and navigating text files, including system logs and configuration files. Practice using commands like `cat`, `more`, and `less` to extract critical information from various file types.
-2. **[Linux tail Command: File End Display](https://labex.io/labs/linux-linux-tail-command-file-end-display-214303)** - Learn the Linux `tail` command for viewing and monitoring the end of text files. This is particularly useful for real-time log analysis.
-3. **[Search Text with grep in Linux](https://labex.io/labs/comptia-search-text-with-grep-in-linux-590841)** - In this lab, you will learn to search for text in files on a Linux system using the `grep` command. This is invaluable for finding specific entries within large log files.
+1. **View system logs**: Try this command
+   ```bash
+   journalctl -n 20` or `tail -20 /var/log/syslog
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of log file management and analysis in real scenarios and build confidence with Linux system monitoring.
+2. **Check auth logs**: Try this command
+   ```bash
+   sudo tail -20 /var/log/auth.log` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View kernel logs**: Try this command
+   ```bash
+   dmesg | tail -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check log directory**: Try this command
+   ```bash
+   ls -lh /var/log/ | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

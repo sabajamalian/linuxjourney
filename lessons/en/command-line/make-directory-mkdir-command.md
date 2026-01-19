@@ -39,12 +39,35 @@ This single command creates `books`, `hemmingway`, and `favorites` if they don't
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of directory creation and management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux mkdir Command: Directory Creating](https://labex.io/labs/linux-linux-mkdir-command-directory-creating-209739)** - Learn how to use the `mkdir` command in Linux to create directories, set permissions, and organize your file system. This lab covers basic and advanced usage, including creating nested directories.
-2. **[Setting Up a New Project Structure](https://labex.io/labs/linux-setting-up-a-new-project-structure-387859)** - Practice your Linux directory management skills by creating a specific project structure and navigating through it using essential commands like `mkdir` and `cd`.
+1. **Create a single directory**: Make a new directory
+   ```bash
+   mkdir testdir
+   ls -ld testdir
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with creating and organizing directories in Linux.
+2. **Create multiple directories at once**: Make several directories
+   ```bash
+   mkdir dir1 dir2 dir3
+   ls -d dir*
+   ```
+
+3. **Create nested directories**: Use -p flag to create parents
+   ```bash
+   mkdir -p parent/child/grandchild
+   ls -R parent/
+   ```
+
+4. **Create directory with verbose output**: See confirmation
+   ```bash
+   mkdir -v myproject
+   ```
+
+5. **Clean up**: Remove all test directories
+   ```bash
+   rm -r testdir dir1 dir2 dir3 parent myproject
+   ```
 
 ## Quiz Question
 

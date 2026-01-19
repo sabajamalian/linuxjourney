@@ -33,13 +33,43 @@ ip neighbour show
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of ARP and network layer interaction:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Use `ping` and `arp` commands to observe how IP addresses are resolved to MAC addresses and how the default gateway handles traffic.
-2. **[Identify MAC and IP Addresses in Linux](https://labex.io/labs/comptia-identify-mac-and-ip-addresses-in-linux-592731)** - Learn to use the `ip a` command to identify network addressing information, including MAC and IP addresses, which are fundamental to understanding ARP.
-3. **[Manage IP Addressing in Linux](https://labex.io/labs/comptia-manage-ip-addressing-in-linux-592736)** - Practice managing IP addressing using the `ip` command and verify network configuration with `arp` and `traceroute`.
+1. **View IP configuration**: Try this command
+   ```bash
+   ip addr show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of ARP and network addressing in real scenarios and build confidence with Linux networking.
+2. **Check network interfaces**: Try this command
+   ```bash
+   ls /sys/class/net/
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View ARP table**: Try this command
+   ```bash
+   ip neigh` or `arp -a
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check network statistics**: Try this command
+   ```bash
+   netstat -i` or `ip -s link
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

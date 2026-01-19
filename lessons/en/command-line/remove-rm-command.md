@@ -67,12 +67,39 @@ The `rmdir` command will only succeed if the directory is completely empty, maki
 
 ## Exercise
 
-Practice is key. Here are some hands-on exercises to solidify your understanding of file and directory removal in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux rm Command: File Removing](https://labex.io/labs/linux-linux-rm-command-file-removing-209741)** - Learn how to use the `rm` command for removing files and directories, including various options like `-r` and `-i`, and practice safe and effective file deletion.
-2. **[Organizing Files and Directories](https://labex.io/labs/linux-organizing-files-and-directories-387877)** - Practice essential Linux file management skills, including using the `rm` command to clean up unnecessary directories, in a practical challenge.
+1. **Create and remove a single file**: Make a test file and delete it
+   ```bash
+   touch testfile.txt
+   rm testfile.txt
+   ls testfile.txt 2>/dev/null || echo "File removed successfully"
+   ```
 
-These labs will help you apply these concepts in real-world scenarios and build confidence with the `linux rm command`.
+2. **Remove multiple files**: Create several files and delete them
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   rm file1.txt file2.txt file3.txt
+   ```
+
+3. **Remove files with verbose output**: Use -v
+   ```bash
+   touch demo.txt
+   rm -v demo.txt
+   ```
+
+4. **Create and remove a directory**: Use -r flag
+   ```bash
+   mkdir testdir
+   touch testdir/file.txt
+   rm -r testdir
+   ```
+
+5. **Remove with interactive prompts**: Use -i
+   ```bash
+   touch important.txt
+   rm -i important.txt
+   ```
 
 ## Quiz Question
 

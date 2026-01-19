@@ -38,11 +38,43 @@ In the output above, the lines with a `PID` (Process ID) represent the main proc
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux processes and their management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
+1. **View top processes**: Try this command
+   ```bash
+   top -b -n 1 | head -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-This lab will help you apply the concepts of process management in real scenarios and build confidence with monitoring system activity.
+2. **Check memory usage**: Try this command
+   ```bash
+   free -h
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View CPU info**: Try this command
+   ```bash
+   cat /proc/cpuinfo | grep 'model name' | head -1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check load average**: Try this command
+   ```bash
+   uptime
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

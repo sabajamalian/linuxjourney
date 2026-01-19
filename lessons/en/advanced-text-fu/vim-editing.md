@@ -55,9 +55,35 @@ Combining operators with different motions unlocks the full potential of this Li
 
 ## Exercise
 
-To put your knowledge into practice, we recommend the following hands-on lab. It will help you master the fundamental editing commands discussed in this Vim tutorial.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating files, editing text, saving files, and navigating with both vi/vim and nano. This lab will help you apply concepts like deleting, changing, yanking, and putting text in real scenarios.
+1. **Practice the concepts using a text editor of your choice**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+2. **Create a test file**: Try this command
+   ```bash
+   touch practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Edit the file following the lesson instructions**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+4. **Save and verify changes**: Try this command
+   ```bash
+   cat practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

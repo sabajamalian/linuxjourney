@@ -25,11 +25,43 @@ While these two files are powerful tools for **system monitoring**, remember tha
 
 ## Exercise
 
-Practice is key to mastering **log analysis**. The following exercises will help you get comfortable with viewing and analyzing **Linux logs** using common command-line tools, an essential skill for **system monitoring**.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux tail Command: File End Display](https://labex.io/labs/linux-linux-tail-command-file-end-display-214303)** - Learn the Linux `tail` command for viewing and monitoring the end of text files, essential for log analysis.
-2. **[Linux head Command: File Beginning Display](https://labex.io/labs/linux-linux-head-command-file-beginning-display-214302)** - Explore the `head` command to display the initial lines of text files, useful for quickly checking log headers.
-3. **[Rapid Threat Detection](https://labex.io/labs/linux-rapid-threat-detection-387930)** - Practice essential Linux command-line skills for cybersecurity analysis, using `tail` and `head` to quickly extract and analyze recent log entries.
+1. **View system logs**: Try this command
+   ```bash
+   journalctl -n 20` or `tail -20 /var/log/syslog
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Check auth logs**: Try this command
+   ```bash
+   sudo tail -20 /var/log/auth.log` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View kernel logs**: Try this command
+   ```bash
+   dmesg | tail -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check log directory**: Try this command
+   ```bash
+   ls -lh /var/log/ | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

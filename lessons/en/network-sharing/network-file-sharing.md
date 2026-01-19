@@ -49,11 +49,43 @@ Mastering `scp` is an essential step, and exploring such tools is why many consi
 
 ## Exercise
 
-Practice is key to mastering new commands. To reinforce your understanding of secure network file transfer, we recommend this hands-on lab:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Secure Remote Access in Linux with SSH](https://labex.io/labs/comptia-secure-remote-access-in-linux-with-ssh-592816)** - Practice key-based authentication, securely transferring files with `scp`, and creating SSH tunnels for port forwarding.
+1. **Check SSH availability**: Try this command
+   ```bash
+   which ssh
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-This lab will help you apply the concepts of secure remote access and file transfer in a real-world scenario and build confidence with `scp`.
+2. **Test local connection**: Try this command
+   ```bash
+   ss -tuln | grep :22
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View network shares**: Try this command
+   ```bash
+   mount | grep nfs` or similar
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check rsync**: Try this command
+   ```bash
+   which rsync` and `rsync --version
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

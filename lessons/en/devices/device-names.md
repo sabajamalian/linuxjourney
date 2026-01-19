@@ -46,12 +46,43 @@ On older systems, you might encounter hard drives that use the Parallel ATA (PAT
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux device names and storage management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Linux Partitions and Filesystems](https://labex.io/labs/comptia-manage-linux-partitions-and-filesystems-590845)** - Practice creating, formatting, and mounting partitions, which directly involves working with device names.
-2. **[Explore Hardware Devices in Linux](https://labex.io/labs/comptia-explore-hardware-devices-in-linux-590861)** - Learn to identify and inspect various hardware devices and their associated names within a Linux environment.
+1. **List block devices**: Try this command
+   ```bash
+   lsblk
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with managing storage and understanding hardware in Linux.
+2. **View device information**: Try this command
+   ```bash
+   ls -l /dev/
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check device types**: Try this command
+   ```bash
+   file /dev/sda` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View USB devices**: Try this command
+   ```bash
+   lsusb
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

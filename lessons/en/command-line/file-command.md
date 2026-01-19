@@ -21,13 +21,41 @@ file banana.jpg
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of inspecting file content and properties:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux ls Command: Content Listing](https://labex.io/labs/linux-linux-ls-command-content-listing-219205)** - Learn the Linux `ls` command to efficiently list and analyze file and directory contents, which often precedes or follows using the `file` command to understand what's in your directories.
-2. **[Linux cat Command: File Concatenating](https://labex.io/labs/linux-linux-cat-command-file-concatenating-210986)** - Practice viewing and manipulating text files, a common task after identifying a file's type.
-3. **[Linux more Command: File Scrolling](https://labex.io/labs/linux-linux-more-command-file-scrolling-214299)** - Enhance your command-line skills for navigating and exploring large text files, building on the ability to identify file types and then inspect their content.
+1. **Check the type of a text file**: Identify what kind of file .bashrc is
+   ```bash
+   file ~/.bashrc
+   ```
+   Expected output:
+   ```
+   /home/user/.bashrc: ASCII text
+   ```
 
-These labs will help you apply the concepts of file inspection and content viewing in real scenarios and build confidence with managing files in Linux.
+2. **Check a binary file**: See the type of a system binary
+   ```bash
+   file /bin/ls
+   ```
+   Expected output:
+   ```
+   /bin/ls: ELF 64-bit LSB executable
+   ```
+
+3. **Check a directory**: Use file on a directory
+   ```bash
+   file /etc
+   ```
+   Expected output:
+   ```
+   /etc: directory
+   ```
+
+4. **Create and check different file types**: Make files and check them
+   ```bash
+   echo "Hello World" > test.txt
+   file test.txt
+   rm test.txt
+   ```
 
 ## Quiz Question
 

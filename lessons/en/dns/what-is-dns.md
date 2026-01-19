@@ -4,7 +4,7 @@ lang: "en"
 title: "What is DNS?"
 meta_title: "What is DNS? - DNS"
 meta_description: "If you want to learn Linux networking, understanding DNS is crucial. This guide explains what the Domain Name System (DNS) is, how it translates domain names to IP addresses, and why it's the internet's essential address book. A perfect starting point for anyone looking to learn Linux."
-meta_keywords: "DNS, Domain Name System, IP address, learn linux, linux learn, hostname, Linux networking, beginner, tutorial, guide, labex linux"
+meta_keywords: "DNS, Domain Name System, IP address, learn linux, linux learn, hostname, Linux networking, beginner, tutorial, guide"
 ---
 
 ## Lesson Content
@@ -27,13 +27,43 @@ If you want to **learn Linux** for system administration or web development, und
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of DNS and hostname resolution. Using a **labex linux terminal** for these exercises is a great way to get practical experience.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Query DNS Records in Linux with dig and nslookup](https://labex.io/labs/comptia-query-dns-records-in-linux-with-dig-and-nslookup-592796)** - Learn to use essential Linux tools like `dig` and `nslookup` to query various DNS record types, helping you understand how hostnames are resolved to IP addresses.
-2. **[Manage Local Hostname Resolution in Linux](https://labex.io/labs/comptia-manage-local-hostname-resolution-in-linux-592792)** - Practice editing the `/etc/hosts` file to manage local hostname resolution, a fundamental skill for controlling how your Linux system resolves names without relying on external DNS servers.
-3. **[Set Up a Local Authoritative DNS Server on Linux](https://labex.io/labs/comptia-set-up-a-local-authoritative-dns-server-on-linux-592803)** - Gain hands-on experience by setting up and configuring your own local authoritative DNS server using `bind9`, allowing you to delve deeper into how DNS zones and records are managed.
+1. **View DNS configuration**: Try this command
+   ```bash
+   cat /etc/resolv.conf
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with DNS and hostname resolution in a Linux environment.
+2. **Test DNS lookup**: Try this command
+   ```bash
+   nslookup google.com` or `host google.com
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check hosts file**: Try this command
+   ```bash
+   cat /etc/hosts
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Query DNS**: Try this command
+   ```bash
+   dig google.com` (if available) or use nslookup
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

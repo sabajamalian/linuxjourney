@@ -32,13 +32,43 @@ When a packet is destined for a device outside the local network, the process in
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of basic Linux file and directory management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Basic File Operations in Linux](https://labex.io/labs/linux-basic-file-operations-in-linux-18001)** - Practice navigating the file system, managing files and directories, and using command-line shortcuts in a real Linux environment.
-2. **[File and Directory Operations](https://labex.io/labs/linux-file-and-directory-operations-17997)** - Learn to navigate the directory structure, manage files and folders, and use powerful command-line tools like `ls`, `cd`, `mkdir`, `cp`, `mv`, and `rm`.
-3. **[Organizing Files and Directories](https://labex.io/labs/linux-organizing-files-and-directories-387877)** - Practice essential Linux file management skills by using `cp`, `mv`, and `rm` commands to organize a project structure, move files, and clean up unnecessary directories.
+1. **View routing table**: Try this command
+   ```bash
+   ip route show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux file system interactions.
+2. **Check default gateway**: Try this command
+   ```bash
+   ip route | grep default
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Trace route to server**: Try this command
+   ```bash
+   traceroute 8.8.8.8` (if available) or use `tracepath
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View network interfaces**: Try this command
+   ```bash
+   ip link show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

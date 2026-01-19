@@ -33,13 +33,39 @@ _Linus Torvalds in 2018 (Source: [Wikipedia](https://en.wikipedia.org/wiki/Linus
 
 ## Exercise
 
-The best way to learn is by doing. To start your **Linux journey**, try these hands-on labs to practice fundamental commands and build your confidence in the command-line environment.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Getting Started with Linux](https://labex.io/labs/linux-getting-started-with-linux-446315)** - Begin your Linux journey by learning essential terminal commands like `echo`, `date`, and basic calculations. Perfect for complete beginners.
-2. **[Your First Linux Lab](https://labex.io/labs/linux-your-first-linux-lab-270253)** - This introductory lab guides you through the classic "Hello, World!" program in Linux and teaches you some fundamental commands.
-3. **[Create Personalized Terminal Greeting](https://labex.io/labs/linux-create-personalized-terminal-greeting-446322)** - A quick and fun challenge to use basic Linux terminal commands to create an engaging welcome message.
+1. **Check your distribution**: Try this command
+   ```bash
+   cat /etc/os-release
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply foundational concepts in a real Linux environment.
+2. **View system information**: Try this command
+   ```bash
+   uname -a
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check package manager**: Try this command
+   ```bash
+   which apt yum dnf pacman
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View installed packages: Use appropriate list command for your system**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
 
 ## Quiz Question
 

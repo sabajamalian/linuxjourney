@@ -51,13 +51,54 @@ This command changes the delimiter from a TAB to a semicolon (`;`). Since we are
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of text processing with `cut` and other related commands:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux cut Command: Text Cutting](https://labex.io/labs/linux-linux-cut-command-text-cutting-219187)** - This lab provides a direct, hands-on introduction to the `cut` command, allowing you to practice extracting specific columns or fields from text files, just as discussed in the lesson.
-2. **[Simple Text Processing](https://labex.io/labs/linux-simple-text-processing-18004)** - Expand your text manipulation skills by using powerful commands like `tr`, `col`, `join`, and `paste` to efficiently process and analyze text data.
-3. **[Sequence Control and Pipeline](https://labex.io/labs/linux-sequence-control-and-pipeline-17994)** - Enhance your command-line efficiency by learning to control command execution sequences, utilize pipelines, and leverage powerful text processing tools like `cut`, `grep`, `wc`, `sort`, and `uniq`.
+1. **Create a test file with delimited data**: Make a CSV-style file
+   ```bash
+   cat > data.txt << EOF
+   John,Doe,30,Engineer
+   Jane,Smith,25,Designer
+   Bob,Johnson,35,Manager
+   EOF
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with text processing in Linux.
+2. **Extract first column**: Use cut with delimiter
+   ```bash
+   cut -d',' -f1 data.txt
+   ```
+   Expected output:
+   ```
+   John
+   Jane
+   Bob
+   ```
+
+3. **Extract multiple columns**: Get first and last columns
+   ```bash
+   cut -d',' -f1,4 data.txt
+   ```
+   Expected output:
+   ```
+   John,Engineer
+   Jane,Designer
+   Bob,Manager
+   ```
+
+4. **Extract by character position**: Get first 5 characters of each line
+   ```bash
+   cut -c1-5 data.txt
+   ```
+   Expected output:
+   ```
+   John,
+   Jane,
+   Bob,J
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm data.txt
+   ```
 
 ## Quiz Question
 

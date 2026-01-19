@@ -39,13 +39,39 @@ Therefore, the actual number of usable hosts is 256 - 2 = 254. This means for th
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of IP addressing and subnetting:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Perform IP Subnetting and Binary Conversion in the Linux Terminal](https://labex.io/labs/comptia-perform-ip-subnetting-and-binary-conversion-in-the-linux-terminal-592782)** - Master IP subnetting and binary conversion, essential skills for network configuration and planning.
-2. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Deepen your understanding of various IP address types and how to verify network reachability using Linux commands.
-3. **[Simulate Network Layer Connectivity in Linux](https://labex.io/labs/comptia-simulate-network-layer-connectivity-in-linux-592752)** - Apply your knowledge by simulating network configurations and testing connectivity between different IP subnets in a practical environment.
+1. **View IP address**: Try this command
+   ```bash
+   ip addr show | grep inet
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of IP addressing, subnet masks, and host calculation in real-world scenarios and build confidence with network fundamentals.
+2. **Calculate subnet: Use `ipcalc 192.168.1.0/24` (if available)**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+3. **Check network mask**: Try this command
+   ```bash
+   ifconfig | grep netmask` or `ip addr
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View CIDR notation**: Try this command
+   ```bash
+   ip addr show | grep inet
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

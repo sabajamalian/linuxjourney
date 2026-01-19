@@ -37,11 +37,43 @@ It's important to note that the location for authentication logs can vary betwee
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of user authentication and account management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Practice enforcing password policies, locking/unlocking user accounts, securing the root account, and granting administrative permissions, all of which are critical for understanding authentication security.
+1. **View system logs**: Try this command
+   ```bash
+   journalctl -n 20` or `tail -20 /var/log/syslog
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux user and security management.
+2. **Check auth logs**: Try this command
+   ```bash
+   sudo tail -20 /var/log/auth.log` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View kernel logs**: Try this command
+   ```bash
+   dmesg | tail -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check log directory**: Try this command
+   ```bash
+   ls -lh /var/log/ | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

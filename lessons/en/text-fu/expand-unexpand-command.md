@@ -43,13 +43,47 @@ By default, `unexpand` only converts leading spaces on each line. The `-a` optio
 
 ## Exercise
 
-To master text manipulation and redirection in Linux, practice is key. The following hands-on labs will help reinforce your understanding:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Redirecting Input and Output in Linux](https://labex.io/labs/comptia-redirecting-input-and-output-in-linux-590840)** - Practice controlling data flow from commands by manipulating standard output (stdout), standard error (stderr), and standard input (stdin) using operators like `>` and `>>`.
-2. **[Simple Text Processing](https://labex.io/labs/linux-simple-text-processing-18004)** - Learn to use powerful commands like `tr`, `col`, `join`, and `paste` to manipulate and analyze text data efficiently, enhancing your command-line skills for data processing.
-3. **[Text Processing and Regular Expressions](https://labex.io/labs/linux-text-processing-and-regular-expressions-18003)** - Learn the powerful text processing tools `grep`, `sed`, and `awk`, and use regular expressions for efficient text manipulation and pattern matching in Linux.
+1. **Create a file with tabs**: Make a test file with tab characters
+   ```bash
+   echo -e "Col1	Col2	Col3" > tabbed.txt
+   cat tabbed.txt
+   ```
 
-Completing these labs will help you apply the concepts of text transformation and file manipulation in real-world scenarios, building your confidence with essential Linux command-line tools.
+2. **Convert tabs to spaces**: Use expand command
+   ```bash
+   expand tabbed.txt
+   ```
+   Expected output:
+   ```
+   Col1    Col2    Col3
+   (Tabs converted to spaces)
+   ```
+
+3. **Specify tab width**: Use -t flag to set tab width
+   ```bash
+   expand -t 4 tabbed.txt
+   ```
+   Expected output:
+   ```
+   Col1 Col2 Col3
+   (Tabs converted to 4 spaces)
+   ```
+
+4. **Convert spaces back to tabs**: Use unexpand command
+   ```bash
+   expand tabbed.txt | unexpand
+   ```
+   Expected output:
+   ```
+   (Spaces converted back to tabs)
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm tabbed.txt
+   ```
 
 ## Quiz Question
 

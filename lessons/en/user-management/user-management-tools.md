@@ -43,13 +43,63 @@ When run by an administrator, the system will prompt for a new password for the 
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of user and account management in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Linux User Accounts with useradd, usermod, and userdel](https://labex.io/labs/comptia-manage-linux-user-accounts-with-useradd-usermod-and-userdel-590837)** - Practice the complete lifecycle of user administration, from creating and securing new accounts to modifying and deleting them.
-2. **[Manage Linux Groups with groupadd, usermod, and groupdel](https://labex.io/labs/comptia-manage-linux-groups-with-groupadd-usermod-and-groupdel-590836)** - Gain hands-on experience with core command-line utilities for group administration, including adding, modifying, and deleting groups.
-3. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Learn essential techniques for managing user accounts and sudo privileges to enhance the security of a Linux system.
+1. **Create a new user (requires sudo)**: Add a test user
+   ```bash
+   sudo useradd -m testuser
+   grep testuser /etc/passwd
+   ```
+   Expected output:
+   ```
+   testuser:x:1001:1001::/home/testuser:/bin/sh
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux user and group management.
+2. **Set password for the new user**: Assign a password
+   ```bash
+   sudo passwd testuser
+   ```
+   Expected output:
+   ```
+   Enter new UNIX password:
+   Retype new UNIX password:
+   passwd: password updated successfully
+   ```
+
+3. **View user information**: Use finger or id command
+   ```bash
+   id testuser
+   ```
+   Expected output:
+   ```
+   uid=1001(testuser) gid=1001(testuser) groups=1001(testuser)
+   ```
+
+4. **Create a new group**: Add a test group
+   ```bash
+   sudo groupadd testgroup
+   grep testgroup /etc/group
+   ```
+   Expected output:
+   ```
+   testgroup:x:1002:
+   ```
+
+5. **Add user to group**: Modify group membership
+   ```bash
+   sudo usermod -aG testgroup testuser
+   id testuser
+   ```
+   Expected output:
+   ```
+   uid=1001(testuser) gid=1001(testuser) groups=1001(testuser),1002(testgroup)
+   ```
+
+6. **Clean up**: Remove test user and group
+   ```bash
+   sudo userdel -r testuser
+   sudo groupdel testgroup
+   ```
 
 ## Quiz Question
 

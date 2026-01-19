@@ -57,13 +57,54 @@ Mastering these commands will significantly improve your efficiency on the comma
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of input/output redirection and pipelines:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Redirecting Input and Output in Linux](https://labex.io/labs/comptia-redirecting-input-and-output-in-linux-590840)** - Practice controlling data flow from commands by manipulating standard output (stdout), standard error (stderr), and standard input (stdin) using operators like `>`, `>>`, `2>`, and the `tee` command.
-2. **[Sequence Control and Pipeline](https://labex.io/labs/linux-sequence-control-and-pipeline-17994)** - Learn to control command execution sequences, utilize pipelines, and leverage powerful text processing tools like `cut`, `grep`, `wc`, `sort`, and `uniq`.
-3. **[Data Stream Redirection](https://labex.io/labs/linux-data-stream-redirection-17995)** - Learn the art of Linux stream redirection, including manipulating standard input, output, and error streams, combining outputs, and utilizing `/dev/null`.
+1. **Use pipe to chain commands**: List files and count them
+   ```bash
+   ls /etc | wc -l
+   ```
+   Expected output:
+   ```
+   (Number of files in /etc directory)
+   ```
 
-These labs will help you apply the concepts of piping and redirection in real scenarios and build confidence with command-line data manipulation.
+2. **Use tee to view and save output**: See output and save to file
+   ```bash
+   ls /etc | tee filelist.txt | head -10
+   ```
+   Expected output:
+   ```
+   (First 10 files displayed and all saved to filelist.txt)
+   ```
+
+3. **Chain multiple pipes**: Filter and sort results
+   ```bash
+   ls -l /etc | grep ".conf" | wc -l
+   ```
+   Expected output:
+   ```
+   (Number of .conf files in /etc)
+   ```
+
+4. **Use tee to append**: Append to file instead of overwriting
+   ```bash
+   echo "New entry" | tee -a filelist.txt
+   cat filelist.txt | tail -5
+   ```
+
+5. **Complex pipe chain**: Combine multiple text processing tools
+   ```bash
+   cat /etc/passwd | cut -d: -f1 | sort | head -10
+   ```
+   Expected output:
+   ```
+   (First 10 usernames sorted alphabetically)
+   ```
+
+6. **Clean up**: Remove test file
+   ```bash
+   rm filelist.txt
+   ```
 
 ## Quiz Question
 

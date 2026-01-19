@@ -51,12 +51,67 @@ dog
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of the `sort` command and text processing:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux sort Command: Text Sorting](https://labex.io/labs/linux-linux-sort-command-text-sorting-219196)** - This lab provides a direct introduction to the `sort` command, allowing you to practice sorting lines of text files in various ways, including ascending and descending order.
-2. **[Word Count and Sorting](https://labex.io/labs/linux-word-count-and-sorting-388125)** - In this challenge, you'll apply your knowledge of sorting along with word counting to analyze text data, helping you find frequent patterns and sort data efficiently.
+1. **Create a test file with unsorted data**: Make a file to practice sorting
+   ```bash
+   cat > animals.txt << EOF
+   dog
+   cow
+   cat
+   elephant
+   bird
+   EOF
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with text manipulation and sorting in Linux.
+2. **Sort the file alphabetically**: Use basic sort
+   ```bash
+   sort animals.txt
+   ```
+   Expected output:
+   ```
+   bird
+   cat
+   cow
+   dog
+   elephant
+   ```
+
+3. **Sort in reverse order**: Use the -r flag
+   ```bash
+   sort -r animals.txt
+   ```
+   Expected output:
+   ```
+   elephant
+   dog
+   cow
+   cat
+   bird
+   ```
+
+4. **Sort numbers**: Create a file with numbers and sort numerically
+   ```bash
+   echo -e "10
+2
+30
+1
+20" > numbers.txt
+   sort -n numbers.txt
+   ```
+   Expected output:
+   ```
+   1
+   2
+   10
+   20
+   30
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm animals.txt numbers.txt
+   ```
 
 ## Quiz Question
 

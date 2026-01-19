@@ -38,9 +38,48 @@ In short, an orphan is alive but parentless, while a zombie is dead but not yet 
 
 ## Exercise
 
-To apply these concepts, try the following hands-on lab:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, adjusting priority with `renice`, and terminating them with `kill`. This lab provides practical experience with the process lifecycle, including how to terminate them and observe their states.
+1. **Start a process to terminate**: Create a test process
+   ```bash
+   sleep 300 &
+   echo "Process PID: $!"
+   ```
+   Expected output:
+   ```
+   [1] 5678
+   Process PID: 5678
+   ```
+
+2. **List the background job**: View running jobs
+   ```bash
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Running                 sleep 300 &
+   ```
+
+3. **Terminate gracefully**: Send SIGTERM signal
+   ```bash
+   kill %1
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Terminated              sleep 300
+   ```
+
+4. **Force termination**: Start another process and force kill
+   ```bash
+   sleep 300 &
+   kill -9 %1
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Killed                  sleep 300
+   ```
 
 ## Quiz Question
 

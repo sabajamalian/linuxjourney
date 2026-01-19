@@ -18,11 +18,35 @@ Now you may notice, the mouse is nowhere in use here. To navigate a text documen
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of text editor navigation and usage:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Edit Text Files in Linux with Vim and Nano](https://labex.io/labs/comptia-edit-text-files-in-linux-with-vim-and-nano-591076)** - Practice creating files, editing text, saving files, and navigating with both Vim and Nano in a real Linux environment.
+1. **Practice the concepts using a text editor of your choice**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
 
-This lab will help you apply the concepts in real scenarios and build confidence with text editing in Linux.
+2. **Create a test file**: Try this command
+   ```bash
+   touch practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Edit the file following the lesson instructions**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
+
+4. **Save and verify changes**: Try this command
+   ```bash
+   cat practice.txt
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

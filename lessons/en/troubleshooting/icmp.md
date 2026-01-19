@@ -4,7 +4,7 @@ lang: "en"
 title: "ICMP"
 meta_title: "ICMP - Troubleshooting"
 meta_description: "This linux tutorial helps you learn linux networking by explaining the ICMP protocol. Understand ICMP message types and codes for effective network troubleshooting."
-meta_keywords: "ICMP, ICMP protocol, network troubleshooting, ICMP types, Linux networking, learn linux, linux tutorial, labex linux, beginner, guide"
+meta_keywords: "ICMP, ICMP protocol, network troubleshooting, ICMP types, Linux networking, learn linux, linux tutorial, beginner, guide"
 ---
 
 ## Lesson Content
@@ -32,17 +32,47 @@ While there are many ICMP types, a few are particularly common in day-to-day net
   - Code 1: Host Unreachable
 - **Type 11 - Time Exceeded**: This message is generated when a packet's Time-To-Live (TTL) value reaches zero before it arrives at its destination. This often happens in routing loops and is used by the `traceroute` command to map network paths.
 
-These messages will become more familiar as we explore common network troubleshooting tools available in the `labex linux terminal`.
+These messages will become more familiar as we explore common network troubleshooting tools available in your Ubuntu Linux terminal.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of ICMP and network troubleshooting:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Use `ping` to explore how the network and data link layers interact, directly applying concepts related to ICMP's function in testing connectivity.
-2. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Practice using `ping` to test network reachability and diagnose connectivity issues, reinforcing the practical application of ICMP messages.
-3. **[Simulate Network Layer Connectivity in Linux](https://labex.io/labs/comptia-simulate-network-layer-connectivity-in-linux-592752)** - Learn to assign IP addresses and test connectivity with `ping` in a simulated environment, helping you understand how network configurations affect packet delivery.
+1. **Test connectivity**: Try this command
+   ```bash
+   ping -c 4 8.8.8.8
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of ICMP and network diagnostics in real scenarios and build confidence with troubleshooting network issues.
+2. **Check network status**: Try this command
+   ```bash
+   ip link show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View open connections**: Try this command
+   ```bash
+   ss -tuln | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Test DNS resolution**: Try this command
+   ```bash
+   nslookup google.com` or `host google.com
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

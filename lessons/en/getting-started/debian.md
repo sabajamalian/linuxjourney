@@ -33,13 +33,39 @@ The **Debian** Stable branch is renowned for its rock-solid stability. While it 
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux file and directory management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Basic Files Operations](https://labex.io/labs/linux-basic-files-operations-270248)** - Practice listing files, changing directories, and moving/copying/deleting files and directories in a real Linux environment.
-2. **[Files and Directories](https://labex.io/labs/linux-files-and-directories-270246)** - Learn to navigate the file system, copy, move, and delete files and directories using basic Linux commands.
-3. **[Basic File Operations in Linux](https://labex.io/labs/linux-basic-file-operations-in-linux-18001)** - Learn essential Linux commands and concepts to navigate the file system, manage files and directories, and use wildcards.
+1. **Check your distribution**: Try this command
+   ```bash
+   cat /etc/os-release
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with Linux file system operations.
+2. **View system information**: Try this command
+   ```bash
+   uname -a
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check package manager**: Try this command
+   ```bash
+   which apt yum dnf pacman
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View installed packages: Use appropriate list command for your system**
+   ```bash
+   # Follow the instructions from the lesson
+   ```
 
 ## Quiz Question
 

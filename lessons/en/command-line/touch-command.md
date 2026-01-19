@@ -68,12 +68,34 @@ Mastering `touch` is a great step in learning to manage your file system efficie
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of creating and managing file system objects:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux mkdir Command: Directory Creating](https://labex.io/labs/linux-linux-mkdir-command-directory-creating-209739)** - Learn how to use the `mkdir` command in Linux to create directories, set permissions, and organize your file system. This will help you understand the broader concept of creating new items in the file system.
-2. **[Setting Up a New Project Structure](https://labex.io/labs/linux-setting-up-a-new-project-structure-387859)** - Practice your Linux directory management skills by creating a specific project structure and navigating through it using essential commands like `mkdir` and `cd`.
+1. **Create a new empty file**: Use touch to create a test file
+   ```bash
+   touch myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
 
-These labs will help you apply the concepts of file system creation and organization in real scenarios and build confidence with Linux commands.
+2. **Create multiple files at once**: Make several files in one command
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   ls -l file*.txt
+   ```
+
+3. **Update file timestamp**: Touch an existing file to update modification time
+   ```bash
+   touch myfile.txt
+   ls -l myfile.txt
+   ```
+
+4. **Clean up test files**: Remove the created files
+   ```bash
+   rm myfile.txt file1.txt file2.txt file3.txt
+   ```
 
 ## Quiz Question
 

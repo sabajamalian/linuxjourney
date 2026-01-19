@@ -63,12 +63,43 @@ These are percentages of total CPU time.
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of system and memory monitoring:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux free Command: Monitoring System Memory](https://labex.io/labs/linux-linux-free-command-monitoring-system-memory-388496)** - Learn to monitor and analyze system memory usage, understanding various display formats and total memory consumption.
-2. **[Linux top Command: Real-time System Monitoring](https://labex.io/labs/linux-linux-top-command-real-time-system-monitoring-388500)** - Learn to monitor system performance in real-time, including processes, CPU, and memory usage, using various options for sorting and filtering.
+1. **View top processes**: Try this command
+   ```bash
+   top -b -n 1 | head -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of system resource monitoring in real scenarios and build confidence with analyzing Linux system performance.
+2. **Check memory usage**: Try this command
+   ```bash
+   free -h
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View CPU info**: Try this command
+   ```bash
+   cat /proc/cpuinfo | grep 'model name' | head -1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check load average**: Try this command
+   ```bash
+   uptime
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

@@ -35,7 +35,43 @@ You've successfully learned how to navigate, work with files, and now, how to ex
 
 ## Exercise
 
-While there are no specific labs for this topic, we recommend exploring the comprehensive [Linux Learning Path](https://labex.io/learn/linux) to practice related Linux skills and concepts.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check exit status of successful command**: Run a command and check status
+   ```bash
+   ls /home
+   echo $?
+   ```
+   Expected output:
+   ```
+   0
+   ```
+
+2. **Check exit status of failed command**: Run a failing command
+   ```bash
+   ls /nonexistent 2>/dev/null
+   echo $?
+   ```
+   Expected output:
+   ```
+   2
+   ```
+
+3. **Exit with custom status code**: Test exit codes
+   ```bash
+   bash -c 'exit 5'
+   echo $?
+   ```
+   Expected output:
+   ```
+   5
+   ```
+
+4. **Chain commands based on success**: Use && operator
+   ```bash
+   mkdir tempdir && cd tempdir && pwd
+   cd .. && rmdir tempdir
+   ```
 
 ## Quiz Question
 

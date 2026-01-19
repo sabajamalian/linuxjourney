@@ -33,7 +33,36 @@ echo Hello World
 
 ## Exercise
 
-We recommend exploring the comprehensive [![Shell Learning Path](https://labex.io/_ipx/f_webp&q_100&s_20x20/https://file.labex.io/path/FaVTnI4iqZP0.png)Shell Learning Path](https://labex.io/learn/shell) to practice related skills and concepts.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check your current shell**: See which shell you're using
+   ```bash
+   echo $SHELL
+   ```
+   Expected output:
+   ```
+   /bin/bash
+   ```
+
+2. **View available shells**: List all shells installed
+   ```bash
+   cat /etc/shells
+   ```
+
+3. **Check shell version**: See bash version
+   ```bash
+   bash --version | head -1
+   ```
+
+4. **Use shell expansion**: Try wildcard patterns
+   ```bash
+   echo /etc/*.conf | head -c 100
+   ```
+
+5. **View environment variables**: See shell variables
+   ```bash
+   env | head -10
+   ```
 
 ## Quiz Question
 

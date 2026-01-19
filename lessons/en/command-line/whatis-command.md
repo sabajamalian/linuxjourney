@@ -31,13 +31,31 @@ The description provided by the **linux whatis command** is sourced directly fro
 
 ## Exercise
 
-Practice makes perfect! While there isn't a specific lab for the `whatis` command, understanding how to find information about commands and files is crucial. Here are some hands-on labs to reinforce your understanding of locating commands and files in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux which Command: Command Locating](https://labex.io/labs/linux-linux-which-command-command-locating-215210)** - Practice using the `which` command to locate executable files and understand command priority in your system's PATH.
-2. **[Linux whereis Command: File and Command Finding](https://labex.io/labs/linux-linux-whereis-command-file-and-command-finding-215211)** - Learn to use `whereis` to find the binary, source, and manual pages for commands, deepening your understanding of how commands are structured.
-3. **[Discover Critical System Resources](https://labex.io/labs/linux-discover-critical-system-resources-388032)** - This challenge combines `which`, `whereis`, and `find` to help you efficiently navigate the file system and discover important system resources.
+1. **Get brief description of ls**: See one-line summary
+   ```bash
+   whatis ls
+   ```
+   Expected output:
+   ```
+   ls (1)               - list directory contents
+   ```
 
-These labs will help you apply the concepts of command and file discovery in real scenarios and build confidence with essential Linux utilities.
+2. **Look up multiple commands**: Check several commands
+   ```bash
+   whatis ls pwd mkdir
+   ```
+
+3. **Check a system file**: Get info about passwd
+   ```bash
+   whatis passwd
+   ```
+
+4. **Use with wildcards**: Find commands starting with "net"
+   ```bash
+   whatis net* | head -5
+   ```
 
 ## Quiz Question
 

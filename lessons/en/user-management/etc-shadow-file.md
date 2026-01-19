@@ -45,12 +45,46 @@ While the `/etc/shadow` file is fundamental, most modern distributions supplemen
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of user authentication and password management in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage Linux User Accounts with useradd, usermod, and userdel](https://labex.io/labs/comptia-manage-linux-user-accounts-with-useradd-usermod-and-userdel-590837)** - Practice the complete lifecycle of user administration, from creating and securing new accounts with `useradd` and `passwd` to modifying and deleting them.
-2. **[Configure User Accounts and Sudo Privileges in Linux](https://labex.io/labs/comptia-configure-user-accounts-and-sudo-privileges-in-linux-590856)** - Learn essential techniques for managing user accounts and sudo privileges, including enforcing password policies and securing accounts.
+1. **View the shadow file (requires sudo)**: Display encrypted passwords
+   ```bash
+   sudo cat /etc/shadow | head -5
+   ```
+   Expected output:
+   ```
+   root:*:18000:0:99999:7:::
+   daemon:*:18000:0:99999:7:::
+   (encrypted password hashes)
+   ```
 
-These labs will help you apply the concepts of user and password management in real scenarios and build confidence with Linux system administration.
+2. **Check your own shadow entry**: Find your user's password info
+   ```bash
+   sudo grep "$USER" /etc/shadow
+   ```
+   Expected output:
+   ```
+   your-username:$6$randomhash...:18500:0:99999:7:::
+   ```
+
+3. **View shadow file permissions**: See why sudo is needed
+   ```bash
+   ls -l /etc/shadow
+   ```
+   Expected output:
+   ```
+   -rw-r----- 1 root shadow 1234 Jan 15 10:30 /etc/shadow
+   (Only root and shadow group can read)
+   ```
+
+4. **Count password entries**: Count lines in shadow file
+   ```bash
+   sudo wc -l /etc/shadow
+   ```
+   Expected output:
+   ```
+   45 /etc/shadow
+   ```
 
 ## Quiz Question
 

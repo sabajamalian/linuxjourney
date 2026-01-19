@@ -35,13 +35,43 @@ To understand how data moves, it's helpful to know these related terms:
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of network connectivity and routing:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Explore IP Address Types and Reachability in Linux](https://labex.io/labs/comptia-explore-ip-address-types-and-reachability-in-linux-592780)** - Practice testing the local TCP/IP stack, identifying private and public IPs, and verifying network reachability, which are key to understanding how a router facilitates communication.
-2. **[Explore Network Layer Interaction with ping and arp in Linux](https://labex.io/labs/comptia-explore-network-layer-interaction-with-ping-and-arp-in-linux-592746)** - Learn how `ping` and `arp` commands help you observe how the network and data link layers interact, and how the default gateway (router) handles remote traffic.
-3. **[Simulate Network Layer Connectivity in Linux](https://labex.io/labs/comptia-simulate-network-layer-connectivity-in-linux-592752)** - Use Docker to simulate network nodes and assign IP addresses, then test connectivity to understand how IP subnets and routing govern network communication.
+1. **View routing table**: Try this command
+   ```bash
+   ip route show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of network communication, IP addressing, and the role of routing in real scenarios, building confidence with network fundamentals.
+2. **Check default gateway**: Try this command
+   ```bash
+   ip route | grep default
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Trace route to server**: Try this command
+   ```bash
+   traceroute 8.8.8.8` (if available) or use `tracepath
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View network interfaces**: Try this command
+   ```bash
+   ip link show
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

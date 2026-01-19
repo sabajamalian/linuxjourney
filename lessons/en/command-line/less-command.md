@@ -49,13 +49,34 @@ Mastering the `less command` is a fundamental skill for anyone working on the Li
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of viewing and navigating text files in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux less Command: File Paging](https://labex.io/labs/linux-linux-less-command-file-paging-214301)** - Learn the Linux 'less' command for efficient text file viewing and navigation, including search, line numbers, and pattern matching.
-2. **[Linux more Command: File Scrolling](https://labex.io/labs/linux-linux-more-command-file-scrolling-214299)** - Learn the Linux 'more' command for efficient text file viewing, covering basic usage, starting from specific lines, and customizing display.
-3. **[Viewing Log and Configuration Files in Linux](https://labex.io/labs/linux-viewing-log-and-configuration-files-in-linux-387914)** - Learn essential Linux command-line skills for efficiently viewing and navigating text files, including system logs and configuration files, using commands like `cat`, `more`, and `less`.
+1. **Open a file with less**: View a system file
+   ```bash
+   less /etc/services
+   ```
+   Expected output:
+   ```
+   (Opens file in pager - press 'q' to quit)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with text file manipulation and navigation.
+2. **Navigate through the file**: Practice movement commands
+   - Press **Space** to move down one page
+   - Press **b** to move back one page
+   - Press **g** to go to the beginning
+   - Press **G** to go to the end
+   - Press **q** to quit
+
+3. **Search within less**: Open a file and search
+   ```bash
+   less /etc/services
+   ```
+   Then type **/http** and press Enter to search for "http"
+
+4. **View command output with less**: Pipe a long listing into less
+   ```bash
+   ls -lR /etc | less
+   ```
 
 ## Quiz Question
 

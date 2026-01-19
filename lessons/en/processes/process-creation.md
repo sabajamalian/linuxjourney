@@ -33,11 +33,53 @@ If every process is a child of another, there must be an original ancestor. This
 
 ## Exercise
 
-Practice makes perfect! Here is a hands-on lab to reinforce your understanding of Linux processes and their management:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-- **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - In this lab, you will learn essential skills for managing and monitoring processes on a Linux system. You will explore how to interact with foreground and background processes, inspect them with `ps`, monitor resources with `top`, adjust priority with `renice`, and terminate them with `kill`.
+1. **View process parent-child relationship**: Check your shell and its parent
+   ```bash
+   ps -ef | grep $$
+   ```
+   Expected output:
+   ```
+   user      1234  1233  0 10:30 pts/0    00:00:00 bash
+   (Shows your bash process and its parent PID)
+   ```
 
-This lab will help you apply the concepts of process IDs, parent process IDs, and process monitoring in a real scenario and build confidence with process management.
+2. **Start a background process**: Create a child process
+   ```bash
+   sleep 100 &
+   ps -ef | grep sleep
+   ```
+   Expected output:
+   ```
+   user      5678  1234  0 10:35 pts/0    00:00:00 sleep 100
+   (Child process of your shell)
+   ```
+
+3. **View process tree**: See fork relationships
+   ```bash
+   pstree -p $$ | head -5
+   ```
+   Expected output:
+   ```
+   bash(1234)─┬─pstree(5679)
+              └─sleep(5678)
+   ```
+
+4. **Check parent process ID**: View PPID
+   ```bash
+   ps -o pid,ppid,cmd -p $$
+   ```
+   Expected output:
+   ```
+     PID  PPID CMD
+    1234  1233 bash
+   ```
+
+5. **Clean up**: Kill the background process
+   ```bash
+   killall sleep
+   ```
 
 ## Quiz Question
 

@@ -47,11 +47,55 @@ Understanding the sticky bit is essential for managing multi-user environments a
 
 ## Exercise
 
-To solidify your understanding of file permissions, including special permissions like the sticky bit, try these hands-on labs. They will help you see how these concepts apply in real-world scenarios.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Linux User Group and File Permissions](https://labex.io/labs/linux-linux-user-group-and-file-permissions-18002)** - Practice creating users and groups, and manipulating file ownership and permissions. This lab provides a foundation for understanding how special permissions function.
-2. **[Delete and Move Files](https://labex.io/labs/linux-delete-and-move-files-7777)** - Learn how to delete and move files, and see how permissions, including the sticky bit on a directory, can restrict these actions.
-3. **[Find a File](https://labex.io/labs/linux-find-a-file-17993)** - Practice locating files and setting access controls, reinforcing the importance of file permissions in managing file access and modification.
+1. **Check /tmp directory sticky bit**: View the sticky bit on /tmp
+   ```bash
+   ls -ld /tmp
+   ```
+   Expected output:
+   ```
+   drwxrwxrwt 15 root root 4096 Jan 19 10:30 /tmp
+   (Note the 't' at the end - sticky bit)
+   ```
+
+2. **Create a directory and set sticky bit**: Make a test directory
+   ```bash
+   mkdir testshared
+   chmod +t testshared
+   ls -ld testshared
+   ```
+   Expected output:
+   ```
+   drwxrwxr-t 2 user user 4096 Jan 19 10:30 testshared
+   ```
+
+3. **Set sticky bit with octal notation**: Use numeric mode
+   ```bash
+   chmod 1777 testshared
+   ls -ld testshared
+   ```
+   Expected output:
+   ```
+   drwxrwxrwt 2 user user 4096 Jan 19 10:30 testshared
+   (1 prefix indicates sticky bit)
+   ```
+
+4. **Test sticky bit behavior**: Create a file in the directory
+   ```bash
+   touch testshared/myfile.txt
+   ls -l testshared/
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 myfile.txt
+   (Only owner can delete this file, even though dir is world-writable)
+   ```
+
+5. **Clean up**: Remove test directory
+   ```bash
+   rm -r testshared
+   ```
 
 ## Quiz Question
 

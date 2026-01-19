@@ -27,12 +27,43 @@ This isn't a complete list, but it should give you an idea of where to look if y
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of DNS in Linux:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Query DNS Records in Linux with dig and nslookup](https://labex.io/labs/comptia-query-dns-records-in-linux-with-dig-and-nslookup-592796)** - Learn to use essential command-line tools like `dig` and `nslookup` to query various DNS record types and troubleshoot DNS resolution issues.
-2. **[Set Up a Local Authoritative DNS Server on Linux](https://labex.io/labs/comptia-set-up-a-local-authoritative-dns-server-on-linux-592803)** - Gain practical experience by installing and configuring `bind9` to set up your own local authoritative DNS server, defining zones, and testing resolution.
+1. **View DNS configuration**: Try this command
+   ```bash
+   cat /etc/resolv.conf
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts in real scenarios and build confidence with DNS management in Linux.
+2. **Test DNS lookup**: Try this command
+   ```bash
+   nslookup google.com` or `host google.com
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check hosts file**: Try this command
+   ```bash
+   cat /etc/hosts
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Query DNS**: Try this command
+   ```bash
+   dig google.com` (if available) or use nslookup
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

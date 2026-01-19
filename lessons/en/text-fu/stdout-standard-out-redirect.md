@@ -49,11 +49,53 @@ This operator appends the output to the end of the specified file. If the file d
 
 ## Exercise
 
-To solidify your understanding of I/O redirection, try this hands-on lab:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Redirecting Input and Output in Linux](https://labex.io/labs/comptia-redirecting-input-and-output-in-linux-590840)** - Practice controlling data flow from commands by manipulating standard output (stdout), standard error (stderr), and standard input (stdin) using operators like `>`, `>>`, `2>`, and the `tee` command.
+1. **Redirect output to a file**: Save command output to a file
+   ```bash
+   echo "Hello World" > output.txt
+   cat output.txt
+   ```
+   Expected output:
+   ```
+   Hello World
+   ```
 
-This lab will help you apply these concepts in real-world scenarios and build confidence with I/O redirection.
+2. **Append to a file**: Add more content without overwriting
+   ```bash
+   echo "Second line" >> output.txt
+   cat output.txt
+   ```
+   Expected output:
+   ```
+   Hello World
+   Second line
+   ```
+
+3. **Redirect ls output**: Save directory listing to a file
+   ```bash
+   ls -la ~ > homelist.txt
+   head -5 homelist.txt
+   ```
+   Expected output:
+   ```
+   (First 5 lines of your home directory listing)
+   ```
+
+4. **Overwrite existing file**: Use > to replace file contents
+   ```bash
+   echo "New content" > output.txt
+   cat output.txt
+   ```
+   Expected output:
+   ```
+   New content
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm output.txt homelist.txt
+   ```
 
 ## Quiz Question
 

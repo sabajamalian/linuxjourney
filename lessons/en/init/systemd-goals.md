@@ -97,11 +97,43 @@ These commands are the building blocks for service management on modern Linux sy
 
 ## Exercise
 
-Practice is key to mastering new skills. This hands-on lab will help reinforce your understanding of managing processes, which are often controlled by systemd services:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Manage and Monitor Linux Processes](https://labex.io/labs/comptia-manage-and-monitor-linux-processes-590864)** - Practice interacting with foreground and background processes, inspecting them with `ps`, monitoring resources with `top`, adjusting priority with `renice`, and terminating them with `kill`. This lab will give you practical experience with the runtime effects of systemd unit management.
+1. **Check init system**: Try this command
+   ```bash
+   ps -p 1
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-This lab will help you apply these concepts in a real-world scenario and build confidence with process management in Linux.
+2. **List services**: Try this command
+   ```bash
+   systemctl list-units --type=service | head -15
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **Check service status**: Try this command
+   ```bash
+   systemctl status ssh` (if available)
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View runlevel**: Try this command
+   ```bash
+   runlevel` or `who -r
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

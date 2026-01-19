@@ -38,13 +38,43 @@ There are many different kernel versions. Some are used as LTS (Long Term Suppor
 
 ## Exercise
 
-Practice makes perfect! Here are some hands-on labs to reinforce your understanding of Linux kernel management and related system administration tasks:
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
 
-1. **[Customize the GRUB2 Boot Menu in Linux](https://labex.io/labs/comptia-customize-the-grub2-boot-menu-in-linux-590859)** - Practice modifying the GRUB2 boot menu, which is essential when managing multiple kernel versions and selecting which one to boot into.
-2. **[Manage Kernel Modules in Linux](https://labex.io/labs/comptia-manage-kernel-modules-in-linux-590865)** - Learn to list, inspect, load, and unload kernel modules, a fundamental aspect of kernel management and understanding how hardware interacts with your system.
-3. **[Software Installation on Linux](https://labex.io/labs/linux-software-installation-on-linux-18005)** - Gain practical experience with various methods to install and manage software, including using package managers, which is a common way to install and update kernels.
+1. **Check kernel version**: Try this command
+   ```bash
+   uname -r
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
-These labs will help you apply the concepts of kernel management, boot processes, and package management in real scenarios, building confidence with system administration.
+2. **View kernel parameters**: Try this command
+   ```bash
+   sysctl -a | head -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **List loaded modules**: Try this command
+   ```bash
+   lsmod | head -10
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **View kernel messages**: Try this command
+   ```bash
+   dmesg | tail -20
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 
