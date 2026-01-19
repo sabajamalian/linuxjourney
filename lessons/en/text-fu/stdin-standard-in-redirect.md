@@ -37,7 +37,55 @@ Ultimately, the content of `peanuts.txt` is copied to `banana.txt`. This example
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a test file**: Make a file to use as input
+   ```bash
+   cat > input.txt << EOF
+   Line 1
+   Line 2
+   Line 3
+   EOF
+   ```
+
+2. **Redirect file as input**: Use < to provide input to a command
+   ```bash
+   cat < input.txt
+   ```
+   Expected output:
+   ```
+   Line 1
+   Line 2
+   Line 3
+   ```
+
+3. **Use stdin with sort**: Sort contents of a file via stdin
+   ```bash
+   sort < input.txt
+   ```
+   Expected output:
+   ```
+   Line 1
+   Line 2
+   Line 3
+   ```
+
+4. **Combine input and output redirection**: Read from one file, write to another
+   ```bash
+   tr 'a-z' 'A-Z' < input.txt > output.txt
+   cat output.txt
+   ```
+   Expected output:
+   ```
+   LINE 1
+   LINE 2
+   LINE 3
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm input.txt output.txt
+   ```
 
 ## Quiz Question
 

@@ -39,7 +39,35 @@ This single command creates `books`, `hemmingway`, and `favorites` if they don't
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a single directory**: Make a new directory
+   ```bash
+   mkdir testdir
+   ls -ld testdir
+   ```
+
+2. **Create multiple directories at once**: Make several directories
+   ```bash
+   mkdir dir1 dir2 dir3
+   ls -d dir*
+   ```
+
+3. **Create nested directories**: Use -p flag to create parents
+   ```bash
+   mkdir -p parent/child/grandchild
+   ls -R parent/
+   ```
+
+4. **Create directory with verbose output**: See confirmation
+   ```bash
+   mkdir -v myproject
+   ```
+
+5. **Clean up**: Remove all test directories
+   ```bash
+   rm -r testdir dir1 dir2 dir3 parent myproject
+   ```
 
 ## Quiz Question
 

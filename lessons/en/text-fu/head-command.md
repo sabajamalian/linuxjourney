@@ -33,7 +33,58 @@ This makes `head` one of the most useful **Linux commands** for quickly inspecti
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View first 10 lines of a system file**: Use default head behavior
+   ```bash
+   head /etc/passwd
+   ```
+   Expected output:
+   ```
+   (First 10 lines of the passwd file)
+   ```
+
+2. **View first 5 lines**: Use the -n flag to specify line count
+   ```bash
+   head -n 5 /etc/passwd
+   ```
+   Expected output:
+   ```
+   (First 5 lines of the passwd file)
+   ```
+
+3. **Create a test file and view it**: Make a file with numbered lines
+   ```bash
+   seq 1 100 > numbers.txt
+   head numbers.txt
+   ```
+   Expected output:
+   ```
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+   ```
+
+4. **View first 15 lines**: Use head -n with a larger number
+   ```bash
+   head -n 15 numbers.txt
+   ```
+   Expected output:
+   ```
+   (Numbers 1 through 15)
+   ```
+
+5. **Clean up**: Remove the test file
+   ```bash
+   rm numbers.txt
+   ```
 
 ## Quiz Question
 

@@ -31,7 +31,31 @@ The description provided by the **linux whatis command** is sourced directly fro
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Get brief description of ls**: See one-line summary
+   ```bash
+   whatis ls
+   ```
+   Expected output:
+   ```
+   ls (1)               - list directory contents
+   ```
+
+2. **Look up multiple commands**: Check several commands
+   ```bash
+   whatis ls pwd mkdir
+   ```
+
+3. **Check a system file**: Get info about passwd
+   ```bash
+   whatis passwd
+   ```
+
+4. **Use with wildcards**: Find commands starting with "net"
+   ```bash
+   whatis net* | head -5
+   ```
 
 ## Quiz Question
 

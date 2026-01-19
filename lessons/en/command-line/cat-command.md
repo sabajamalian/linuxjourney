@@ -52,7 +52,40 @@ For a complete list of functionalities, you can always refer to the `cat manual 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View a simple file**: Display the contents of /etc/hostname
+   ```bash
+   cat /etc/hostname
+   ```
+   Expected output:
+   ```
+   ubuntu
+   ```
+
+2. **Create a file with cat**: Use cat to create and write content
+   ```bash
+   cat > mytext.txt
+   This is line 1
+   This is line 2
+   (Press Ctrl+D to save)
+   ```
+
+3. **View your created file**: Display what you just created
+   ```bash
+   cat mytext.txt
+   ```
+
+4. **Concatenate multiple files**: Create another file and combine them
+   ```bash
+   echo "File 2 content" > file2.txt
+   cat mytext.txt file2.txt
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm mytext.txt file2.txt
+   ```
 
 ## Quiz Question
 

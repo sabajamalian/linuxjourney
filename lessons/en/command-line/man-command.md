@@ -31,7 +31,37 @@ Man pages are particularly useful for understanding command options. For instanc
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Read the manual for ls**: Open the comprehensive manual page
+   ```bash
+   man ls
+   ```
+   Expected output:
+   ```
+   (Opens manual - press 'q' to quit)
+   ```
+
+2. **Search within a man page**: Look for specific information
+   ```bash
+   man ls
+   ```
+   Then type **/recursive** and press Enter
+
+3. **View manual for a configuration file**: Check passwd file docs
+   ```bash
+   man 5 passwd
+   ```
+
+4. **Search all manual pages**: Find commands related to "copy"
+   ```bash
+   man -k copy | head -10
+   ```
+
+5. **View man page sections**: Check available sections for passwd
+   ```bash
+   man -wa passwd
+   ```
 
 ## Quiz Question
 

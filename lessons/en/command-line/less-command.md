@@ -49,7 +49,34 @@ Mastering the `less command` is a fundamental skill for anyone working on the Li
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Open a file with less**: View a system file
+   ```bash
+   less /etc/services
+   ```
+   Expected output:
+   ```
+   (Opens file in pager - press 'q' to quit)
+   ```
+
+2. **Navigate through the file**: Practice movement commands
+   - Press **Space** to move down one page
+   - Press **b** to move back one page
+   - Press **g** to go to the beginning
+   - Press **G** to go to the end
+   - Press **q** to quit
+
+3. **Search within less**: Open a file and search
+   ```bash
+   less /etc/services
+   ```
+   Then type **/http** and press Enter to search for "http"
+
+4. **View command output with less**: Pipe a long listing into less
+   ```bash
+   ls -lR /etc | less
+   ```
 
 ## Quiz Question
 

@@ -71,7 +71,45 @@ ls -la
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **List files in your home directory**: See what files and folders you have
+   ```bash
+   ls
+   ```
+   Expected output:
+   ```
+   Desktop  Documents  Downloads  Music  Pictures  Videos
+   ```
+
+2. **Show hidden files**: View all files including those starting with a dot
+   ```bash
+   ls -a
+   ```
+   Expected output:
+   ```
+   .  ..  .bash_history  .bashrc  .profile  Desktop  Documents
+   ```
+
+3. **Get detailed file information**: Use the long format
+   ```bash
+   ls -l
+   ```
+   Expected output:
+   ```
+   drwxr-xr-x 2 user user 4096 Jan 15 10:30 Desktop
+   drwxr-xr-x 2 user user 4096 Jan 15 10:30 Documents
+   ```
+
+4. **Combine flags**: List all files in long format with reverse sorting
+   ```bash
+   ls -lar
+   ```
+
+5. **List a specific directory**: View contents of /etc
+   ```bash
+   ls /etc
+   ```
 
 ## Quiz Question
 

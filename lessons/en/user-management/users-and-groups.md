@@ -47,7 +47,57 @@ This time, you will be prompted for your password and, upon successful authentic
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View your current user information**: Check who you are logged in as
+   ```bash
+   whoami
+   ```
+   Expected output:
+   ```
+   your-username
+   ```
+
+2. **See your user and group IDs**: Display numeric IDs
+   ```bash
+   id
+   ```
+   Expected output:
+   ```
+   uid=1000(user) gid=1000(user) groups=1000(user),4(adm),27(sudo)
+   ```
+
+3. **List all users on the system**: View the passwd file
+   ```bash
+   cat /etc/passwd | head -10
+   ```
+   Expected output:
+   ```
+   root:x:0:0:root:/root:/bin/bash
+   daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+   (and more users)
+   ```
+
+4. **List all groups**: View the group file
+   ```bash
+   cat /etc/group | head -10
+   ```
+   Expected output:
+   ```
+   root:x:0:
+   daemon:x:1:
+   bin:x:2:
+   (and more groups)
+   ```
+
+5. **See which groups you belong to**: List your group memberships
+   ```bash
+   groups
+   ```
+   Expected output:
+   ```
+   user adm cdrom sudo dip plugdev lxd
+   ```
 
 ## Quiz Question
 

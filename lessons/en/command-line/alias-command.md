@@ -57,7 +57,37 @@ To remove a permanent alias, you must also delete its definition from your `~/.b
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a simple alias**: Make a shortcut
+   ```bash
+   alias ll='ls -la'
+   ll
+   ```
+
+2. **View all current aliases**: List defined aliases
+   ```bash
+   alias
+   ```
+
+3. **Create an alias with options**: Make a helpful shortcut
+   ```bash
+   alias gohome='cd ~ && pwd'
+   gohome
+   ```
+
+4. **Remove an alias**: Use unalias
+   ```bash
+   unalias ll
+   alias | grep ll
+   ```
+
+5. **Create a permanent alias**: Add to .bashrc
+   ```bash
+   echo "alias myls='ls -lh'" >> ~/.bashrc
+   tail -1 ~/.bashrc
+   ```
+   Note: Run `source ~/.bashrc` to apply immediately
 
 ## Quiz Question
 

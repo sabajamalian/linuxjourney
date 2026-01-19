@@ -41,7 +41,33 @@ A key feature of the `find command linux` users appreciate is its recursive natu
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Find files by name**: Search for files in your home directory
+   ```bash
+   find ~ -name "*.txt" 2>/dev/null | head -5
+   ```
+
+2. **Find files by type**: Look for all directories
+   ```bash
+   find /etc -type d 2>/dev/null | head -10
+   ```
+
+3. **Find recently modified files**: Search for files modified in last 7 days
+   ```bash
+   find ~ -type f -mtime -7 2>/dev/null | head -5
+   ```
+
+4. **Find empty files**: Create and find empty files
+   ```bash
+   touch empty1.txt empty2.txt
+   find . -name "empty*.txt" -type f -empty
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm empty1.txt empty2.txt
+   ```
 
 ## Quiz Question
 

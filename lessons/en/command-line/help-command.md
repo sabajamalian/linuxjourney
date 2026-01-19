@@ -35,7 +35,27 @@ While most developers adhere to this standard, it's not universal. However, tryi
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Get help for a built-in command**: Use help for cd
+   ```bash
+   help cd
+   ```
+
+2. **List all shell built-ins**: See what commands have help
+   ```bash
+   help | head -20
+   ```
+
+3. **Get help for another built-in**: Check help for alias
+   ```bash
+   help alias
+   ```
+
+4. **Get help for export**: Learn about the export command
+   ```bash
+   help export
+   ```
 
 ## Quiz Question
 

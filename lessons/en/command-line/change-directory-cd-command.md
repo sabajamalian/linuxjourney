@@ -63,7 +63,53 @@ Experiment with these shortcuts to become more efficient on the command line.
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Navigate to root directory**: Move to the top of the filesystem
+   ```bash
+   cd /
+   pwd
+   ```
+   Expected output:
+   ```
+   /
+   ```
+
+2. **Use absolute path**: Navigate to /usr/share using the full path
+   ```bash
+   cd /usr/share
+   pwd
+   ```
+   Expected output:
+   ```
+   /usr/share
+   ```
+
+3. **Use relative path**: Move up one directory level
+   ```bash
+   cd ..
+   pwd
+   ```
+   Expected output:
+   ```
+   /usr
+   ```
+
+4. **Return to home directory**: Use cd without arguments
+   ```bash
+   cd
+   pwd
+   ```
+   Expected output:
+   ```
+   /home/your-username
+   ```
+
+5. **Use cd with tilde**: Navigate to home using the ~ shortcut
+   ```bash
+   cd ~/Documents
+   pwd
+   ```
 
 ## Quiz Question
 

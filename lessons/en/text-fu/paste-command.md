@@ -37,7 +37,53 @@ Now everything should be on one line delimited by spaces.
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create two test files**: Make files to paste together
+   ```bash
+   echo -e "A
+B
+C" > file1.txt
+   echo -e "1
+2
+3" > file2.txt
+   ```
+
+2. **Paste files side by side**: Merge files horizontally
+   ```bash
+   paste file1.txt file2.txt
+   ```
+   Expected output:
+   ```
+   A       1
+   B       2
+   C       3
+   ```
+
+3. **Use custom delimiter**: Paste with comma delimiter
+   ```bash
+   paste -d',' file1.txt file2.txt
+   ```
+   Expected output:
+   ```
+   A,1
+   B,2
+   C,3
+   ```
+
+4. **Paste serially**: Use -s to paste one file per line
+   ```bash
+   paste -s file1.txt
+   ```
+   Expected output:
+   ```
+   A       B       C
+   ```
+
+5. **Clean up**: Remove test files
+   ```bash
+   rm file1.txt file2.txt
+   ```
 
 ## Quiz Question
 

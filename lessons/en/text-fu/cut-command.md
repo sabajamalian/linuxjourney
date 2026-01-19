@@ -51,7 +51,54 @@ This command changes the delimiter from a TAB to a semicolon (`;`). Since we are
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a test file with delimited data**: Make a CSV-style file
+   ```bash
+   cat > data.txt << EOF
+   John,Doe,30,Engineer
+   Jane,Smith,25,Designer
+   Bob,Johnson,35,Manager
+   EOF
+   ```
+
+2. **Extract first column**: Use cut with delimiter
+   ```bash
+   cut -d',' -f1 data.txt
+   ```
+   Expected output:
+   ```
+   John
+   Jane
+   Bob
+   ```
+
+3. **Extract multiple columns**: Get first and last columns
+   ```bash
+   cut -d',' -f1,4 data.txt
+   ```
+   Expected output:
+   ```
+   John,Engineer
+   Jane,Designer
+   Bob,Manager
+   ```
+
+4. **Extract by character position**: Get first 5 characters of each line
+   ```bash
+   cut -c1-5 data.txt
+   ```
+   Expected output:
+   ```
+   John,
+   Jane,
+   Bob,J
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm data.txt
+   ```
 
 ## Quiz Question
 

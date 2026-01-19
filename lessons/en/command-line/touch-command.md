@@ -68,7 +68,34 @@ Mastering `touch` is a great step in learning to manage your file system efficie
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a new empty file**: Use touch to create a test file
+   ```bash
+   touch myfile.txt
+   ls -l myfile.txt
+   ```
+   Expected output:
+   ```
+   -rw-rw-r-- 1 user user 0 Jan 19 10:30 myfile.txt
+   ```
+
+2. **Create multiple files at once**: Make several files in one command
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   ls -l file*.txt
+   ```
+
+3. **Update file timestamp**: Touch an existing file to update modification time
+   ```bash
+   touch myfile.txt
+   ls -l myfile.txt
+   ```
+
+4. **Clean up test files**: Remove the created files
+   ```bash
+   rm myfile.txt file1.txt file2.txt file3.txt
+   ```
 
 ## Quiz Question
 

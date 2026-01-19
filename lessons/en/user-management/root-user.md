@@ -33,7 +33,55 @@ To edit this file safely, you should always use the `visudo` command. This utili
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check if you are root**: Verify your current user
+   ```bash
+   whoami
+   ```
+   Expected output:
+   ```
+   your-username
+   (not root - which is correct for safety)
+   ```
+
+2. **Run a command as root**: Use sudo to execute with elevated privileges
+   ```bash
+   sudo whoami
+   ```
+   Expected output:
+   ```
+   root
+   ```
+
+3. **View a root-only file**: Try to access shadow file
+   ```bash
+   sudo cat /etc/shadow | head -3
+   ```
+   Expected output:
+   ```
+   root:*:18000:0:99999:7:::
+   (encrypted password entries)
+   ```
+
+4. **Check sudo privileges**: See what commands you can run as sudo
+   ```bash
+   sudo -l
+   ```
+   Expected output:
+   ```
+   User your-username may run the following commands:
+       (ALL : ALL) ALL
+   ```
+
+5. **View root's home directory**: List contents of /root
+   ```bash
+   sudo ls -la /root
+   ```
+   Expected output:
+   ```
+   drwx------  5 root root 4096 (root's home directory contents)
+   ```
 
 ## Quiz Question
 

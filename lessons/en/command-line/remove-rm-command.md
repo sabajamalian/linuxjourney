@@ -67,7 +67,39 @@ The `rmdir` command will only succeed if the directory is completely empty, maki
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create and remove a single file**: Make a test file and delete it
+   ```bash
+   touch testfile.txt
+   rm testfile.txt
+   ls testfile.txt 2>/dev/null || echo "File removed successfully"
+   ```
+
+2. **Remove multiple files**: Create several files and delete them
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   rm file1.txt file2.txt file3.txt
+   ```
+
+3. **Remove files with verbose output**: Use -v
+   ```bash
+   touch demo.txt
+   rm -v demo.txt
+   ```
+
+4. **Create and remove a directory**: Use -r flag
+   ```bash
+   mkdir testdir
+   touch testdir/file.txt
+   rm -r testdir
+   ```
+
+5. **Remove with interactive prompts**: Use -i
+   ```bash
+   touch important.txt
+   rm -i important.txt
+   ```
 
 ## Quiz Question
 

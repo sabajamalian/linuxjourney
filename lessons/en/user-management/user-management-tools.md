@@ -43,7 +43,63 @@ When run by an administrator, the system will prompt for a new password for the 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a new user (requires sudo)**: Add a test user
+   ```bash
+   sudo useradd -m testuser
+   grep testuser /etc/passwd
+   ```
+   Expected output:
+   ```
+   testuser:x:1001:1001::/home/testuser:/bin/sh
+   ```
+
+2. **Set password for the new user**: Assign a password
+   ```bash
+   sudo passwd testuser
+   ```
+   Expected output:
+   ```
+   Enter new UNIX password:
+   Retype new UNIX password:
+   passwd: password updated successfully
+   ```
+
+3. **View user information**: Use finger or id command
+   ```bash
+   id testuser
+   ```
+   Expected output:
+   ```
+   uid=1001(testuser) gid=1001(testuser) groups=1001(testuser)
+   ```
+
+4. **Create a new group**: Add a test group
+   ```bash
+   sudo groupadd testgroup
+   grep testgroup /etc/group
+   ```
+   Expected output:
+   ```
+   testgroup:x:1002:
+   ```
+
+5. **Add user to group**: Modify group membership
+   ```bash
+   sudo usermod -aG testgroup testuser
+   id testuser
+   ```
+   Expected output:
+   ```
+   uid=1001(testuser) gid=1001(testuser) groups=1001(testuser),1002(testgroup)
+   ```
+
+6. **Clean up**: Remove test user and group
+   ```bash
+   sudo userdel -r testuser
+   sudo groupdel testgroup
+   ```
 
 ## Quiz Question
 

@@ -52,7 +52,59 @@ It is always safer and more reliable to use dedicated command-line utilities lik
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View the passwd file**: Display user account information
+   ```bash
+   cat /etc/passwd | head -10
+   ```
+   Expected output:
+   ```
+   root:x:0:0:root:/root:/bin/bash
+   daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+   bin:x:2:2:bin:/bin:/usr/sbin/nologin
+   ```
+
+2. **Find your user entry**: Search for your username
+   ```bash
+   grep "$USER" /etc/passwd
+   ```
+   Expected output:
+   ```
+   your-username:x:1000:1000:Your Name:/home/your-username:/bin/bash
+   ```
+
+3. **Count total users**: Count lines in passwd file
+   ```bash
+   wc -l /etc/passwd
+   ```
+   Expected output:
+   ```
+   45 /etc/passwd
+   (number varies by system)
+   ```
+
+4. **List all user shells**: Extract the shell column
+   ```bash
+   cut -d: -f7 /etc/passwd | sort -u
+   ```
+   Expected output:
+   ```
+   /bin/bash
+   /bin/false
+   /bin/sync
+   /usr/sbin/nologin
+   ```
+
+5. **Find users with bash shell**: Filter for bash users
+   ```bash
+   grep "/bin/bash$" /etc/passwd
+   ```
+   Expected output:
+   ```
+   root:x:0:0:root:/root:/bin/bash
+   your-username:x:1000:1000::/home/your-username:/bin/bash
+   ```
 
 ## Quiz Question
 

@@ -77,7 +77,39 @@ Mastering the `mv command` is essential for efficient file management on the com
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a file and rename it**: Use mv to change a filename
+   ```bash
+   echo "Test content" > oldname.txt
+   mv oldname.txt newname.txt
+   ls -l newname.txt
+   ```
+
+2. **Move a file to a different directory**: Create a directory and move a file
+   ```bash
+   mkdir mydir
+   mv newname.txt mydir/
+   ls mydir/
+   ```
+
+3. **Move and rename simultaneously**: Move file with new name
+   ```bash
+   mv mydir/newname.txt renamed_file.txt
+   ls -l renamed_file.txt
+   ```
+
+4. **Move multiple files**: Create several files and move them
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   mv file1.txt file2.txt file3.txt mydir/
+   ls mydir/
+   ```
+
+5. **Clean up**: Remove test files and directory
+   ```bash
+   rm -r mydir renamed_file.txt
+   ```
 
 ## Quiz Question
 

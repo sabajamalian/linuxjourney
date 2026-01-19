@@ -57,7 +57,54 @@ Mastering these commands will significantly improve your efficiency on the comma
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Use pipe to chain commands**: List files and count them
+   ```bash
+   ls /etc | wc -l
+   ```
+   Expected output:
+   ```
+   (Number of files in /etc directory)
+   ```
+
+2. **Use tee to view and save output**: See output and save to file
+   ```bash
+   ls /etc | tee filelist.txt | head -10
+   ```
+   Expected output:
+   ```
+   (First 10 files displayed and all saved to filelist.txt)
+   ```
+
+3. **Chain multiple pipes**: Filter and sort results
+   ```bash
+   ls -l /etc | grep ".conf" | wc -l
+   ```
+   Expected output:
+   ```
+   (Number of .conf files in /etc)
+   ```
+
+4. **Use tee to append**: Append to file instead of overwriting
+   ```bash
+   echo "New entry" | tee -a filelist.txt
+   cat filelist.txt | tail -5
+   ```
+
+5. **Complex pipe chain**: Combine multiple text processing tools
+   ```bash
+   cat /etc/passwd | cut -d: -f1 | sort | head -10
+   ```
+   Expected output:
+   ```
+   (First 10 usernames sorted alphabetically)
+   ```
+
+6. **Clean up**: Remove test file
+   ```bash
+   rm filelist.txt
+   ```
 
 ## Quiz Question
 

@@ -39,7 +39,58 @@ Try running this command. As you continue to use your system, you will see new l
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View last 10 lines of a file**: Use default tail behavior
+   ```bash
+   tail /etc/passwd
+   ```
+   Expected output:
+   ```
+   (Last 10 lines of the passwd file)
+   ```
+
+2. **View last 5 lines**: Use the -n flag
+   ```bash
+   tail -n 5 /etc/passwd
+   ```
+   Expected output:
+   ```
+   (Last 5 lines of the passwd file)
+   ```
+
+3. **Create a test file**: Make a file with numbered lines
+   ```bash
+   seq 1 100 > numbers.txt
+   tail numbers.txt
+   ```
+   Expected output:
+   ```
+   91
+   92
+   93
+   94
+   95
+   96
+   97
+   98
+   99
+   100
+   ```
+
+4. **Follow a file in real-time**: Monitor a log file (press Ctrl+C to stop)
+   ```bash
+   tail -f /var/log/syslog
+   ```
+   Expected output:
+   ```
+   (Real-time log output - press Ctrl+C to exit)
+   ```
+
+5. **Clean up**: Remove the test file
+   ```bash
+   rm numbers.txt
+   ```
 
 ## Quiz Question
 

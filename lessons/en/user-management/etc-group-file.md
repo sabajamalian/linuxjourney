@@ -38,7 +38,64 @@ In the example `root:*:0:pete`, the group name is `root`, there is no password, 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View the group file**: Display all system groups
+   ```bash
+   cat /etc/group | head -10
+   ```
+   Expected output:
+   ```
+   root:x:0:
+   daemon:x:1:
+   bin:x:2:
+   sys:x:3:
+   adm:x:4:syslog,user
+   ```
+
+2. **Find groups you belong to**: Search for your username
+   ```bash
+   grep "$USER" /etc/group
+   ```
+   Expected output:
+   ```
+   adm:x:4:syslog,your-username
+   sudo:x:27:your-username
+   (your groups with your username listed)
+   ```
+
+3. **Count total groups**: Count lines in group file
+   ```bash
+   wc -l /etc/group
+   ```
+   Expected output:
+   ```
+   75 /etc/group
+   (number varies by system)
+   ```
+
+4. **Find the sudo group**: See who has sudo access
+   ```bash
+   grep "^sudo:" /etc/group
+   ```
+   Expected output:
+   ```
+   sudo:x:27:your-username
+   ```
+
+5. **List all group names only**: Extract first column
+   ```bash
+   cut -d: -f1 /etc/group | head -15
+   ```
+   Expected output:
+   ```
+   root
+   daemon
+   bin
+   sys
+   adm
+   (and more groups)
+   ```
 
 ## Quiz Question
 

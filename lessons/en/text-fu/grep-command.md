@@ -81,7 +81,62 @@ As you can see, `grep` is a versatile and powerful tool for any Linux user.
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a sample file for testing**: Make a file with multiple lines
+   ```bash
+   cat > sample.txt << EOF
+   The quick brown fox jumps over the lazy dog
+   Fox hunting is a traditional activity
+   The red fox is very clever
+   Dogs and foxes are different animals
+   EOF
+   ```
+
+2. **Basic grep search**: Find all lines containing "fox"
+   ```bash
+   grep fox sample.txt
+   ```
+   Expected output:
+   ```
+   The quick brown fox jumps over the lazy dog
+   The red fox is very clever
+   ```
+
+3. **Case-insensitive search**: Use -i flag to find "fox" regardless of case
+   ```bash
+   grep -i fox sample.txt
+   ```
+   Expected output:
+   ```
+   The quick brown fox jumps over the lazy dog
+   Fox hunting is a traditional activity
+   The red fox is very clever
+   ```
+
+4. **Count matching lines**: Use grep -c to count occurrences
+   ```bash
+   grep -c fox sample.txt
+   ```
+   Expected output:
+   ```
+   2
+   ```
+
+5. **Show only the match**: Use grep -o to see just the matching text
+   ```bash
+   grep -o fox sample.txt
+   ```
+   Expected output:
+   ```
+   fox
+   fox
+   ```
+
+6. **Clean up**: Remove the test file
+   ```bash
+   rm sample.txt
+   ```
 
 ## Quiz Question
 

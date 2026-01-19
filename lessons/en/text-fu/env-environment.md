@@ -119,7 +119,53 @@ After this, the `TEST` variable will be available in all future terminal session
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View all environment variables**: Display current environment
+   ```bash
+   env | head -20
+   ```
+   Expected output:
+   ```
+   (Lists environment variables like PATH, HOME, USER, etc.)
+   ```
+
+2. **Check specific variable**: View the PATH variable
+   ```bash
+   echo $PATH
+   ```
+   Expected output:
+   ```
+   /usr/local/bin:/usr/bin:/bin:/usr/games
+   ```
+
+3. **Set a new variable**: Create a temporary environment variable
+   ```bash
+   export MYVAR="Hello Linux"
+   echo $MYVAR
+   ```
+   Expected output:
+   ```
+   Hello Linux
+   ```
+
+4. **View user-related variables**: Check HOME and USER
+   ```bash
+   echo "User: $USER, Home: $HOME"
+   ```
+   Expected output:
+   ```
+   User: your-username, Home: /home/your-username
+   ```
+
+5. **Filter environment variables**: Find variables containing "PATH"
+   ```bash
+   env | grep PATH
+   ```
+   Expected output:
+   ```
+   PATH=/usr/local/bin:/usr/bin:/bin
+   ```
 
 ## Quiz Question
 

@@ -21,7 +21,41 @@ file banana.jpg
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check the type of a text file**: Identify what kind of file .bashrc is
+   ```bash
+   file ~/.bashrc
+   ```
+   Expected output:
+   ```
+   /home/user/.bashrc: ASCII text
+   ```
+
+2. **Check a binary file**: See the type of a system binary
+   ```bash
+   file /bin/ls
+   ```
+   Expected output:
+   ```
+   /bin/ls: ELF 64-bit LSB executable
+   ```
+
+3. **Check a directory**: Use file on a directory
+   ```bash
+   file /etc
+   ```
+   Expected output:
+   ```
+   /etc: directory
+   ```
+
+4. **Create and check different file types**: Make files and check them
+   ```bash
+   echo "Hello World" > test.txt
+   file test.txt
+   rm test.txt
+   ```
 
 ## Quiz Question
 

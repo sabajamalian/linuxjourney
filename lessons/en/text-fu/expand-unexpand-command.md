@@ -43,7 +43,47 @@ By default, `unexpand` only converts leading spaces on each line. The `-a` optio
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create a file with tabs**: Make a test file with tab characters
+   ```bash
+   echo -e "Col1	Col2	Col3" > tabbed.txt
+   cat tabbed.txt
+   ```
+
+2. **Convert tabs to spaces**: Use expand command
+   ```bash
+   expand tabbed.txt
+   ```
+   Expected output:
+   ```
+   Col1    Col2    Col3
+   (Tabs converted to spaces)
+   ```
+
+3. **Specify tab width**: Use -t flag to set tab width
+   ```bash
+   expand -t 4 tabbed.txt
+   ```
+   Expected output:
+   ```
+   Col1 Col2 Col3
+   (Tabs converted to 4 spaces)
+   ```
+
+4. **Convert spaces back to tabs**: Use unexpand command
+   ```bash
+   expand tabbed.txt | unexpand
+   ```
+   Expected output:
+   ```
+   (Spaces converted back to tabs)
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm tabbed.txt
+   ```
 
 ## Quiz Question
 

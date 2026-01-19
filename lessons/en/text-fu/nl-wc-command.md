@@ -66,7 +66,63 @@ Both `wc` and `nl` are essential commands for everyday text processing on the Li
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Number lines in a file**: Create a test file and add line numbers
+   ```bash
+   cat > lines.txt << EOF
+   First line
+   Second line
+   Third line
+   EOF
+   nl lines.txt
+   ```
+   Expected output:
+   ```
+        1  First line
+        2  Second line
+        3  Third line
+   ```
+
+2. **Count lines, words, and bytes**: Use wc on the file
+   ```bash
+   wc lines.txt
+   ```
+   Expected output:
+   ```
+   3 6 33 lines.txt
+   ```
+
+3. **Count only lines**: Use wc -l
+   ```bash
+   wc -l lines.txt
+   ```
+   Expected output:
+   ```
+   3 lines.txt
+   ```
+
+4. **Number non-empty lines only**: Use nl with -b flag
+   ```bash
+   echo -e "line1
+
+line3
+
+line5" | nl -b a
+   ```
+   Expected output:
+   ```
+        1  line1
+        2  
+        3  line3
+        4  
+        5  line5
+   ```
+
+5. **Clean up**: Remove test file
+   ```bash
+   rm lines.txt
+   ```
 
 ## Quiz Question
 

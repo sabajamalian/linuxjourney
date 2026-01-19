@@ -51,7 +51,46 @@ Where are you? Where am I? Give it a try to see your own current working directo
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check your current location**: Run pwd to see where you are in the filesystem
+   ```bash
+   pwd
+   ```
+   Expected output:
+   ```
+   /home/your-username
+   ```
+
+2. **Navigate to the root directory**: Change to the root and verify your location
+   ```bash
+   cd /
+   pwd
+   ```
+   Expected output:
+   ```
+   /
+   ```
+
+3. **Explore a system directory**: Navigate to /etc and check your working directory
+   ```bash
+   cd /etc
+   pwd
+   ```
+   Expected output:
+   ```
+   /etc
+   ```
+
+4. **Return to your home directory**: Use cd without arguments and confirm the change
+   ```bash
+   cd
+   pwd
+   ```
+   Expected output:
+   ```
+   /home/your-username
+   ```
 
 ## Quiz Question
 

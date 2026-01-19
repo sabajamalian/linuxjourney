@@ -79,7 +79,66 @@ By default, this command splits `somefile` into new files once a 1000-line limit
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create files with common fields**: Make two files to join
+   ```bash
+   echo -e "1 John
+2 Jane
+3 Bob" > names.txt
+   echo -e "1 Engineer
+2 Designer
+3 Manager" > jobs.txt
+   ```
+
+2. **Join files on common field**: Merge based on first column
+   ```bash
+   join names.txt jobs.txt
+   ```
+   Expected output:
+   ```
+   1 John Engineer
+   2 Jane Designer
+   3 Bob Manager
+   ```
+
+3. **Create a large file to split**: Make a file with multiple lines
+   ```bash
+   seq 1 100 > bigfile.txt
+   ```
+
+4. **Split file into smaller files**: Use split command
+   ```bash
+   split -l 25 bigfile.txt part_
+   ls part_*
+   ```
+   Expected output:
+   ```
+   part_aa  part_ab  part_ac  part_ad
+   ```
+
+5. **View one of the split files**: Check the content
+   ```bash
+   head part_aa
+   ```
+   Expected output:
+   ```
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+   ```
+
+6. **Clean up**: Remove all test files
+   ```bash
+   rm names.txt jobs.txt bigfile.txt part_*
+   ```
 
 ## Quiz Question
 
