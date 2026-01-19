@@ -63,6 +63,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What tries to assign IP addresses with the DHCP protocol?
 
-## Quiz Answer
-
-dhclient

@@ -101,6 +101,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What redirector do you use to append output to a file?
 
-## Quiz Answer
-
-`>>`

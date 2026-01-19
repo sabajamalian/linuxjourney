@@ -101,6 +101,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you create a file called `myfile`? Please answer using only the English command, paying attention to case sensitivity.
 
-## Quiz Answer
-
-touch myfile

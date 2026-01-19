@@ -105,6 +105,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to change a password? Please answer with the command name in lowercase English letters only.
 
-## Quiz Answer
-
-passwd

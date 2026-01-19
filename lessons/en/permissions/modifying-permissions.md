@@ -133,6 +133,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What number represents the read permission when using numerical format?
 
-## Quiz Answer
-
-4

@@ -82,6 +82,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What protocol is used to find the MAC address of a host on the same local network? (Please answer with the English acronym in uppercase letters).
 
-## Quiz Answer
-
-ARP

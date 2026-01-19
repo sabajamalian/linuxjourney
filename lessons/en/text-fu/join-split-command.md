@@ -144,6 +144,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command would you use to join files named `cat`, `dog`, `cow`? Please provide the full command in English. The command and filenames should be in lowercase.
 
-## Quiz Answer
-
-join cat dog cow

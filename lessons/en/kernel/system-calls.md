@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is used to switch from user mode to kernel mode? Please answer in English, using two words.
 
-## Quiz Answer
-
-System call

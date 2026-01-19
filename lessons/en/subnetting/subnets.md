@@ -79,6 +79,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 A subnet is defined by a network prefix and a subnet mask. True or False? (Please answer with 'True' or 'False'. The answer is case-sensitive and must be in English.)
 
-## Quiz Answer
-
-True

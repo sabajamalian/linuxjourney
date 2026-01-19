@@ -136,6 +136,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the name of the protocol, an early dialect of SMB, that was developed for file sharing? Please answer in English, paying attention to capitalization.
 
-## Quiz Answer
-
-CIFS

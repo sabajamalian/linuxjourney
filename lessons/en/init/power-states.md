@@ -89,6 +89,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the full command, including `sudo`, to schedule a system power off in 4 minutes? Please provide the complete command in English, paying attention to spacing and case.
 
-## Quiz Answer
-
-sudo shutdown -h +4

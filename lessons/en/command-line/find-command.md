@@ -73,6 +73,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What option should you specify for the `find` command to search by name? Please answer using only the English option, paying attention to the required format (e.g., -option).
 
-## Quiz Answer
-
--name

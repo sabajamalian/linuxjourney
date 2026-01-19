@@ -105,6 +105,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you see how many inodes are left on your system? (Please answer in English, paying attention to case sensitivity.)
 
-## Quiz Answer
-
-df -i

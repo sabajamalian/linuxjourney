@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Which log file typically records everything except authentication messages? (Please answer in English, using only lowercase letters.)
 
-## Quiz Answer
-
-syslog

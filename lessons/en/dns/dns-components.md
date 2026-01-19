@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What resource record type is used for mail exchangers?
 
-## Quiz Answer
-
-MX

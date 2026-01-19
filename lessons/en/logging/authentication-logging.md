@@ -79,6 +79,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 On Debian-based systems, what is the name of the log file used for user authentication? Please answer using the filename only. The answer is case-sensitive.
 
-## Quiz Answer
-
-auth.log

@@ -93,6 +93,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to create an alias? Please answer in lowercase English.
 
-## Quiz Answer
-
-alias

@@ -97,6 +97,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What permission bit is used for executable? Please answer in English, paying close attention to case sensitivity.
 
-## Quiz Answer
-
-x

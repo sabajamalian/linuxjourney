@@ -84,6 +84,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What UID decides what access to grant?
 
-## Quiz Answer
-
-effective

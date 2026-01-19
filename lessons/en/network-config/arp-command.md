@@ -75,6 +75,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can you use to view your ARP cache?
 
-## Quiz Answer
-
-arp

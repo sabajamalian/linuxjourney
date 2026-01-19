@@ -108,6 +108,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the symbol for character devices in the `ls -l` command? (Provide the single lowercase English character as your answer)
 
-## Quiz Answer
-
-c

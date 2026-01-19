@@ -128,6 +128,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the legacy command used to configure a Linux network interface? Please answer in English, using only lowercase letters.
 
-## Quiz Answer
-
-ifconfig

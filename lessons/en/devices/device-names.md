@@ -88,6 +88,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What would commonly be the device name for the first partition on the second SCSI disk? Please provide the answer in English, paying attention to the correct case.
 
-## Quiz Answer
-
-/dev/sdb1

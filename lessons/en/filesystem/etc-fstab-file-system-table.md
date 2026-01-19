@@ -83,6 +83,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What file is used to define how filesystems should be mounted? (Please provide the full path. The answer is case-sensitive.)
 
-## Quiz Answer
-
-/etc/fstab

@@ -142,6 +142,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command do you use to find a certain pattern in a file? Please answer in a single lowercase English word.
 
-## Quiz Answer
-
-grep

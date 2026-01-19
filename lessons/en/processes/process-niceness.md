@@ -105,6 +105,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 If you want a process to get more CPU priority, should you use a lower or higher nice number? Please answer in a single English word, all lowercase.
 
-## Quiz Answer
-
-lower

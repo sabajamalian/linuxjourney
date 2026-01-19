@@ -78,6 +78,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the ICMP type for an echo request? Please answer with the numerical value only.
 
-## Quiz Answer
-
-8

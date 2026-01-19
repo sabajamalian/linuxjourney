@@ -83,6 +83,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What are the four steps in the DHCP process, in order? Please answer in English, using uppercase words separated by a comma and a space.
 
-## Quiz Answer
-
-DISCOVER, OFFER, REQUEST, ACK

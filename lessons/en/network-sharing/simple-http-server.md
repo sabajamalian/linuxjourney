@@ -79,6 +79,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 For Python 3, what is the name of the module used to create a simple HTTP server? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-http.server

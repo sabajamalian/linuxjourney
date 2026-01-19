@@ -85,6 +85,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What system call creates a new process? (Please answer in a single lowercase English word.)
 
-## Quiz Answer
-
-fork

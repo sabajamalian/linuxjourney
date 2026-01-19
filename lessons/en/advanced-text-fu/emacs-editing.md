@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you move to the end of the buffer? Please answer using only the key combination format shown in the lesson (e.g., C-w). The answer is case-sensitive.
 
-## Quiz Answer
-
-M->

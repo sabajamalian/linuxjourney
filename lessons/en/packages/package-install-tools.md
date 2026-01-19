@@ -115,6 +115,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the package management tool for `.deb` files?
 
-## Quiz Answer
-
-dpkg

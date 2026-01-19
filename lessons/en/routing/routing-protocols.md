@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the term for the state where all routing tables on a network agree on the network topology? (Please answer in English, paying attention to capitalization.)
 
-## Quiz Answer
-
-Convergence

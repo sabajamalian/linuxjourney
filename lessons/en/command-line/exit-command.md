@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the most common command to exit from the Linux shell? Please answer using only a single lowercase English word.
 
-## Quiz Answer
-
-exit

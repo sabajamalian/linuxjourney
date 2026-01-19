@@ -75,6 +75,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What does the BIOS load? Please answer in a single word, in English, and in lowercase.
 
-## Quiz Answer
-
-bootloader

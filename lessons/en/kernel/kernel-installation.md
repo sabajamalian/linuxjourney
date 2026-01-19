@@ -80,6 +80,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you see the kernel version of your system?
 
-## Quiz Answer
-
-uname -r

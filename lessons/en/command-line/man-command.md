@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you see the manual for a command? (Please answer using only the command name in lowercase English letters).
 
-## Quiz Answer
-
-man

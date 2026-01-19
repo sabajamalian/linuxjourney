@@ -74,6 +74,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What tool is used to manage mount points automatically? Please answer in English, and note that the answer is case-sensitive.
 
-## Quiz Answer
-
-automount

@@ -90,6 +90,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What flag would you use with the `head` command to change the number of lines you want to view? Please answer using only the English flag, paying attention to case sensitivity.
 
-## Quiz Answer
-
--n

@@ -84,6 +84,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What ring number has the highest privileges?
 
-## Quiz Answer
-
-0

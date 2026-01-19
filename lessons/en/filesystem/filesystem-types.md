@@ -88,6 +88,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the most common and default filesystem type for many Linux distributions? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-ext4

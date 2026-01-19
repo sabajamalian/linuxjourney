@@ -81,6 +81,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can you use to manually log a message?
 
-## Quiz Answer
-
-logger

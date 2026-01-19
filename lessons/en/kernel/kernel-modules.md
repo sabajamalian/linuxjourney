@@ -107,6 +107,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to unload a module?
 
-## Quiz Answer
-
-modprobe -r

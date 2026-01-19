@@ -171,6 +171,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Which command displays all of your current environment variables? (Please answer in English, using only the lowercase command name).
 
-## Quiz Answer
-
-env

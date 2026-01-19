@@ -78,6 +78,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the daemon that manages logs on newer Linux systems? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-rsyslogd

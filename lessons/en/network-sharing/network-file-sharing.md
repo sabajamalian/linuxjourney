@@ -91,6 +91,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can you use to securely copy files from one host to another? Please answer with the command name only, in lowercase English letters.
 
-## Quiz Answer
-
-scp

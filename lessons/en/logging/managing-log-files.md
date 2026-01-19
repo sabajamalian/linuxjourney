@@ -74,6 +74,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the primary utility used for log rotation and managing Linux logs? Please answer in lowercase English.
 
-## Quiz Answer
-
-logrotate

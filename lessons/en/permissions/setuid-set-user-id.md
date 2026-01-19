@@ -128,6 +128,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What number represents the SUID?
 
-## Quiz Answer
-
-4

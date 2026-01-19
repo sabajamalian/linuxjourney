@@ -103,6 +103,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What virtual filesystem stores process information? Please answer in English, paying attention to case sensitivity.
 
-## Quiz Answer
-
-/proc

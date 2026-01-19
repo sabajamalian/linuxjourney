@@ -79,6 +79,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What value is given for a process that does not have a controlling terminal?
 
-## Quiz Answer
-
-?

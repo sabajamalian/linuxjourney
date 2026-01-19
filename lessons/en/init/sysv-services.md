@@ -91,6 +91,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the full command to stop a service named `peanut` on a System V system? Please provide the exact command in English, paying attention to case.
 
-## Quiz Answer
-
-sudo service peanut stop

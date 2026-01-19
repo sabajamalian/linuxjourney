@@ -73,6 +73,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What editor is Vim an improved version of?
 
-## Quiz Answer
-
-Vi

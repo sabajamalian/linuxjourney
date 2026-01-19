@@ -72,6 +72,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 In the `/boot` directory, what is the typical name for the compressed Linux kernel image file? Please answer in English, paying attention to case sensitivity.
 
-## Quiz Answer
-
-vmlinuz

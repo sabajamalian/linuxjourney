@@ -115,6 +115,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Using the `mv` command, how would you rename a file named `cat` to `dog`? Please provide the full command. Note: The answer is case-sensitive and should be entered in lowercase English.
 
-## Quiz Answer
-
-mv cat dog

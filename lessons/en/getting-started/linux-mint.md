@@ -69,6 +69,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What popular distribution is Linux Mint based on? (Answer in English, case-sensitive)
 
-## Quiz Answer
-
-Ubuntu

@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What package management system does Gentoo use? (Your answer should be in English and pay attention to capitalization.)
 
-## Quiz Answer
-
-Portage

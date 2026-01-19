@@ -91,6 +91,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can be used to view I/O and CPU usage? (Please answer in lowercase English characters only)
 
-## Quiz Answer
-
-iostat

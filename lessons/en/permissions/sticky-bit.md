@@ -101,6 +101,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 In a long directory listing (ls -l), what single character in the permissions string represents that the sticky bit is set? Please answer with a single lowercase English letter.
 
-## Quiz Answer
-
-t

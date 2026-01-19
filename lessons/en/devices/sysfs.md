@@ -85,6 +85,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What directory is used to view detailed information on devices? Please answer in English.
 
-## Quiz Answer
-
-/sys

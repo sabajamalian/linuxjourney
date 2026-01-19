@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the local area network known as? Please answer in English, paying attention to capitalization.
 
-## Quiz Answer
-
-LAN

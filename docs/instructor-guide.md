@@ -211,6 +211,12 @@ az snapshot create \
     --source $(az vm show -g $RESOURCE_GROUP -n VM_NAME --query "storageProfile.osDisk.name" -o tsv)
 ```
 
+## Quiz Answer Key
+
+The quiz answers for all lessons have been centralized in the [`/quiz-answers/`](/quiz-answers/) folder. This answer key is organized by category and can be used for grading student responses.
+
+Each lesson file contains only the quiz question; the answers are located in the corresponding category file (e.g., `quiz-answers/command-line-answers.md` for command line lessons).
+
 ## Course Delivery Tips
 
 1. **Pre-class**: Ensure all VMs are running and accessible

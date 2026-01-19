@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is used to represent a single private address to the internet?
 
-## Quiz Answer
-
-NAT

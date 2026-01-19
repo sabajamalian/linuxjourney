@@ -101,6 +101,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the GID of root?
 
-## Quiz Answer
-
-0

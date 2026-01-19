@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 True or false: Distance vector protocols use the route with the least amount of bandwidth?
 
-## Quiz Answer
-
-False

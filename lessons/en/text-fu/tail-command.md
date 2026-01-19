@@ -96,6 +96,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the flag used to follow a file in `tail`? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
--f

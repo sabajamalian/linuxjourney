@@ -89,6 +89,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the command to clear the terminal? (Please answer in lowercase English letters only)
 
-## Quiz Answer
-
-clear

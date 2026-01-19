@@ -73,6 +73,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to make a directory? Please answer using only the lowercase English command.
 
-## Quiz Answer
-
-mkdir

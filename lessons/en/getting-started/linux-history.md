@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Who developed the Linux kernel? Please answer in English and be mindful of capitalization.
 
-## Quiz Answer
-
-Linus Torvalds

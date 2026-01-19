@@ -86,6 +86,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What number represents the SGID?
 
-## Quiz Answer
-
-2

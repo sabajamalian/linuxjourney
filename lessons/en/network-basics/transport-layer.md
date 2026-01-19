@@ -85,6 +85,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is a reliable transport protocol? (Your answer should be in English and is case-sensitive).
 
-## Quiz Answer
-
-TCP

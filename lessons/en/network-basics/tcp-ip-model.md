@@ -92,6 +92,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the top layer of the TCP/IP model? (Please answer in English. Note that the answer is case-sensitive.)
 
-## Quiz Answer
-
-Application

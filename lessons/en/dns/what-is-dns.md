@@ -71,6 +71,3 @@ True or false: DNS helps us find MAC addresses for hostnames?
 
 (Please answer in English with "True" or "False". The answer is case-sensitive.)
 
-## Quiz Answer
-
-False

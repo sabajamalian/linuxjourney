@@ -132,6 +132,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the `parted` command to make a partition? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-mkpart

@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What manages hardware in a Linux system? (Answer in English, paying attention to capitalization)
 
-## Quiz Answer
-
-Linux Kernel

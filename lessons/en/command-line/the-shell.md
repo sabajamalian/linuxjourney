@@ -68,6 +68,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the exact output to the display when you type `echo Hello World`? Please answer in English, paying close attention to capitalization and spacing.
 
-## Quiz Answer
-
-Hello World

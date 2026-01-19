@@ -120,6 +120,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command displays the same output as the first line in `top`? Please answer using only the lowercase English command name.
 
-## Quiz Answer
-
-uptime

@@ -81,6 +81,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to view a list of connected USB devices? (Please answer in lowercase English characters only.)
 
-## Quiz Answer
-
-lsusb

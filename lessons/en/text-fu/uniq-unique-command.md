@@ -182,6 +182,3 @@ banana" | sort | uniq
 
 What command would you use to remove adjacent duplicate lines in a file? Please answer using only the command name in lowercase English letters.
 
-## Quiz Answer
-
-uniq

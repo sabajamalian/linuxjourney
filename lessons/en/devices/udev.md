@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What dynamically adds and removes devices?
 
-## Quiz Answer
-
-udev

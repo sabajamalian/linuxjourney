@@ -78,6 +78,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Which key enters Insert mode before the cursor? Please answer with a single lowercase English letter.
 
-## Quiz Answer
-
-i

@@ -91,6 +91,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What operator is used to redirect stdin? Please answer with only the required symbol.
 
-## Quiz Answer
-
-<

@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Where are device files stored on the system? (Please provide the absolute path. The answer is case-sensitive and should be in English.)
 
-## Quiz Answer
-
-/dev

@@ -128,6 +128,3 @@ line5" | nl -b a
 
 Which command and option would you use to display only the total word count of a file? Please answer using only the command and its option in English. The answer is case-sensitive.
 
-## Quiz Answer
-
-wc -w

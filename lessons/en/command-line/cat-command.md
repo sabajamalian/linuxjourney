@@ -91,6 +91,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to display the contents of a file on the command line? (Note: Your answer should be a single, lowercase English word.)
 
-## Quiz Answer
-
-cat

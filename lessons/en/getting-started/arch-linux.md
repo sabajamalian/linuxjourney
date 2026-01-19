@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the name of the package manager used by Arch Linux? Please answer in English, paying attention to capitalization.
 
-## Quiz Answer
-
-Pacman

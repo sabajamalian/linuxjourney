@@ -114,6 +114,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What port is used for HTTPS?
 
-## Quiz Answer
-
-443

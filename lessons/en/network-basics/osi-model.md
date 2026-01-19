@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is used as the theoretical model of networking? (Please answer in English, using the acronym in uppercase.)
 
-## Quiz Answer
-
-OSI

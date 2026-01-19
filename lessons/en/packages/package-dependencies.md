@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is a collection of pre-compiled code that multiple programs can use? (Please answer in English, paying attention to uppercase and lowercase letters).
 
-## Quiz Answer
-
-Libraries

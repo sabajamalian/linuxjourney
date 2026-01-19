@@ -80,6 +80,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What kernel parameter makes it so you don't see bootup messages? Please answer with the single-word parameter in lowercase English.
 
-## Quiz Answer
-
-quiet

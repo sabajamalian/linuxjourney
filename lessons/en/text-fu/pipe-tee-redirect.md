@@ -110,6 +110,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What single character represents the pipe operator in a Linux command? Please answer with only the symbol.
 
-## Quiz Answer
-
-|

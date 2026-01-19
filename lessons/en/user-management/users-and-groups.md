@@ -103,6 +103,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command allows you to run a single command with `root` privileges? (Please answer in English, using only lowercase letters).
 
-## Quiz Answer
-
-sudo

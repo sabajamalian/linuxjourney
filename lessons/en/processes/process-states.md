@@ -80,6 +80,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What STAT code is used to represent an uninterruptible sleep? (Please provide the single, uppercase English letter for the state code.)
 
-## Quiz Answer
-
-D

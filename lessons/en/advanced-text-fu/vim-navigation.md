@@ -52,6 +52,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What letter is used to move down?
 
-## Quiz Answer
-
-j

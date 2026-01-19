@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How many bytes are in an IPv4 address?
 
-## Quiz Answer
-
-4

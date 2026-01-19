@@ -118,6 +118,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What partition type is used to create more than 4 partitions in the MBR partitioning scheme? (Please answer in a single lowercase English word.)
 
-## Quiz Answer
-
-extended

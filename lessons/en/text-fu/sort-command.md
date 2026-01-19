@@ -117,6 +117,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What flag do you use to perform a reverse sort?
 
-## Quiz Answer
-
--r

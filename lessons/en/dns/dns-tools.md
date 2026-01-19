@@ -114,6 +114,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What tool is used to get detailed information about DNS name servers? Please answer using only lowercase English characters.
 
-## Quiz Answer
-
-dig

@@ -86,6 +86,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What gets decremented by one when making hops across the network? (Please answer in English, paying attention to capitalization.)
 
-## Quiz Answer
-
-TTL

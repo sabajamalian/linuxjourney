@@ -110,6 +110,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 If a user account is locked and cannot be used for login, how is this denoted in the password field of the `/etc/passwd` file? Please answer using only the required character.
 
-## Quiz Answer
-
-`*`

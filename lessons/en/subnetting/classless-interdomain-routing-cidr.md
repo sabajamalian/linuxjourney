@@ -69,6 +69,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How many bits does an IPv4 address consist of?
 
-## Quiz Answer
-
-32

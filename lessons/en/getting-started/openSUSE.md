@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the name of openSUSE's administration and installation tool? Please answer using only lowercase English letters.
 
-## Quiz Answer
-
-yast

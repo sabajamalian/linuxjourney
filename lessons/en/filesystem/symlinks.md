@@ -126,6 +126,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the command and its primary option used to create a symlink? Your answer must be in English and is case-sensitive. Please include the space between the command and the option.
 
-## Quiz Answer
-
-ln -s

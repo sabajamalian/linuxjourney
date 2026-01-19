@@ -96,6 +96,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Which command is used to find the directory you are currently in? (Please answer in English, using only the command name in lowercase.)
 
-## Quiz Answer
-
-pwd

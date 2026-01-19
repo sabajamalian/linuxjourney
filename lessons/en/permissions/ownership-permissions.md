@@ -96,6 +96,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to change the user ownership of a file? Please provide only the command name in lowercase English letters.
 
-## Quiz Answer
-
-chown

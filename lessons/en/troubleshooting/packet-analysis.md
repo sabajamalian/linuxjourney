@@ -116,6 +116,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the flag to capture a specific interface with tcpdump? Please answer using only the required flag in English. The answer is case-sensitive.
 
-## Quiz Answer
-
--i

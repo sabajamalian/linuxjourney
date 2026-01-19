@@ -162,6 +162,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What tar flag is used to create archives? Please answer with a single lowercase English letter.
 
-## Quiz Answer
-
-c

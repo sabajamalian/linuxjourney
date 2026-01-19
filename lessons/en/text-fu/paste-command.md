@@ -89,6 +89,3 @@ C" > file1.txt
 
 What flag do you use with `paste` to make everything go on one line?
 
-## Quiz Answer
-
--s

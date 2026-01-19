@@ -69,6 +69,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the underlying package management system that Red Hat Enterprise Linux is built on? Please answer in English, using all uppercase letters for the acronym.
 
-## Quiz Answer
-
-RPM

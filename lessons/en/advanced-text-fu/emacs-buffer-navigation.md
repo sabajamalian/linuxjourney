@@ -87,6 +87,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you kill a buffer? Please answer using the exact keybinding in English, paying attention to case.
 
-## Quiz Answer
-
-C-x k

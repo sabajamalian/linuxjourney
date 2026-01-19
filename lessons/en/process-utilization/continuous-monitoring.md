@@ -89,6 +89,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is a good tool to use for monitoring system resources?
 
-## Quiz Answer
-
-sar

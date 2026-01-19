@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you access the help menu?
 
-## Quiz Answer
-
-C-h C-h

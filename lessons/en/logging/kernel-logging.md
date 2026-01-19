@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can be used to view kernel bootup messages? Please answer using only the lowercase English command.
 
-## Quiz Answer
-
-dmesg

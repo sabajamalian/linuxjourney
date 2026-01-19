@@ -103,6 +103,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command, known for its delta-transfer algorithm, is particularly useful for creating efficient data backups? Please answer in English, paying attention to case sensitivity.
 
-## Quiz Answer
-
-rsync

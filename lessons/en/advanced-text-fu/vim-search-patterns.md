@@ -82,6 +82,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What key is used to initiate a forward search in Vim?
 
-## Quiz Answer
-
-/

@@ -105,6 +105,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What signal is unblockable? Please answer in English, using the exact signal name and paying attention to capitalization.
 
-## Quiz Answer
-
-SIGKILL

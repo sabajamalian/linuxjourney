@@ -75,6 +75,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the last stage in the Linux boot process? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-init

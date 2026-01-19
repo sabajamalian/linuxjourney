@@ -130,6 +130,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What `ps` flag, when used with the `a` and `x` flags, is used to view detailed, user-oriented information about processes? Please answer with a single lowercase English letter.
 
-## Quiz Answer
-
-u

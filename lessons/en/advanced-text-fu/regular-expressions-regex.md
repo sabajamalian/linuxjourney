@@ -112,6 +112,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What regular expression would you use to match any single character?
 
-## Quiz Answer
-
-.

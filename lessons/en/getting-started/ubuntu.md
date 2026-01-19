@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What operating system is Ubuntu based on? (Please answer in English, paying attention to capitalization.)
 
-## Quiz Answer
-
-Debian

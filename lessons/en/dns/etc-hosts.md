@@ -92,6 +92,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What file is used to map hostnames to IP addresses on our machines? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-/etc/hosts

@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the abbreviation for the nameservers where .com, .net, .org, etc., addresses are found? Please answer using only uppercase English letters.
 
-## Quiz Answer
-
-TLD

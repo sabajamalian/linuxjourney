@@ -85,6 +85,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can you use to see the system's load average? Please answer in English, and note that the command is case-sensitive.
 
-## Quiz Answer
-
-uptime

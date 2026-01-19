@@ -85,6 +85,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the most common termination status for a process succeeding?
 
-## Quiz Answer
-
-0

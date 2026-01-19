@@ -89,6 +89,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to convert tabs to spaces? (Please answer using the lowercase English command name.)
 
-## Quiz Answer
-
-expand

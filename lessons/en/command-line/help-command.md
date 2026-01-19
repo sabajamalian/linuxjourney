@@ -61,6 +61,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you get quick command-line help for built-in Bash commands? (Please provide the single command name in English and in lowercase.)
 
-## Quiz Answer
-
-help

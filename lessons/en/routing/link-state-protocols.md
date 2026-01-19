@@ -57,6 +57,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is one of the most common link state protocols?
 
-## Quiz Answer
-
-OSPF

@@ -98,6 +98,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the command to view a summary of NetworkManager's state and devices as shown in the lesson? Please answer using only the English command name in lowercase.
 
-## Quiz Answer
-
-nm-tool

@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the name of the IP protocol designed to increase the number of available addresses for hosts on the Internet? Please answer in English using the protocol's common name, paying attention to capitalization.
 
-## Quiz Answer
-
-IPv6

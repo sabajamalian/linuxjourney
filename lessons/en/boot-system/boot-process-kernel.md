@@ -69,6 +69,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is used in modern systems to load a temporary root filesystem? Please answer in English, using only lowercase letters.
 
-## Quiz Answer
-
-initramfs

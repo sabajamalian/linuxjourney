@@ -128,6 +128,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the operator used to redirect the `stderr` stream? Please provide the exact operator in your answer.
 
-## Quiz Answer
-
-2>

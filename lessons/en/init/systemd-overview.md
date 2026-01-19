@@ -87,6 +87,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What unit is used to group together other units? Please answer in a single lowercase English word.
 
-## Quiz Answer
-
-target

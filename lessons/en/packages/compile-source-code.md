@@ -135,6 +135,3 @@ EOF
 
 What should you use instead of `make install` ALWAYS? (Please answer in English, paying attention to case sensitivity).
 
-## Quiz Answer
-
-checkinstall

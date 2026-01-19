@@ -88,6 +88,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the `dd` option for block size? Please answer using only lowercase English letters.
 
-## Quiz Answer
-
-bs

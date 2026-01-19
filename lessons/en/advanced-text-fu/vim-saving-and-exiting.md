@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you quit out of Vim without saving your changes? Please provide the exact command in English, paying attention to case and special characters.
 
-## Quiz Answer
-
-:q

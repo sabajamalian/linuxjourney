@@ -95,6 +95,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What directory is used to store logs? (Please provide the full path. The answer is case-sensitive and must be in English.)
 
-## Quiz Answer
-
-/var

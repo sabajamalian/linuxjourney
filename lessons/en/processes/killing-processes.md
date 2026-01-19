@@ -102,6 +102,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the signal name for the default `kill` command? Please answer in English. Note that the answer is case-sensitive.
 
-## Quiz Answer
-
-SIGTERM

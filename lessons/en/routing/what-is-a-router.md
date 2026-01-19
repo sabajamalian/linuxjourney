@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do packets measure distance? (Please answer in English. The answer is case-sensitive.)
 
-## Quiz Answer
-
-Hops

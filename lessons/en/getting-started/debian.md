@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What kind of release do Testing and Unstable have? Please answer in English and be mindful of capitalization.
 
-## Quiz Answer
-
-Rolling

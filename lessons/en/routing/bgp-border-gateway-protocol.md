@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What protocol basically makes the internet work? Please answer using the uppercase English acronym.
 
-## Quiz Answer
-
-BGP

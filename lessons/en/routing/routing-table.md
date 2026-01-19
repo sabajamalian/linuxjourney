@@ -93,6 +93,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 If a destination is not found in the routing table, where are the packets sent? Please answer with a single English word, paying attention to capitalization.
 
-## Quiz Answer
-
-Gateway

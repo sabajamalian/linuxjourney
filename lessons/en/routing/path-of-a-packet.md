@@ -74,6 +74,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 Which protocol is used to find the MAC address of a host on the local network, given its IP address? Please answer with the three-letter acronym in all uppercase.
 
-## Quiz Answer
-
-ARP

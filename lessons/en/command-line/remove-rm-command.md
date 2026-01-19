@@ -105,6 +105,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you remove a file named `myfile`? Your answer must be in English and use the exact, case-sensitive command.
 
-## Quiz Answer
-
-rm myfile

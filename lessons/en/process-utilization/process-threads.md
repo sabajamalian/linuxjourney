@@ -80,6 +80,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 True or false, all processes start out single-threaded.
 
-## Quiz Answer
-
-True

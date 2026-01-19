@@ -87,6 +87,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What file lists the users and groups with `sudo` privileges? Please provide the full path. (Note: Your answer must be in English and is case-sensitive).
 
-## Quiz Answer
-
-/etc/sudoers

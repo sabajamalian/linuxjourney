@@ -69,6 +69,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the de facto DNS server for Linux?
 
-## Quiz Answer
-
-BIND

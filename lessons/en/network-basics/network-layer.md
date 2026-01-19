@@ -67,6 +67,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What are the smaller networks that make up the Internet called? Please answer using a single, lowercase English word.
 
-## Quiz Answer
-
-subnets

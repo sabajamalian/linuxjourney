@@ -98,6 +98,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to show how much space is free on your disk? Please answer in lowercase English letters.
 
-## Quiz Answer
-
-df

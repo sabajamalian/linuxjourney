@@ -111,6 +111,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to show package information on a Debian system? Please answer in English, paying attention to case sensitivity.
 
-## Quiz Answer
-
-apt show

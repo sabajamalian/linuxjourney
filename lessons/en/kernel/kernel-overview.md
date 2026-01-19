@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What level of the operating system manages devices? (Please answer in a single, lowercase English word.)
 
-## Quiz Answer
-
-kernel

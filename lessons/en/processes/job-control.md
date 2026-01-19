@@ -128,6 +128,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to list background jobs? (Please answer in English, using only lowercase letters.)
 
-## Quiz Answer
-
-jobs

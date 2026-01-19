@@ -115,6 +115,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 If you are in `/home/pete/Pictures` and want to navigate to the parent directory (`/home/pete`), what is the full command you should use? Please answer in English, paying attention to case and spacing.
 
-## Quiz Answer
-
-cd ..

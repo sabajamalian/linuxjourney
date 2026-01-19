@@ -93,6 +93,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 When using the legacy `route` command, what is the flag used to delete a route? Please answer in English, paying attention to case.
 
-## Quiz Answer
-
-del

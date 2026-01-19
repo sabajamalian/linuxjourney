@@ -82,6 +82,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How do you quit out of the `less` command? Please provide the single character key as your answer. Note: the answer is a case-sensitive English letter.
 
-## Quiz Answer
-
-q

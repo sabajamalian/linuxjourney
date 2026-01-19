@@ -110,6 +110,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to attach a filesystem? (Please use a single, lowercase English word for your answer.)
 
-## Quiz Answer
-
-mount

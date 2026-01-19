@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is RHEL branched off of? (Please answer in English, paying attention to capitalization.)
 
-## Quiz Answer
-
-Fedora

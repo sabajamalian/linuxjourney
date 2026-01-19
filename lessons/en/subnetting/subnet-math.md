@@ -77,6 +77,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the binary equivalent of 255?
 
-## Quiz Answer
-
-11111111

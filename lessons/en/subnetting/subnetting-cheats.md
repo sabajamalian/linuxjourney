@@ -93,6 +93,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the binary conversion of 123? Please provide the answer in English characters (numbers).
 
-## Quiz Answer
-
-01111011

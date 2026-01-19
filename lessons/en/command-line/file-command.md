@@ -61,6 +61,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can you use to find the file type of a file?
 
-## Quiz Answer
-
-file

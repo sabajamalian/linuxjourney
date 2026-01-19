@@ -139,6 +139,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the command to start a service named peanut.service? Please answer in English. The answer is case-sensitive.
 
-## Quiz Answer
-
-sudo systemctl start peanut.service

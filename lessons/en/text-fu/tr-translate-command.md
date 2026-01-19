@@ -97,6 +97,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to translate characters? (Please answer in lowercase English letters only)
 
-## Quiz Answer
-
-tr

@@ -79,6 +79,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What layer is used to present the packet data in a user-friendly format? (Please answer in English and pay attention to capitalization.)
 
-## Quiz Answer
-
-Application

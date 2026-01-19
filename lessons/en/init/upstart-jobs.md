@@ -106,6 +106,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 How would you manually restart an Upstart job called `peanuts`? Please provide the full command. (Note: The answer is case-sensitive and must be in English.)
 
-## Quiz Answer
-
-sudo initctl restart peanuts

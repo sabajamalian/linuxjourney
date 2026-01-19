@@ -117,6 +117,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What flag do you need to specify to copy over a directory?
 
-## Quiz Answer
-
--r

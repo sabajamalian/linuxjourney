@@ -83,6 +83,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the roundtrip time unit of measurement? Please answer in English, paying attention to case sensitivity.
 
-## Quiz Answer
-
-ms

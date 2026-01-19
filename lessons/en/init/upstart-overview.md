@@ -86,6 +86,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the init implementation that is used by Ubuntu?
 
-## Quiz Answer
-
-systemd

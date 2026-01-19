@@ -104,6 +104,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command would you use to get the first character of every line in a file?
 
-## Quiz Answer
-
-cut -c 1

@@ -61,6 +61,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command can you use to see a small description of a command? Please answer in English, paying attention to lowercase.
 
-## Quiz Answer
-
-whatis

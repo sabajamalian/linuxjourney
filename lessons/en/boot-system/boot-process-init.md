@@ -71,6 +71,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the newest standard for init? (Please answer in lowercase English letters only)
 
-## Quiz Answer
-
-systemd

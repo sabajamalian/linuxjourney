@@ -76,6 +76,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 On a traditional Debian system, what is the full path to the main file that lists package repositories? Please answer using the full file path.
 
-## Quiz Answer
-
-/etc/apt/sources.list

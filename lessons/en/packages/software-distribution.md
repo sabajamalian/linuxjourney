@@ -81,6 +81,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What package format is used by Ubuntu and Debian?
 
-## Quiz Answer
-
-deb

@@ -74,6 +74,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the command to enable swap space on a device?
 
-## Quiz Answer
-
-swapon

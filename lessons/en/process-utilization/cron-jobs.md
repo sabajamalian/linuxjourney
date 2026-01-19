@@ -89,6 +89,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What is the command to edit your personal cron jobs? (Please answer using the exact lowercase command and its option.)
 
-## Quiz Answer
-
-crontab -e

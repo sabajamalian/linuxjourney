@@ -65,6 +65,3 @@ Follow these steps in your Ubuntu VM terminal to practice the concepts from this
 
 What command is used to open a file?
 
-## Quiz Answer
-
-C-x C-f
