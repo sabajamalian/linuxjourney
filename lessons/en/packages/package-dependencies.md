@@ -27,7 +27,50 @@ Effective package management is all about ensuring these dependencies are met. I
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check package dependencies**: View dependencies of a package
+   ```bash
+   apt show wget 2>/dev/null | grep -A10 "^Depends"
+   ```
+   Expected output:
+   ```
+   Depends: libc6 (>= 2.28), libgnutls30 (>= 3.6.12), libidn2-0 (>= 2.0), etc.
+   ```
+
+2. **View reverse dependencies**: See what depends on a package
+   ```bash
+   apt rdepends bash | head -15
+   ```
+   Expected output:
+   ```
+   bash
+   Reverse Depends:
+     bash-completion
+     byobu
+     command-not-found
+   ```
+
+3. **Check if dependencies are satisfied**: Verify package status
+   ```bash
+   dpkg -s wget | grep "^Status"
+   ```
+   Expected output:
+   ```
+   Status: install ok installed
+   ```
+
+4. **View dependency tree**: Show package relationships
+   ```bash
+   apt-cache depends wget | head -15
+   ```
+   Expected output:
+   ```
+   wget
+     Depends: libc6
+     Depends: libgnutls30
+     Depends: libidn2-0
+   ```
 
 ## Quiz Question
 

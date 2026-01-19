@@ -35,7 +35,45 @@ To prevent them from being accidentally terminated, daemons are not attached to 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check your terminal device**: View current TTY
+   ```bash
+   tty
+   ```
+   Expected output:
+   ```
+   /dev/pts/0
+   ```
+
+2. **View processes on your terminal**: Filter by TTY
+   ```bash
+   ps -t pts/0
+   ```
+   Expected output:
+   ```
+     PID TTY          TIME CMD
+    1234 pts/0    00:00:00 bash
+    5678 pts/0    00:00:00 ps
+   ```
+
+3. **View all terminal sessions**: See all active terminals
+   ```bash
+   who
+   ```
+   Expected output:
+   ```
+   user     pts/0        2024-01-19 10:30 (:0)
+   ```
+
+4. **Check processes without controlling terminal**: Find daemon processes
+   ```bash
+   ps aux | grep "?" | head -10
+   ```
+   Expected output:
+   ```
+   (Shows system daemons with ? in TTY column)
+   ```
 
 ## Quiz Question
 

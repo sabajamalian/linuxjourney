@@ -41,7 +41,63 @@ By directly accessing files within `/proc`, you can gather specific metrics to b
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Explore the /proc directory**: View process information filesystem
+   ```bash
+   ls /proc | head -20
+   ```
+   Expected output:
+   ```
+   1
+   2
+   3
+   cpuinfo
+   meminfo
+   (PIDs and system info files)
+   ```
+
+2. **View process information**: Check info for current shell
+   ```bash
+   cat /proc/$$/status | head -15
+   ```
+   Expected output:
+   ```
+   Name:   bash
+   State:  S (sleeping)
+   Pid:    1234
+   PPid:   1233
+   ```
+
+3. **Check system CPU information**: View processor details
+   ```bash
+   cat /proc/cpuinfo | grep "model name" | head -1
+   ```
+   Expected output:
+   ```
+   model name      : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+   ```
+
+4. **View memory information**: Check system memory
+   ```bash
+   cat /proc/meminfo | head -10
+   ```
+   Expected output:
+   ```
+   MemTotal:        8052484 kB
+   MemFree:         1234567 kB
+   MemAvailable:    5678901 kB
+   ```
+
+5. **Check command line of a process**: View how process was started
+   ```bash
+   cat /proc/$$/cmdline
+   echo
+   ```
+   Expected output:
+   ```
+   bash
+   ```
 
 ## Quiz Question
 

@@ -92,7 +92,71 @@ While `tar` and `gzip` are extremely common, you will encounter other archiving 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Create test files for archiving**: Make some files to practice with
+   ```bash
+   mkdir test_archive
+   echo "File 1" > test_archive/file1.txt
+   echo "File 2" > test_archive/file2.txt
+   echo "File 3" > test_archive/file3.txt
+   ```
+
+2. **Create a tar archive**: Bundle files together
+   ```bash
+   tar -cvf myarchive.tar test_archive/
+   ls -lh myarchive.tar
+   ```
+   Expected output:
+   ```
+   test_archive/
+   test_archive/file1.txt
+   test_archive/file2.txt
+   test_archive/file3.txt
+   -rw-rw-r-- 1 user user 10K Jan 19 10:30 myarchive.tar
+   ```
+
+3. **List contents of tar archive**: View what's inside without extracting
+   ```bash
+   tar -tvf myarchive.tar
+   ```
+   Expected output:
+   ```
+   drwxrwxr-x user/user         0 2024-01-19 10:30 test_archive/
+   -rw-rw-r-- user/user         7 2024-01-19 10:30 test_archive/file1.txt
+   -rw-rw-r-- user/user         7 2024-01-19 10:30 test_archive/file2.txt
+   ```
+
+4. **Create compressed tar.gz archive**: Use gzip compression
+   ```bash
+   tar -czvf myarchive.tar.gz test_archive/
+   ls -lh myarchive.tar.gz
+   ```
+   Expected output:
+   ```
+   test_archive/
+   test_archive/file1.txt
+   test_archive/file2.txt
+   -rw-rw-r-- 1 user user 1.2K Jan 19 10:30 myarchive.tar.gz
+   ```
+
+5. **Extract tar archive**: Unpack the archive
+   ```bash
+   rm -r test_archive
+   tar -xzvf myarchive.tar.gz
+   ls test_archive/
+   ```
+   Expected output:
+   ```
+   test_archive/
+   test_archive/file1.txt
+   file1.txt  file2.txt  file3.txt
+   ```
+
+6. **Clean up**: Remove test files
+   ```bash
+   rm -r test_archive myarchive.tar myarchive.tar.gz
+   ```
 
 ## Quiz Question
 

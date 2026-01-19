@@ -38,7 +38,48 @@ In short, an orphan is alive but parentless, while a zombie is dead but not yet 
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Start a process to terminate**: Create a test process
+   ```bash
+   sleep 300 &
+   echo "Process PID: $!"
+   ```
+   Expected output:
+   ```
+   [1] 5678
+   Process PID: 5678
+   ```
+
+2. **List the background job**: View running jobs
+   ```bash
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Running                 sleep 300 &
+   ```
+
+3. **Terminate gracefully**: Send SIGTERM signal
+   ```bash
+   kill %1
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Terminated              sleep 300
+   ```
+
+4. **Force termination**: Start another process and force kill
+   ```bash
+   sleep 300 &
+   kill -9 %1
+   jobs
+   ```
+   Expected output:
+   ```
+   [1]+  Killed                  sleep 300
+   ```
 
 ## Quiz Question
 

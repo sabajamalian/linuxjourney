@@ -35,7 +35,46 @@ By understanding these fundamental **linux process states**, you can gain deeper
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View process states**: See STAT column in ps output
+   ```bash
+   ps aux | head -15
+   ```
+   Expected output:
+   ```
+   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+   root         1  0.0  0.1 225848  9476 ?        Ss   Jan19   0:03 /sbin/init
+   root         2  0.0  0.0      0     0 ?        S    Jan19   0:00 [kthreadd]
+   (Note STAT column: S=sleeping, R=running, Z=zombie, etc.)
+   ```
+
+2. **Find running processes**: Filter for running state
+   ```bash
+   ps aux | awk '$8 ~ /R/ {print $0}' | head -5
+   ```
+   Expected output:
+   ```
+   (Shows processes in Running state)
+   ```
+
+3. **Find sleeping processes**: Look for interruptible sleep
+   ```bash
+   ps aux | awk '$8 ~ /S/ {print $0}' | head -5
+   ```
+   Expected output:
+   ```
+   (Shows processes in Sleeping state)
+   ```
+
+4. **Check zombie processes**: Look for defunct processes
+   ```bash
+   ps aux | grep Z
+   ```
+   Expected output:
+   ```
+   (Usually no output if system is healthy)
+   ```
 
 ## Quiz Question
 

@@ -37,7 +37,43 @@ To view the files on the same machine, you can use the localhost address: `http:
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check SSH availability**: Try this command
+   ```bash
+   which ssh
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+2. **Test local connection**: Try this command
+   ```bash
+   ss -tuln | grep :22
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+3. **View network shares**: Try this command
+   ```bash
+   mount | grep nfs` or similar
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
+
+4. **Check rsync**: Try this command
+   ```bash
+   which rsync` and `rsync --version
+   ```
+   Expected output:
+   ```
+   (Output will vary based on your system)
+   ```
 
 ## Quiz Question
 

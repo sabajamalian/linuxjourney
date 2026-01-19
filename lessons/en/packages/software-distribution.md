@@ -33,7 +33,49 @@ Mastering the tools to manage these packages is the **best way to learn linux co
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check your Linux distribution**: Identify which distro you're using
+   ```bash
+   cat /etc/os-release
+   ```
+   Expected output:
+   ```
+   NAME="Ubuntu"
+   VERSION="20.04.5 LTS (Focal Fossa)"
+   ID=ubuntu
+   ID_LIKE=debian
+   ```
+
+2. **Check package management system**: Verify what package manager is available
+   ```bash
+   which apt
+   which dpkg
+   ```
+   Expected output:
+   ```
+   /usr/bin/apt
+   /usr/bin/dpkg
+   ```
+
+3. **View system architecture**: Check if 32-bit or 64-bit
+   ```bash
+   uname -m
+   ```
+   Expected output:
+   ```
+   x86_64
+   (64-bit system)
+   ```
+
+4. **Check kernel version**: View Linux kernel information
+   ```bash
+   uname -r
+   ```
+   Expected output:
+   ```
+   5.4.0-150-generic
+   ```
 
 ## Quiz Question
 

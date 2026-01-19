@@ -45,7 +45,61 @@ The key difference between `SIGTERM` (**linux signal 15**) and `SIGKILL` is that
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **List all available signals**: View signal numbers and names
+   ```bash
+   kill -l
+   ```
+   Expected output:
+   ```
+    1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL
+    5) SIGTRAP      6) SIGABRT      7) SIGBUS       8) SIGFPE
+    9) SIGKILL     10) SIGUSR1     11) SIGSEGV     12) SIGUSR2
+   (and more signals)
+   ```
+
+2. **Start a process and send SIGSTOP**: Pause a process
+   ```bash
+   sleep 100 &
+   SLEEPPID=$!
+   kill -STOP $SLEEPPID
+   ps -p $SLEEPPID -o pid,state,cmd
+   ```
+   Expected output:
+   ```
+     PID S CMD
+    5678 T sleep 100
+   (T = stopped)
+   ```
+
+3. **Resume the process with SIGCONT**: Continue a stopped process
+   ```bash
+   kill -CONT $SLEEPPID
+   ps -p $SLEEPPID -o pid,state,cmd
+   ```
+   Expected output:
+   ```
+     PID S CMD
+    5678 S sleep 100
+   (S = sleeping/running)
+   ```
+
+4. **Terminate with SIGTERM**: Send termination signal
+   ```bash
+   kill -TERM $SLEEPPID
+   ```
+
+5. **Try SIGINT with Ctrl+C**: Start a foreground process
+   ```bash
+   sleep 60
+   (Press Ctrl+C to send SIGINT)
+   ```
+   Expected output:
+   ```
+   ^C
+   (Process interrupted)
+   ```
 
 ## Quiz Question
 

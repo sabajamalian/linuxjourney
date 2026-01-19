@@ -31,7 +31,46 @@ It is also common practice to add new repository configurations in the `/etc/apt
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View configured repositories**: Check your sources list
+   ```bash
+   cat /etc/apt/sources.list | grep -v "^#" | grep -v "^$"
+   ```
+   Expected output:
+   ```
+   deb http://archive.ubuntu.com/ubuntu focal main restricted
+   deb http://archive.ubuntu.com/ubuntu focal-updates main restricted
+   ```
+
+2. **List additional repository files**: View sources.list.d directory
+   ```bash
+   ls /etc/apt/sources.list.d/
+   ```
+   Expected output:
+   ```
+   (Lists any additional repository configuration files)
+   ```
+
+3. **Update package index**: Refresh repository information
+   ```bash
+   sudo apt update
+   ```
+   Expected output:
+   ```
+   Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+   Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+   Reading package lists... Done
+   ```
+
+4. **View repository cache**: Check downloaded package lists
+   ```bash
+   ls /var/lib/apt/lists/ | head -10
+   ```
+   Expected output:
+   ```
+   (Lists cached repository index files)
+   ```
 
 ## Quiz Question
 

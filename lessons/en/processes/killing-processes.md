@@ -51,7 +51,52 @@ If the command executes successfully (exit code 0), the process exists. If it fa
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Start multiple test processes**: Create processes to practice killing
+   ```bash
+   sleep 500 &
+   sleep 500 &
+   sleep 500 &
+   ps aux | grep sleep
+   ```
+   Expected output:
+   ```
+   user      5678  0.0  0.0   7256   756 pts/0    S    10:35   0:00 sleep 500
+   user      5679  0.0  0.0   7256   756 pts/0    S    10:35   0:00 sleep 500
+   user      5680  0.0  0.0   7256   756 pts/0    S    10:35   0:00 sleep 500
+   ```
+
+2. **Kill by PID**: Terminate one specific process
+   ```bash
+   kill 5678
+   ps aux | grep sleep
+   ```
+   Expected output:
+   ```
+   (One sleep process gone)
+   ```
+
+3. **Kill multiple processes by name**: Use killall
+   ```bash
+   killall sleep
+   ps aux | grep sleep
+   ```
+   Expected output:
+   ```
+   (All sleep processes terminated)
+   ```
+
+4. **Force kill a stubborn process**: Use kill -9
+   ```bash
+   sleep 500 &
+   TESTPID=$!
+   kill -9 $TESTPID
+   ```
+   Expected output:
+   ```
+   [1]+  Killed                  sleep 500
+   ```
 
 ## Quiz Question
 

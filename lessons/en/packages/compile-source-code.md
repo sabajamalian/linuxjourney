@@ -71,7 +71,65 @@ To uninstall a package installed with `make install`, you would navigate back to
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check if compiler is installed**: Verify gcc availability
+   ```bash
+   which gcc
+   gcc --version | head -1
+   ```
+   Expected output:
+   ```
+   /usr/bin/gcc
+   gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+   ```
+
+2. **Create a simple C program**: Make a hello world program
+   ```bash
+   cat > hello.c << 'EOF'
+#include <stdio.h>
+int main() {
+    printf("Hello, Linux Journey!
+");
+    return 0;
+}
+EOF
+   ```
+
+3. **Compile the program**: Use gcc to compile
+   ```bash
+   gcc hello.c -o hello
+   ls -l hello
+   ```
+   Expected output:
+   ```
+   -rwxrwxr-x 1 user user 16696 Jan 19 10:30 hello
+   ```
+
+4. **Run the compiled program**: Execute the binary
+   ```bash
+   ./hello
+   ```
+   Expected output:
+   ```
+   Hello, Linux Journey!
+   ```
+
+5. **View compilation steps**: Compile with verbose output
+   ```bash
+   gcc -v hello.c -o hello 2>&1 | head -5
+   ```
+   Expected output:
+   ```
+   Using built-in specs.
+   COLLECT_GCC=gcc
+   (Shows compilation process)
+   ```
+
+6. **Clean up**: Remove test files
+   ```bash
+   rm hello.c hello
+   ```
 
 ## Quiz Question
 

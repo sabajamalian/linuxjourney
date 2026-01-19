@@ -50,7 +50,56 @@ renice 10 -p 3245
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **Check niceness of current shell**: View the nice value
+   ```bash
+   ps -o pid,ni,cmd -p $$
+   ```
+   Expected output:
+   ```
+     PID  NI CMD
+    1234   0 bash
+   ```
+
+2. **Start a process with nice**: Launch process with lower priority
+   ```bash
+   nice -n 10 sleep 100 &
+   ps -o pid,ni,cmd | grep sleep
+   ```
+   Expected output:
+   ```
+    5678  10 sleep 100
+   ```
+
+3. **Change niceness with renice**: Adjust priority of running process
+   ```bash
+   sleep 100 &
+   SLEEPPID=$!
+   renice +5 $SLEEPPID
+   ps -o pid,ni,cmd -p $SLEEPPID
+   ```
+   Expected output:
+   ```
+    5679   5 sleep 100
+   ```
+
+4. **View nice values of all processes**: List processes by priority
+   ```bash
+   ps -eo pid,ni,cmd | head -15
+   ```
+   Expected output:
+   ```
+     PID  NI CMD
+       1   0 /sbin/init
+       2   0 [kthreadd]
+   (Shows nice values for all processes)
+   ```
+
+5. **Clean up**: Kill test processes
+   ```bash
+   killall sleep
+   ```
 
 ## Quiz Question
 

@@ -48,7 +48,68 @@ RPM: `q` for query and `a` for all
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **List installed packages**: View all installed packages
+   ```bash
+   dpkg -l | head -20
+   ```
+   Expected output:
+   ```
+   Desired=Unknown/Install/Remove/Purge/Hold
+   | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+   |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+   ||/ Name                Version        Architecture Description
+   +++-==================-==============-============-================================
+   ii  adduser            3.118ubuntu2   all          add and remove users and groups
+   ```
+
+2. **Check if a package is installed**: Query specific package
+   ```bash
+   dpkg -l | grep wget
+   ```
+   Expected output:
+   ```
+   ii  wget               1.20.3-1ubuntu1 amd64        retrieves files from the web
+   ```
+
+3. **View package details**: Get information about a package
+   ```bash
+   dpkg -s wget
+   ```
+   Expected output:
+   ```
+   Package: wget
+   Status: install ok installed
+   Priority: important
+   Section: web
+   Installed-Size: 975
+   ```
+
+4. **List files from a package**: See what files a package installed
+   ```bash
+   dpkg -L wget | head -10
+   ```
+   Expected output:
+   ```
+   /.
+   /usr
+   /usr/bin
+   /usr/bin/wget
+   /usr/share
+   ```
+
+5. **Search for available packages**: Find packages (if apt is available)
+   ```bash
+   apt search curl 2>/dev/null | head -10
+   ```
+   Expected output:
+   ```
+   Sorting... Done
+   Full Text Search... Done
+   curl/focal-updates 7.68.0-1ubuntu2.20 amd64
+     command line tool for transferring data with URL syntax
+   ```
 
 ## Quiz Question
 

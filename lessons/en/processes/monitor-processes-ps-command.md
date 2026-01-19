@@ -74,7 +74,57 @@ top
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View your current processes**: See processes in your terminal session
+   ```bash
+   ps
+   ```
+   Expected output:
+   ```
+     PID TTY          TIME CMD
+    1234 pts/0    00:00:00 bash
+    5678 pts/0    00:00:00 ps
+   ```
+
+2. **View all processes**: Use ps aux to see all running processes
+   ```bash
+   ps aux | head -10
+   ```
+   Expected output:
+   ```
+   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+   root         1  0.0  0.1 225848  9476 ?        Ss   Jan19   0:03 /sbin/init
+   root         2  0.0  0.0      0     0 ?        S    Jan19   0:00 [kthreadd]
+   ```
+
+3. **Filter processes by name**: Find all bash processes
+   ```bash
+   ps aux | grep bash
+   ```
+   Expected output:
+   ```
+   user      1234  0.0  0.1  21536  5124 pts/0    Ss   10:30   0:00 /bin/bash
+   ```
+
+4. **View processes in tree format**: See process hierarchy
+   ```bash
+   ps auxf | head -20
+   ```
+   Expected output:
+   ```
+   (Shows processes in tree structure with parent-child relationships)
+   ```
+
+5. **Use ps with System V style**: Try the ps -ef command
+   ```bash
+   ps -ef | head -10
+   ```
+   Expected output:
+   ```
+   UID        PID  PPID  C STIME TTY          TIME CMD
+   root         1     0  0 Jan19 ?        00:00:03 /sbin/init
+   ```
 
 ## Quiz Question
 

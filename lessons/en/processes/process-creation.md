@@ -33,7 +33,53 @@ If every process is a child of another, there must be an original ancestor. This
 
 ## Exercise
 
-Practice the commands in your Ubuntu VM terminal. Experiment with different options and variations to deepen your understanding.
+Follow these steps in your Ubuntu VM terminal to practice the concepts from this lesson:
+
+1. **View process parent-child relationship**: Check your shell and its parent
+   ```bash
+   ps -ef | grep $$
+   ```
+   Expected output:
+   ```
+   user      1234  1233  0 10:30 pts/0    00:00:00 bash
+   (Shows your bash process and its parent PID)
+   ```
+
+2. **Start a background process**: Create a child process
+   ```bash
+   sleep 100 &
+   ps -ef | grep sleep
+   ```
+   Expected output:
+   ```
+   user      5678  1234  0 10:35 pts/0    00:00:00 sleep 100
+   (Child process of your shell)
+   ```
+
+3. **View process tree**: See fork relationships
+   ```bash
+   pstree -p $$ | head -5
+   ```
+   Expected output:
+   ```
+   bash(1234)─┬─pstree(5679)
+              └─sleep(5678)
+   ```
+
+4. **Check parent process ID**: View PPID
+   ```bash
+   ps -o pid,ppid,cmd -p $$
+   ```
+   Expected output:
+   ```
+     PID  PPID CMD
+    1234  1233 bash
+   ```
+
+5. **Clean up**: Kill the background process
+   ```bash
+   killall sleep
+   ```
 
 ## Quiz Question
 
