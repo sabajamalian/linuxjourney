@@ -171,6 +171,63 @@ your_username@ubuntu:~$
 
 This means you're logged in and ready to start learning!
 
+### Important: About Your VM Credentials
+
+{: .warning }
+> **Store Your Credentials Securely!** This lab environment will be required for multiple assignments and projects throughout the semester. Please save your username, password, and VM address in a secure location (such as a password manager) for future access.
+
+#### Understanding Your VM's Isolation
+
+Your VM credentials (username and password) are **completely independent** and **not connected to any school systems**. Here's what this means:
+
+- **Isolated Environment**: Your VM is a standalone, sandboxed system. It has no connection to your school's authentication systems, student portal, email, or any other campus services.
+- **Separate Credentials**: The password for your VM is unique to this machine only. It is not your school password, and changing one will not affect the other.
+- **No Single Sign-On (SSO)**: Your VM does not use your school's single sign-on or directory services. You must use the specific credentials provided for this VM.
+- **Your Responsibility**: Since this is an isolated system, you are responsible for remembering and securely storing your VM credentials. Your instructor cannot recover a password you set yourself.
+
+#### Changing Your Password
+
+For security best practices, you may want to change your password after your first login. Here's how:
+
+1. **Connect to your VM** using the initial password provided by your instructor
+
+2. **Run the password change command**:
+   ```bash
+   passwd
+   ```
+
+3. **Enter your current password** when prompted:
+   ```
+   Current password:
+   ```
+   (Type your current password and press Enter - characters won't be displayed)
+
+4. **Enter your new password**:
+   ```
+   New password:
+   ```
+   (Type your new password and press Enter)
+
+5. **Confirm your new password**:
+   ```
+   Retype new password:
+   ```
+   (Type the same new password again and press Enter)
+
+6. **Success!** You'll see a confirmation message:
+   ```
+   passwd: password updated successfully
+   ```
+
+**Password Requirements:**
+- Choose a strong password that you can remember
+- Use a mix of uppercase, lowercase, numbers, and special characters
+- Avoid using easily guessable information (birthdays, names, etc.)
+- **Immediately record your new password in a secure location** (password manager recommended)
+
+{: .note }
+> If you change your password and forget it, contact your instructor. They may need to reset your VM, which could result in loss of your work.
+
 ## Your Learning Environment
 
 ### What You Have
